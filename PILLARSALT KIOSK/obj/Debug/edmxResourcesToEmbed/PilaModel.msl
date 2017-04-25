@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PilaDataModelStoreContainer" CdmEntityContainer="PilaDbContext">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="PilaDataModel.Account">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConnectionInfoes">
+      <EntityTypeMapping TypeName="PilaDataModel.ConnectionInfo">
+        <MappingFragment StoreEntitySet="ConnectionInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="AlternateIP" ColumnName="AlternateIP" />
+          <ScalarProperty Name="SocketPort" ColumnName="SocketPort" />
+          <ScalarProperty Name="KeyName" ColumnName="KeyName" />
+          <ScalarProperty Name="PrivateKey" ColumnName="PrivateKey" />
+          <ScalarProperty Name="PublicKey" ColumnName="PublicKey" />
+          <ScalarProperty Name="ProfilingIP" ColumnName="ProfilingIP" />
+          <ScalarProperty Name="Entry" ColumnName="Entry" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="KeyPass" ColumnName="KeyPass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,25 @@
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\Interop.GLORYCOCTRLLib.dll
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\AxInterop.GLORYCOCTRLLib.dll
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.csproj.ResolveComReference.cache
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.GloryWinUserControl.resources
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.Properties.Resources.resources
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.csproj.GenerateResource.Cache
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\GloryWindowsUserControl.exe.config
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\GloryWindowsUserControl.exe
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\GloryWindowsUserControl.pdb
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\Interop.GLORYCOCTRLLib.dll
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\AxInterop.GLORYCOCTRLLib.dll
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.exe
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.pdb
+C:\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.csprojResolveAssemblyReference.cache
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\bin\Debug\AxInterop.GLORYCOCTRLLib.dll
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\bin\Debug\Interop.GLORYCOCTRLLib.dll
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\GloryWindowsUserControl.exe.config
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\GloryWindowsUserControl.exe
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\bin\Debug\GloryWindowsUserControl.pdb
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.GloryWinUserControl.resources
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.Properties.Resources.resources
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.csproj.GenerateResource.Cache
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.exe
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.pdb
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\GloryWindowsUserControl\obj\Debug\GloryWindowsUserControl.csprojResolveAssemblyReference.cache

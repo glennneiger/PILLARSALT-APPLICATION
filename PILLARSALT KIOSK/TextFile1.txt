@@ -1,0 +1,105 @@
+﻿
+Imports System.IO
+Imports System.Text
+Imports System.Xml.Serialization
+Imports SocketLibrary
+Imports SocketLibrary.Common
+
+Public Class Form1
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Try
+            Dim sending As New TMSSocketClient
+            'note that the richtextbox.text.trim, is just a simple example
+            'it should be replaced with the serialized pillarsalt class string
+
+            If EncryptMessageFromkiosk(RichTextBox1.Text.Trim).Value = 1 Then
+                Dim encryptedMessage = EncryptMessageFromkiosk(RichTextBox1.Text.Trim).Notes
+                Dim response = sending.SyncClient(TextBox1.Text, TextBox3.Text, encryptedMessage)
+
+
+                Dim k As New SocketLibrary.KeyManager
+                ' Dim decryptedResponse = DecryptMessageFromTMS(response.Notes)
+                Dim decryptedResponse = DecryptMessageFromTMS(response.Notes)
+
+                'deserialize to class
+                Dim myObject As PillarSaltMessage
+                Dim mySerializer As XmlSerializer = New XmlSerializer(GetType(PillarSaltMessage))
+
+                ' convert string to stream
+                Dim byteArray As Byte() = Encoding.Unicode.GetBytes(decryptedResponse.Notes)
+                Dim stream As New MemoryStream(byteArray)
+                ' Call the Deserialize method and cast to the object type.
+                myObject = CType(mySerializer.Deserialize(stream), PillarSaltMessage)
+                'e.g how to obtain a value
+                Dim dNotes = myObject.content.Contents(0).MethodCall
+
+                'Save to database
+                Dim xe As New mainEntities
+                Dim tranId = myObject.Header.TransactionCode
+
+            End If
+
+            'TextBox2.Text = c.Notes
+        Catch ex As Exception
+            TextBox2.Text = String.Format("Exception: {0}", ex)
+        End Try
+    End Sub
+
+
+    Function EncryptMessageFromkiosk(message As String) As Output
+        Try
+            Dim xe As New mainEntities
+
+            If xe.ConnectionInfoes.Where(Function(c) c.Active = 1).Count = 1 Then  'profiling is done
+                'Retrieve profiling info
+                Dim profile = xe.ConnectionInfoes.Where(Function(c) c.Active = 1).First
+
+                Dim keyValue = System.Text.Encoding.ASCII.GetString(profile.PublicKey)
+
+
+                Dim keyM As New KeyManager
+                Dim encrypted = keyM.EncryptPGP(profile.KeyName, profile.KeyName, profile.KeyPass, message, profile.PublicKey)
+
+                If encrypted.Value = "0" Then
+                    Return New Output("FAILED", 0, Nothing, Nothing, "Encryption Error : " & encrypted.Notes)
+                    Exit Function
+                End If
+                Return New Output("SUCCESS", 1, Nothing, Nothing, encrypted.Notes)
+            Else
+                Return New Output("HALTED", 0, Nothing, Nothing, "PROFILING ERROR ")
+            End If
+
+        Catch ex As Exception
+            Return New Output("FAILED", 0, Nothing, Nothing, "Encryption Error : " & ex.Message)
+        End Try
+
+
+
+    End Function
+
+    Function DecryptMessageFromTMS(responseMessage As String) As Output
+        Try
+            Dim xe As New mainEntities
+
+            If xe.ConnectionInfoes.Where(Function(c) c.Active = 1).Count = 1 Then  'profiling is done
+                'Retrieve profiling info
+                Dim profile = xe.ConnectionInfoes.Where(Function(c) c.Active = 1).First
+                Dim keyData = profile.PrivateKey
+                Dim keyM As New KeyManager
+                Dim decrypted = keyM.DecryptPGP(profile.KeyName, profile.KeyName, profile.KeyPass, responseMessage, keyData)
+
+                If decrypted.Value = "0" Then
+                    Return New Output("FAILED", 0, Nothing, Nothing, "Decryption Error : " & decrypted.Notes)
+                    Exit Function
+                End If
+                Return New Output("SUCCESS", 1, Nothing, Nothing, decrypted.Notes)
+            Else
+                Return New Output("HALTED", 0, Nothing, Nothing, "PROFILING ERROR ")
+            End If
+
+        Catch ex As Exception
+            Return New Output("FAILED", 0, Nothing, Nothing, "Decryption Error : " & ex.Message)
+        End Try
+    End Function
+End Class

@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5cd029a505ef425f86924e2615a95ee8" Name="Acc" ZoomLevel="75">
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Accounts_BankDetails" Width="1.5" PointX="6" PointY="28.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Amortisation" Width="1.5" PointX="10.75" PointY="7.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Amortisation_Schedule" Width="1.5" PointX="13" PointY="8.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_BankMapping" Width="1.5" PointX="3" PointY="28.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Budget" Width="1.5" PointX="3" PointY="48.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Budget_Breakdown" Width="1.5" PointX="8.25" PointY="48.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Budget_Categories" Width="1.5" PointX="6" PointY="53.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Budget_Funding" Width="1.5" PointX="5.25" PointY="45" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Budget_Inputs" Width="1.5" PointX="10.5" PointY="55.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Budget_Periods" Width="1.5" PointX="5.25" PointY="61.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Budget_Revenue" Width="1.5" PointX="7.5" PointY="61.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_CurrencyCode" Width="1.5" PointX="0.75" PointY="26.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Expenses_Limits" Width="1.5" PointX="0.75" PointY="7.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Payments" Width="1.5" PointX="5.25" PointY="16.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Pending_Transactions" Width="1.5" PointX="12.75" PointY="17.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Retirement_Documents" Width="1.5" PointX="10.75" PointY="23.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Acc_Retirements" Width="1.5" PointX="8.5" PointY="22.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.ACCBank" Width="1.5" PointX="3.75" PointY="71.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.ACCBudget" Width="1.5" PointX="14.75" PointY="17.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.AccountEntity" Width="1.5" PointX="1.5" PointY="16.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.AccountLog" Width="1.5" PointX="15.75" PointY="7.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Account" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.ACCProforma" Width="1.5" PointX="6" PointY="5.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.AccProformaDetail" Width="1.5" PointX="8.25" PointY="12.375" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Accounts_BankDetails_Acc_CurrencyCode" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Accounts_BankDetails_ACCBank" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Accounts_BankDetails_Accounts" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Amortisation_Schedule_Acc_Amortisation" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_BankMapping_Acc_CurrencyCode" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_BankMapping_ACCBank" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Payments_Acc_BankMapping" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Budget_Acc_CurrencyCode" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Budget_Breakdown_Acc_Budget" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Budget_Funding_Acc_Budget" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Budget_Periods_Acc_Budget" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Budget_Breakdown_Acc_Budget_Categories" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Budget_Inputs_Acc_Budget_Breakdown" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Budget_Inputs_Acc_Budget_Periods" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Budget_Revenue_Acc_Budget_Periods" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Retirements_Acc_CurrencyCode" />
+        <AssociationConnector Association="PillarsaltModel.FK_Acc_Retirements_Acc_Payments" />
+        <AssociationConnector Association="PillarsaltModel.FK_Retirement_Documents_Acc_Retirements" />
+        <AssociationConnector Association="PillarsaltModel.FK_Accounts_AccountEntity" />
+        <AssociationConnector Association="PillarsaltModel.FK_ACCProforma_Accounts" />
+        <AssociationConnector Association="PillarsaltModel.FK_AccProformaDetails_ACCProforma" />
+      </Diagram>
+      <Diagram DiagramId="0f8d58be57d849458a6c45ad8acb3aa8" Name="Admin" >
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Appointments" Width="1.5" PointX="17.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_ApprovalLimits" Width="1.5" PointX="17.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Email_Recipients" Width="1.5" PointX="15" PointY="10.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Emails" Width="1.5" PointX="12.75" PointY="10.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Requisition_Documents" Width="1.5" PointX="14.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Requisition_Enquiries" Width="1.5" PointX="16.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_RequisitionType" Width="1.5" PointX="18.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Resource_Request" Width="1.5" PointX="3" PointY="2.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_ResourceBooking" Width="1.5" PointX="5.25" PointY="1.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Resources" Width="1.5" PointX="0.75" PointY="2.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_ResourceTypes" Width="1.5" PointX="19.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_ScrapBook" Width="1.5" PointX="19.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_SMS" Width="1.5" PointX="0.75" PointY="13.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_SMS_Recipents" Width="1.5" PointX="3" PointY="13.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_SMS_SenderList" Width="1.5" PointX="12.75" PointY="1.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_SMS_Statistics" Width="1.5" PointX="20.75" PointY="16.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Template_Documents" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Template_Emails" Width="1.5" PointX="5.75" PointY="21.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_Template_SMS" Width="1.5" PointX="15" PointY="1.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_User_Alarm" Width="1.5" PointX="0.75" PointY="22.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_User_Calendar" Width="1.5" PointX="2.75" PointY="22.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_WorkOrder" Width="1.5" PointX="7.75" PointY="9.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_WorkOrder_Documents" Width="1.5" PointX="10" PointY="2.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_WorkOrder_PaySchedule" Width="1.5" PointX="10" PointY="10.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_WorkOrder_Progression" Width="1.5" PointX="10" PointY="19.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Admin_WorkOrder_Progression_Documents" Width="1.5" PointX="12.25" PointY="19.5" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_Email_Recipients_Admin_Emails" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_Resource_Request_Admin_Resources" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_ResourceBooking_Admin_Resource_Request" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_ResourceBooking_Admin_Resources" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_ResourceBooking_Admin_Resources1" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_SMS_Recipents_Admin_SMS" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_Template_SMS_SMSSenderList" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_JobOrder_Progression_Admin_WorkOrder" />
+        <AssociationConnector Association="PillarsaltModel.FK_Admin_WorkOrder_PaySchedule_Admin_WorkOrder" />
+        <AssociationConnector Association="PillarsaltModel.FK_WorkOrder_Documents_WorkOrder" />
+        <AssociationConnector Association="PillarsaltModel.FK_WorkOrder_Progression_Documents_WorkOrder" />
+      </Diagram>
+      <Diagram DiagramId="83cad834bf7f4e7ca7572ff8335c9dbd" Name="Tms" >
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Account_Categories" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Acct_Setup" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Acquirer" Width="1.5" PointX="12.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_AdminCode" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_AdvertBilling" Width="1.5" PointX="14.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Advertise_Cash" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_AdvertScheduling" Width="1.5" PointX="16.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Assign_Commission" Width="1.5" PointX="12.75" PointY="17.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Assign_Technician" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_AssignMachine" Width="1.5" PointX="0.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_AssignPackage" Width="1.5" PointX="2.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_AtmMap" Width="1.5" PointX="4.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Auction_Settings" Width="1.5" PointX="18.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Banks_Sectors" Width="1.5" PointX="14.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Bidders" Width="1.5" PointX="16.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Blacklisting" Width="1.5" PointX="18.75" PointY="17.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Branch" Width="1.5" PointX="6.75" PointY="19.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_BulkCash" Width="1.5" PointX="8.75" PointY="19.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_CashBidding" Width="1.5" PointX="20.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Cashdams" Width="1.5" PointX="20.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Commission_Setup" Width="1.5" PointX="20.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_ConfigureScreen" Width="1.5" PointX="22.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Customer_Statement" Width="1.5" PointX="22.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Denomination" Width="1.5" PointX="10" PointY="10.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Dependency" Width="1.5" PointX="22.75" PointY="17.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Deposit" Width="1.5" PointX="7.75" PointY="10.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_DepositeBag" Width="1.5" PointX="7.75" PointY="1.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Disbursment" Width="1.5" PointX="24.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_IPSettings" Width="1.5" PointX="24.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_JobOrder" Width="1.5" PointX="24.75" PointY="16.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_JobProgression" Width="1.5" PointX="24.75" PointY="24.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Language" Width="1.5" PointX="2.75" PointY="1.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_LanguageManifest" Width="1.5" PointX="2.75" PointY="10.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_LanguageResources" Width="1.5" PointX="5" PointY="1.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_LogUpdate" Width="1.5" PointX="10.75" PointY="25.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Machine_BrandandModels" Width="1.5" PointX="26.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Machine_Disposal" Width="1.5" PointX="2.75" PointY="26.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Machine_Documents" Width="1.5" PointX="26.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Machine_Locations" Width="1.5" PointX="16.75" PointY="26.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Machine_Status" Width="1.5" PointX="26.75" PointY="18.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_MachineBagDetachment" Width="1.5" PointX="18.75" PointY="26.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_MachineBags" Width="1.5" PointX="10" PointY="1.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_MachineDisposal" Width="1.5" PointX="20.75" PointY="26.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_MachineScreen" Width="1.5" PointX="26.75" PointY="26.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_MaintenanceVoucher" Width="1.5" PointX="4.75" PointY="27.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Manage_Bank" Width="1.5" PointX="12.75" PointY="27.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_MMPackages" Width="1.5" PointX="28.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Offsite" Width="1.5" PointX="6.75" PointY="28.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Operators" Width="1.5" PointX="28.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_PaymentSchedule" Width="1.5" PointX="28.75" PointY="16.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Predictive_Maintenance" Width="1.5" PointX="28.75" PointY="24.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_QueryPayment" Width="1.5" PointX="30.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Region" Width="1.5" PointX="30.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Register_Bank" Width="1.5" PointX="30.75" PointY="16.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_RegisterAgency" Width="1.5" PointX="30.75" PointY="25.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_ResourceAllocation" Width="1.5" PointX="32.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Retailer_Setup" Width="1.5" PointX="32.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Screenshot" Width="1.5" PointX="32.75" PointY="17.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_SectorSettings" Width="1.5" PointX="22.75" PointY="32.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_SendCommand" Width="1.5" PointX="32.75" PointY="25.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_SwitchSetup" Width="1.5" PointX="8.75" PointY="33.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_TransactionDetails" Width="1.5" PointX="32.75" PointY="33.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_UpdateSettings" Width="1.5" PointX="34.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_WarrantyStatus" Width="1.5" PointX="34.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_Work_Order" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.TMS_WorkVerification" Width="1.5" PointX="34.75" PointY="16.75" />
+        <AssociationConnector Association="PillarsaltModel.FK_TMS_Denomination_TMS_Deposit" />
+        <AssociationConnector Association="PillarsaltModel.FK_TMS_MachineBags_TMS_DepositeBag" />
+        <AssociationConnector Association="PillarsaltModel.FK_TMS_LanguageResources_TMS_Language" />
+        <AssociationConnector Association="PillarsaltModel.FK_TMS_LanguageResources_TMS_LanguageManifest" />
+        <AssociationConnector Association="PillarsaltModel.FK_TMS_Work_Order_TMS_Work_Order" />
+      </Diagram>
+      <Diagram DiagramId="d1bfa6f5060f48de9265b4ce840c44bd" Name="Aspnet" >
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="23.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_Membership" Width="1.5" PointX="8.25" PointY="17.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_Paths" Width="1.5" PointX="3" PointY="45.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="5.25" PointY="55.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="8.25" PointY="29.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_Profile" Width="1.5" PointX="5.25" PointY="14.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_Roles" Width="1.5" PointX="3" PointY="36.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_Users" Width="1.5" PointX="3" PointY="13.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_UsersInRoles" Width="1.5" PointX="5.25" PointY="25.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.aspnet_WebEvent_Events" Width="1.5" PointX="2.75" PointY="0.75" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Me__Appli__5947C817" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Me__Appli__5F3414E9" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Me__Appli__622726DB" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pa__Appli__10CB707D" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pa__Appli__5B301089" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pa__Appli__640F6F4D" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Ro__Appli__5FF4C5A6" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Ro__Appli__68D4246A" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Ro__Appli__7DB89C09" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__Appli__4EFDAD20" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__Appli__60E8E9DF" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__Appli__69C848A3" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Me__UserI__5A3BEC50" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Me__UserI__60283922" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Me__UserI__631B4B14" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__PathI__168449D3" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__PathI__1A54DAB7" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__PathI__5C2434C2" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__PathI__5D1858FB" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__PathI__65039386" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__PathI__65F7B7BF" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__UserI__1B48FEF0" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__UserI__5E0C7D34" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pe__UserI__66EBDBF8" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pr__UserI__5F00A16D" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pr__UserI__67E00031" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Pr__UserI__742F31CF" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__RoleI__027D5126" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__RoleI__61DD0E18" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__RoleI__6ABC6CDC" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__UserI__01892CED" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__UserI__62D13251" />
+        <AssociationConnector Association="PillarsaltModel.FK__aspnet_Us__UserI__6BB09115" />
+      </Diagram>
+      <Diagram DiagramId="1e4fdd5f2e5143efbb494eaaf06aadb9" Name="Asset" >
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_AssetLocations" Width="1.5" PointX="0.75" PointY="25.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Brands" Width="1.5" PointX="1.5" PointY="36.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_CommonFaults" Width="1.5" PointX="6" PointY="37.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Depreciation" Width="1.5" PointX="8.25" PointY="17.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Disposal" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Documents" Width="1.5" PointX="8.25" PointY="53.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_FixedAsset_Faults" Width="1.5" PointX="8.25" PointY="27.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_FixedAssets" Width="1.5" PointX="6" PointY="23.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Inspection_Visit" Width="1.5" PointX="3" PointY="25.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_InspectionType" Width="1.5" PointX="0.75" PointY="17.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Maintenance_Decision" Width="1.5" PointX="7.5" PointY="8.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Maintenance_Request" Width="1.5" PointX="0.75" PointY="44.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Maintenance_Schedule" Width="1.5" PointX="8.25" PointY="45.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Mobility" Width="1.5" PointX="3.75" PointY="44.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Models" Width="1.5" PointX="3.75" PointY="36.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Relocations" Width="1.5" PointX="11.25" PointY="26.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_Status" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Asset_WarrantyStatus" Width="1.5" PointX="3.75" PointY="17.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Assets_FixedAsset_Faults" Width="1.5" PointX="5.25" PointY="7.625" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_FixedAssets_Asset_AssetLocations" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Inspection_Visit_Asset_AssetLocations" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Relocations_Asset_AssetLocations" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Models_Asset_Brands" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_FixedAsset_Faults_Asset_CommonFaults" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Depreciation_Asset_FixedAssets" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Documents_Asset_FixedAssets" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_FixedAsset_Faults_Asset_FixedAssets" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_FixedAsset_Faults_Asset_Inspection_Visit" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_FixedAssets_Asset_Mobility" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_FixedAssets_Asset_Models" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_FixedAssets_Asset_WarrantyStatus" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Maintenance_Schedule_Asset_FixedAssets" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Relocations_Asset_FixedAssets" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Inspection_Visit_Asset_Inspection_Visit" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Inspection_Visit_Asset_InspectionType" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Inspection_Visit_Asset_Maintenance_Request" />
+        <AssociationConnector Association="PillarsaltModel.FK_Assets_FixedAsset_Faults_Asset_Inspection_Visit" />
+        <AssociationConnector Association="PillarsaltModel.FK_Asset_Maintenance_Decision_Assets_FixedAsset_Faults" />
+      </Diagram>
+      <Diagram DiagramId="ecda06f6d94c42efa55b2d0ad5b90931" Name="Crm" >
+        <EntityTypeShape EntityType="PillarsaltModel.CRM_Clients" Width="1.5" PointX="3" PointY="23.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRM_Partners" Width="1.5" PointX="3" PointY="2.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMContact" Width="1.5" PointX="0.75" PointY="11.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMDiscount" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMIndustry" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMLead" Width="1.5" PointX="3" PointY="13.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMMarketList" Width="1.5" PointX="7.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMMarketListDetail" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMOpportunity" Width="1.5" PointX="9.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMQuote" Width="1.5" PointX="11.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.CRMRating" Width="1.5" PointX="11.75" PointY="8.75" />
+        <AssociationConnector Association="PillarsaltModel.FK_CRM_Clients_CRMContacts" />
+        <AssociationConnector Association="PillarsaltModel.FK_CRM_Partners_CRMContacts" />
+        <AssociationConnector Association="PillarsaltModel.FK_CRMLeads_CRMContacts" />
+      </Diagram>
+      <Diagram DiagramId="e13a9beb8be14de2a54d5bfe7ea2bb2f" Name="Customer" >
+        <EntityTypeShape EntityType="PillarsaltModel.CustomerBillProforma" Width="1.5" PointX="0.75" PointY="1.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.CustomerItinerary" Width="1.5" PointX="8" PointY="1.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.CustomerPayment" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.CustomerVisit" Width="1.5" PointX="5.75" PointY="2.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.CustomeUnbillProfDetail" Width="1.5" PointX="3" PointY="1.25" />
+        <AssociationConnector Association="PillarsaltModel.FK_CustomeUnbillProfDetails_CustomerBillProforma" />
+        <AssociationConnector Association="PillarsaltModel.FK_CustomerItinerary_CustomerVisit" />
+      </Diagram>
+      <Diagram DiagramId="8835221aba5b49608f7bae6c23743893" Name="Edms" >
+        <EntityTypeShape EntityType="PillarsaltModel.EDMS_Document_Access" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.EDMS_Document_Template" Width="1.5" PointX="0.75" PointY="5.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.EDMS_Document_Trail" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.EDMS_Documents" Width="1.5" PointX="3" PointY="10" />
+        <EntityTypeShape EntityType="PillarsaltModel.EDMS_Template_Categories" Width="1.5" PointX="3" PointY="1.75" />
+        <AssociationConnector Association="PillarsaltModel.FK_EDMS_Documents_EDMS_Document_Template" />
+        <AssociationConnector Association="PillarsaltModel.FK_EDMS_Template_Categories_EDMS_Document_Template" />
+      </Diagram>
+      <Diagram DiagramId="57749e79d8844ee3af95a3fcc916b8aa" Name="Hr" >
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Applicant_Assessment" Width="1.5" PointX="6" PointY="11.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Applicants" Width="1.5" PointX="0.75" PointY="20.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Application_Shortlist" Width="1.5" PointX="6" PointY="20" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Appointment_Payroll" Width="1.5" PointX="8.75" PointY="4.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Appraisal" Width="1.5" PointX="23.75" PointY="13.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Appraisal_Categories" Width="1.5" PointX="29.75" PointY="5.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Appraisal_Grade" Width="1.5" PointX="31.25" PointY="32.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Appraisal_Ratio" Width="1.5" PointX="32" PointY="14.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Calendar" Width="1.5" PointX="13" PointY="26.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_CareerNeeds" Width="1.5" PointX="26" PointY="14.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Goals" Width="1.5" PointX="29" PointY="14.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Job_Description" Width="1.5" PointX="13" PointY="9.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_KPI" Width="1.5" PointX="31.25" PointY="23.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Leave" Width="1.5" PointX="18.75" PointY="13.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Leave_Allotment" Width="1.5" PointX="21" PointY="5.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Leave_Basis" Width="1.5" PointX="21" PointY="23" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Leave_Documents" Width="1.5" PointX="21" PointY="14.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Leave_Request" Width="1.5" PointX="5.75" PointY="34.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Leave_Request_Documents" Width="1.5" PointX="8" PointY="38.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Loan_Documents" Width="1.5" PointX="12.75" PointY="18.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Loan_RateType" Width="1.5" PointX="15.75" PointY="4.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_OtherInfo" Width="1.5" PointX="17.75" PointY="4.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_PAYE_Template" Width="1.5" PointX="15.75" PointY="23.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Posts" Width="1.5" PointX="10.75" PointY="14" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_PreviousEmployers" Width="1.5" PointX="3" PointY="38.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Qualification_Stage" Width="1.5" PointX="3.75" PointY="29.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Queries" Width="1.5" PointX="23.75" PointY="34.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Recruitment_Performance" Width="1.5" PointX="8.25" PointY="20.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Referees" Width="1.5" PointX="3" PointY="19.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_RelievingStaff" Width="1.5" PointX="8" PointY="31" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Salary_Scale" Width="1.5" PointX="17.75" PointY="23.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Schooling" Width="1.5" PointX="3" PointY="10.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Staff_Wage" Width="1.5" PointX="18" PointY="32.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_StaffAppraisal" Width="1.5" PointX="33.5" PointY="23.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Suspensions" Width="1.5" PointX="26" PointY="25.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_SuspensionType" Width="1.5" PointX="23.75" PointY="26.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_TAT" Width="1.5" PointX="13.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_TAT_Monitor" Width="1.5" PointX="16" PointY="13.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_ThriftDetails" Width="1.5" PointX="26" PointY="4.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_ThriftGroup" Width="1.5" PointX="23.75" PointY="4.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Vacancies" Width="1.5" PointX="3.75" PointY="1" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Vacancies_Req" Width="1.5" PointX="6" PointY="1.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.HR_Wages" Width="1.5" PointX="15.75" PointY="32.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.HRIdCard" Width="1.5" PointX="0.75" PointY="30.125" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Recruitment_Performance_HR_Applicant_Assessment" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Application_Shortlist_HR_Applicants" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_PreviousEmployers_HR_Applicants" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Referees_HR_Applicants" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Schooling_HR_Applicants" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Application_Shortlist_HR_Vacancies" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Recruitment_Performance_HR_Application_Shortlist" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Appraisal_Ratio_HR_Appraisal" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_CareerNeeds_HR_Appraisal" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Goals_HR_Appraisal_Setup" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Appraisal_Ratio_HR_Appraisal_Ratio" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Goals_HR_Appraisal_Categories" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_StaffAppraisal_HR_Appraisal_Grade" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Calendar_HR_Posts" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_KPI_HR_Goals" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Job_Description_HR_Posts" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_StaffAppraisal_HR_KPI" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Leave_Allotment_HR_Leave" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Leave_Basis_HR_Leave" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_LeaveDocuments_HR_Leave" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Leave_Request_Documents_HR_Leave_Request" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_RelievingStaff_HR_Leave_Request" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_TAT_Monitor_HR_Posts" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Vacancies_Req_HR_Qualification_Stage" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Suspensions_HR_Queries" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Wages_StaffExtraIncome" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Suspensions_HR_SuspensionType" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_TAT_Monitor_HR_TAT" />
+        <AssociationConnector Association="PillarsaltModel.fk_hr_thriftdetails_hr_thriftgroup" />
+        <AssociationConnector Association="PillarsaltModel.FK_HR_Vacancies_Req_HR_Vacancies" />
+      </Diagram>
+      <Diagram DiagramId="24c9e2466d4f4f5da94a491f3cc82100" Name="IT" >
+        <EntityTypeShape EntityType="PillarsaltModel.IT_AllowedDevices" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.IT_Backup" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.IT_KnowledgeBase" Width="1.5" PointX="5.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.IT_Post_Roles" Width="1.5" PointX="7.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.IT_SupportDocuments" Width="1.5" PointX="3" PointY="2" />
+        <EntityTypeShape EntityType="PillarsaltModel.IT_SupportResponse" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.IT_SupportTicket" Width="1.5" PointX="0.75" PointY="1.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.IT_SupportType" Width="1.5" PointX="2.75" PointY="10.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.IT_Token" Width="1.5" PointX="9.75" PointY="10.75" />
+        <AssociationConnector Association="PillarsaltModel.FK_IT_SupportDocuments_IT_SupportTicket" />
+      </Diagram>
+      <Diagram DiagramId="9e3068599b154210ade788f4be6f0cde" Name="Inventry" >
+        <EntityTypeShape EntityType="PillarsaltModel.Inventory_Voucher_Documents" Width="1.5" PointX="10.5" PointY="17.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryAssigning" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryBatching" Width="1.5" PointX="10.5" PointY="37.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryItem" Width="1.5" PointX="3" PointY="34.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryMovement" Width="1.5" PointX="5.25" PointY="37.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryOrderDetail" Width="1.5" PointX="8.25" PointY="36.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryPriceHistory" Width="1.5" PointX="5.25" PointY="63.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryPricing" Width="1.5" PointX="5.25" PointY="90.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryPurchaseOrder" Width="1.5" PointX="6" PointY="25.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryReqDetail" Width="1.5" PointX="13.25" PointY="37.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryRequest" Width="1.5" PointX="11" PointY="27.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventorySale" Width="1.5" PointX="5.25" PointY="81.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryStocking" Width="1.5" PointX="5.25" PointY="71.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryStockType" Width="1.5" PointX="0.75" PointY="37.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryVendorCat" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryVendor" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.InventoryVoucher" Width="1.5" PointX="8.25" PointY="15.375" />
+        <AssociationConnector Association="PillarsaltModel.FK_Voucher_Documents_Inventory_Vouchers" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryBatching_InventoryItems" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryBatching_InventoryOrderDetail" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryItems_InventoryStockType" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryMovement_InventoryItems" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryOrderDetail_InventoryItems" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryPriceHistory_InventoryItems" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryPricing_InventoryItems" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryReqDetails_InventoryItems" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventorySales_InventoryItems" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryStocking_InventoryItems" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryMovement_InventoryRequest" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryOrderDetail_InventoryPurchaseOrder" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryVoucher_InventoryPurchaseOrder" />
+        <AssociationConnector Association="PillarsaltModel.FK_InventoryReqDetails_InventoryRequest" />
+      </Diagram>
+      <Diagram DiagramId="5cb10218903d4f79a48e8e1e096498f7" Name="Prj" >
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Costing" Width="1.5" PointX="5.25" PointY="26.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Dependencies" Width="1.5" PointX="6" PointY="17.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_GanttResourceAssignments" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_GanttResources" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Issues_Documents" Width="1.5" PointX="3" PointY="12.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Location" Width="1.5" PointX="8.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Milestones" Width="1.5" PointX="0.75" PointY="27.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_ProjectDetails" Width="1.5" PointX="3" PointY="22" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_ProjectDocuments" Width="1.5" PointX="3" PointY="41.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Projects" Width="1.5" PointX="0.75" PointY="15.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_ProjectType" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Requests" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_TaskDocuments" Width="1.5" PointX="6" PointY="8.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Tasks" Width="1.5" PointX="3.75" PointY="3.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_TaskType" Width="1.5" PointX="10.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_Valuation" Width="1.5" PointX="7.5" PointY="27" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_WorkFlows" Width="1.5" PointX="0.75" PointY="35.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_WorkflowTasks" Width="1.5" PointX="9" PointY="18.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Prj_WorkFlowType" Width="1.5" PointX="12.75" PointY="0.75" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_Costing_Prj_ProjectDetails" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_Valuation_Prj_Costing" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_Dependencies_Prj_Projects" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_Dependencies_Prj_Tasks" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_Issues_Documents_Prj_Projects" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_ProjectDetails_Prj_Milestones" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_ProjectDetails_Prj_Projects" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_ProjectDetails_Prj_Tasks" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_ProjectDetails_Prj_WorkFlows" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_ProjectDocuments_Prj_Projects" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_TaskDocuments_Prj_Tasks" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_WorkflowTasks_Prj_Tasks" />
+        <AssociationConnector Association="PillarsaltModel.FK_Prj_WorkflowTasks_Prj_WorkFlows" />
+      </Diagram>
+      <Diagram DiagramId="d679c48d9d7e42b5ab4173f7575cbf28" Name="Outsourcing" >
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_Contract" Width="1.5" PointX="5.25" PointY="10.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_Contract_Document" Width="1.5" PointX="7.5" PointY="7.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_ContractCompletion" Width="1.5" PointX="7.5" PointY="15.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_Negotiation" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_StatementOfWork" Width="1.5" PointX="0.75" PointY="20.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_Tender" Width="1.5" PointX="3" PointY="19.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_TenderBids" Width="1.5" PointX="5.25" PointY="40.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_TenderBids_Details" Width="1.5" PointX="7.5" PointY="41.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_TenderCriteria" Width="1.5" PointX="3" PointY="30.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_TenderDocuments" Width="1.5" PointX="5.25" PointY="32.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Outsourcing_TenderEvaluation" Width="1.5" PointX="5.25" PointY="21.125" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_Contract_Document_Outsourcing_Contract" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_Contract_Outsourcing_Tender" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_ContractCompletion_Outsourcing_Contract" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_Tender_Outsourcing_StatementOfWork" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_TenderBids_Outsourcing_Tender" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_TenderDocuments_Outsourcing_Tender" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_TenderEvaluation_Outsourcing_Tender" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_TenderBids_Details_Outsourcing_TenderBids" />
+        <AssociationConnector Association="PillarsaltModel.FK_Outsourcing_TenderEvaluation_Outsourcing_TenderCriteria" />
+      </Diagram>
+      <Diagram DiagramId="ba44e1914ef84236a2a6dc524daf22be" Name="Legal" >
+        <EntityTypeShape EntityType="PillarsaltModel.LEGAL_Chambers" Width="1.5" PointX="7.75" PointY="1.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.LEGAl_Counsel" Width="1.5" PointX="10" PointY="1.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.LEGAL_Court_Proceedings" Width="1.5" PointX="5.25" PointY="1.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.LEGAL_Document_Tracking" Width="1.5" PointX="7.75" PointY="10.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.LEGAL_Litigants" Width="1.5" PointX="9.75" PointY="10.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.LEGAL_Litigation" Width="1.5" PointX="3" PointY="5.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.LEGAL_Litigation_Documents" Width="1.5" PointX="5.25" PointY="10.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.LEGAL_Litigation_Types" Width="1.5" PointX="0.75" PointY="6.5" />
+        <AssociationConnector Association="PillarsaltModel.FK_LEGAl_Counsel_LEGAL_Chambers" />
+        <AssociationConnector Association="PillarsaltModel.FK_LEGAL_Court_Proceedings_LEGAL_Litigation" />
+        <AssociationConnector Association="PillarsaltModel.FK_LEGAL_Litigation_Documents_LEGAL_Litigation" />
+        <AssociationConnector Association="PillarsaltModel.FK_LEGAL_Litigation_LEGAL_Litigation_Types" />
+      </Diagram>
+      <Diagram DiagramId="72678c22567f4453b851c2549a1a56e6" Name="Real" >
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Estate" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Features" Width="1.5" PointX="6.75" PointY="23.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_FeatureType" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Frequency" Width="1.5" PointX="3.75" PointY="48.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_New_Rental_Income" Width="1.5" PointX="7.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Property" Width="1.5" PointX="0.75" PointY="29.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Property_ClientLeasing" Width="1.5" PointX="3" PointY="2.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Property_Condition" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Property_Manifest" Width="1.5" PointX="3" PointY="23.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Property_Status" Width="1.5" PointX="9.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_PropertyAnalysis" Width="1.5" PointX="3" PointY="71.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_PropertyFeatures" Width="1.5" PointX="9" PointY="32.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_PropertyType" Width="1.5" PointX="11.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_PropertyValuation" Width="1.5" PointX="3" PointY="31.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_RentalLog" Width="1.5" PointX="8.25" PointY="50.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_RentalUnit" Width="1.5" PointX="6" PointY="31.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_ServiceCharge" Width="1.5" PointX="14.25" PointY="33" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Tenant" Width="1.5" PointX="11.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_UBAProperties" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Unit_Manifest" Width="1.5" PointX="8.25" PointY="41.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_UnitType" Width="1.5" PointX="3.75" PointY="41" />
+        <EntityTypeShape EntityType="PillarsaltModel.Real_Valuation_Services" Width="1.5" PointX="11.25" PointY="32.375" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_PropertyFeatures_Real_Features" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_RentalUnit_Real_Frequency" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_ServiceCharge_Real_Frequency" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_Property_Manifest_Real_Property" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_PropertyAnalysis_Real_Property" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_PropertyFeatures_Real_Property" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_PropertyValuation_Real_Property" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_RentalUnit_Real_Property" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_Property_ClientLeasing_Real_Property" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_Valuation_Services_Real_PropertyFeatures" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_Valuation_Services_Real_PropertyValuation" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_RentalLog_Real_RentalUnit" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_RentalUnit_Real_UnitType" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_ServiceCharge_Real_RentalUnit" />
+        <AssociationConnector Association="PillarsaltModel.FK_Real_Unit_Manifest_Real_RentalUnit" />
+      </Diagram>
+      <Diagram DiagramId="e9aa9686ce3545cf9fce6ace9df84b14" Name="Staff" >
+        <EntityTypeShape EntityType="PillarsaltModel.StaffAlllowList" Width="1.5" PointX="8.75" PointY="5.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffAllowance" Width="1.5" PointX="11" PointY="5.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffAttendance" Width="1.5" PointX="5.25" PointY="19.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffBio" Width="1.5" PointX="3" PointY="16.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffDependant" Width="1.5" PointX="0.75" PointY="4.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffDutyShift" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffEmpStatu" Width="1.5" PointX="0.75" PointY="19" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffFixedAllowance" Width="1.5" PointX="10.75" PointY="14.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffFixedDeduction" Width="1.5" PointX="12.75" PointY="14.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffJobType" Width="1.5" PointX="13.75" PointY="4.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffPayRoll" Width="1.5" PointX="14.75" PointY="13.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffQualification" Width="1.5" PointX="15.75" PointY="4.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffScheme" Width="1.5" PointX="16.75" PointY="13.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffTime" Width="1.5" PointX="8.25" PointY="19.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffZKUser" Width="1.5" PointX="5.25" PointY="36.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffAllowDeduction" Width="1.5" PointX="17.75" PointY="4.625" />
+        <EntityTypeShape EntityType="PillarsaltModel.StaffBonu" Width="1.5" PointX="5.25" PointY="10.75" />
+        <AssociationConnector Association="PillarsaltModel.FK_StaffAllowance_StaffAlllowList" />
+        <AssociationConnector Association="PillarsaltModel.FK_StaffAttendance_StaffBio" />
+        <AssociationConnector Association="PillarsaltModel.FK_StaffBio_StsffEmpStatus" />
+        <AssociationConnector Association="PillarsaltModel.FK_StaffBonus_StaffBio" />
+        <AssociationConnector Association="PillarsaltModel.FK_StaffTime_StaffBio" />
+        <AssociationConnector Association="PillarsaltModel.FK_StaffZKUsers_StaffBio" />
+        <AssociationConnector Association="PillarsaltModel.FK_StaffTime_StaffDutyShift" />
+      </Diagram>
+      <Diagram DiagramId="0b6a86c7be264b5a96d46abe8af17a81" Name="Others" >
+        <EntityTypeShape EntityType="PillarsaltModel.Branch" Width="1.5" PointX="10.75" PointY="11.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.CASetting" Width="1.5" PointX="22" PointY="9" />
+        <EntityTypeShape EntityType="PillarsaltModel.CONFIG" Width="1.5" PointX="0.75" PointY="13.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Country" Width="1.5" PointX="0.75" PointY="4.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Department" Width="1.5" PointX="16" PointY="5" />
+        <EntityTypeShape EntityType="PillarsaltModel.EvaluationWeight" Width="1.5" PointX="2.75" PointY="13.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Expens" Width="1.5" PointX="24.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.ExpenseType" Width="1.5" PointX="16" PointY="17.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Level" Width="1.5" PointX="16.75" PointY="51.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Loan" Width="1.5" PointX="23.75" PointY="27.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.MANProductionOrder" Width="1.5" PointX="4.75" PointY="13.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.MANUBom" Width="1.5" PointX="25.75" PointY="27.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Messaging" Width="1.5" PointX="21.75" PointY="18.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.MessagingLog" Width="1.5" PointX="24" PointY="18.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.OtherReport" Width="1.5" PointX="26.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.PatientCase" Width="1.5" PointX="26.75" PointY="11.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.PayRollSetting" Width="1.5" PointX="27.75" PointY="20.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Product" Width="1.5" PointX="19" PointY="10.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.ProductService" Width="1.5" PointX="21.25" PointY="28.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.ProfitCentre" Width="1.5" PointX="13.75" PointY="19" />
+        <EntityTypeShape EntityType="PillarsaltModel.Qualification" Width="1.5" PointX="27.75" PointY="29.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Relationship" Width="1.5" PointX="28.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Salary" Width="1.5" PointX="19" PointY="0.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.SchoolBranch" Width="1.5" PointX="13.75" PointY="7.75" />
+        <EntityTypeShape EntityType="PillarsaltModel.ServiceAssembly" Width="1.5" PointX="18.25" PointY="42.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.ServiceChargeHistory" Width="1.5" PointX="18.25" PointY="24.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.Service" Width="1.5" PointX="16" PointY="27.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.state" Width="1.5" PointX="3" PointY="3.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.State1" Width="1.5" PointX="28.75" PointY="10.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Access" Width="1.5" PointX="29.75" PointY="18.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_AllowedIP" Width="1.5" PointX="29.75" PointY="28.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_approval" Width="1.5" PointX="30.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_AUDIT" Width="1.5" PointX="31.75" PointY="11.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_DuplicateRules" Width="1.5" PointX="31.75" PointY="20.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_ErrorLogs" Width="1.5" PointX="31.75" PointY="28.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_Errors" Width="1.5" PointX="32.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Event_CustomAction" Width="1.5" PointX="6" PointY="36" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Event_Notification" Width="1.5" PointX="8.25" PointY="17.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Event_NotifyMode" Width="1.5" PointX="8.25" PointY="36" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Event_Subscription" Width="1.5" PointX="6" PointY="26" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Event_SubscriptionAction" Width="1.5" PointX="8.25" PointY="43.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Event_UserNotify_Filter" Width="1.5" PointX="11.25" PointY="26.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Events" Width="1.5" PointX="3.75" PointY="31.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Internal_Communications" Width="1.5" PointX="33.75" PointY="11.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_LoginDevice_Log" Width="1.5" PointX="11.75" PointY="35.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_LoginIP_log" Width="1.5" PointX="33.75" PointY="22.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_ModuleTable" Width="1.5" PointX="3" PointY="23" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Notification" Width="1.5" PointX="33.75" PointY="30.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Privileges" Width="1.5" PointX="9" PointY="28" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_ShortCut" Width="1.5" PointX="3" PointY="57.25" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_tablist" Width="1.5" PointX="0.75" PointY="25" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_tempImages" Width="1.5" PointX="34.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_UpdateLog" Width="1.5" PointX="29.75" PointY="36.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_User_Activity" Width="1.5" PointX="0.75" PointY="37.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_Widgets" Width="1.5" PointX="7.75" PointY="3.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_WidgetUser" Width="1.5" PointX="10" PointY="3.375" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_WorkSpaces" Width="1.5" PointX="35.75" PointY="11.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Sys_LoginSettings" Width="1.5" PointX="35.75" PointY="19.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_bankgl" Width="1.5" PointX="35.75" PointY="28.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_Batchtempdump" Width="1.5" PointX="20.75" PointY="37.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_BatchtempdumpHist" Width="1.5" PointX="13.75" PointY="38.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.Term" Width="1.5" PointX="19.75" PointY="51.5" />
+        <EntityTypeShape EntityType="PillarsaltModel.town" Width="1.5" PointX="5.25" PointY="4.125" />
+        <EntityTypeShape EntityType="PillarsaltModel.UBA_PropertyTem" Width="1.5" PointX="22.75" PointY="38.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.UnitMeasure" Width="1.5" PointX="36.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.ZkDevice" Width="1.5" PointX="24.75" PointY="38.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.zkem_AttParam" Width="1.5" PointX="26.75" PointY="38.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.zkem_CHECKEXACT" Width="1.5" PointX="37.75" PointY="11.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.zkem_CHECKINOUT" Width="1.5" PointX="37.75" PointY="21.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.zkem_DEPARTMENTS" Width="1.5" PointX="37.75" PointY="30.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.zkem_TEMPLATE" Width="1.5" PointX="31.75" PointY="39.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.zkem_UserACMachines" Width="1.5" PointX="38.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.zkem_USERINFO" Width="1.5" PointX="2.75" PointY="40.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.IMChat" Width="1.5" PointX="39.75" PointY="10.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.profession" Width="1.5" PointX="39.75" PointY="19.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.sys_tab" Width="1.5" PointX="39.75" PointY="28.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_bankgl2" Width="1.5" PointX="39.75" PointY="37.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_CASAAccount" Width="1.5" PointX="41.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_currency" Width="1.5" PointX="41.75" PointY="23.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_disclosure" Width="1.5" PointX="41.75" PointY="34.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_gl" Width="1.5" PointX="33.75" PointY="43.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_gl2" Width="1.5" PointX="35.75" PointY="43.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_glclasslv" Width="1.5" PointX="41.75" PointY="43.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_glmenu" Width="1.5" PointX="4.75" PointY="44.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_transactions" Width="1.5" PointX="10.75" PointY="44.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tbl_transacttype" Width="1.5" PointX="43.75" PointY="2.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tempStatement" Width="1.5" PointX="43.75" PointY="12.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.tempStatement2" Width="1.5" PointX="43.75" PointY="23.875" />
+        <EntityTypeShape EntityType="PillarsaltModel.zkem_UsersMachines" Width="1.5" PointX="28.75" PointY="45.875" />
+        <AssociationConnector Association="PillarsaltModel.FK_CASettings_SchoolBranches" />
+        <AssociationConnector Association="PillarsaltModel.FK_CASettings_Term" />
+        <AssociationConnector Association="PillarsaltModel.FK_state_Countries" />
+        <AssociationConnector Association="PillarsaltModel.FK_Departments_SchoolBranches" />
+        <AssociationConnector Association="PillarsaltModel.FK_ExpenseType_ProfitCentres" />
+        <AssociationConnector Association="PillarsaltModel.FK_ExpenseType_SchoolBranches" />
+        <AssociationConnector Association="PillarsaltModel.FK_Salary_Levels" />
+        <AssociationConnector Association="PillarsaltModel.FK_MessagingLog_Messaging" />
+        <AssociationConnector Association="PillarsaltModel.FK_ProductServices_Products" />
+        <AssociationConnector Association="PillarsaltModel.FK_ProductServices_Services" />
+        <AssociationConnector Association="PillarsaltModel.FK_Services_ProfitCentres" />
+        <AssociationConnector Association="PillarsaltModel.FK_Salary_SchoolBranches" />
+        <AssociationConnector Association="PillarsaltModel.FK_ServiceAssembly_Services" />
+        <AssociationConnector Association="PillarsaltModel.FK_ServiceChargeHistory_Services" />
+        <AssociationConnector Association="PillarsaltModel.FK_town_state" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_Event_CustomAction_Sys_Events" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_Event_Notification_Sys_Event_Subscription" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_Event_NotifyMode_Sys_Event_Subscription" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_Event_Subscription_Sys_Events" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_Event_Subscription_sys_tablist" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_Event_SubscriptionAction_Sys_Event_Subscription" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_Event_UserNotify_Filter_Sys_Event_Subscription" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_Event_UserNotify_Filter_Sys_Privileges" />
+        <AssociationConnector Association="PillarsaltModel.FK_sys_ModuleTable_sys_tablist" />
+        <AssociationConnector Association="PillarsaltModel.FK_sys_ShortCut_sys_tablist" />
+        <AssociationConnector Association="PillarsaltModel.FK_Sys_WidgetUser_Sys_Widgets" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,9 @@
+﻿<Application x:Class="PILLARSALT_KIOSK.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PILLARSALT_KIOSK"
+             StartupUri="Screen000.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

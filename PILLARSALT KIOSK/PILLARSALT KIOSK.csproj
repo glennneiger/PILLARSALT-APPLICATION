@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23BC266C-61B2-4A91-B72D-422A507EBC92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PILLARSALT_KIOSK</RootNamespace>
+    <AssemblyName>PILLARSALT KIOSK</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Neodynamic.SDK.ThermalLabel, Version=6.0.3500.0, Culture=neutral, PublicKeyToken=0630b9b3415848af, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neodynamic.SDK.ThermalLabel.6.0.3516.1015\lib\Neodynamic.SDK.ThermalLabel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SocketLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SocketLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls, Version=2016.1.112.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="ThermalDotNet, Version=1.0.6147.42050, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\EntralogIT\Desktop\ThermalDotNet-master\ThermalDotNet-master\ThermalDotNet\bin\Release\ThermalDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.14\lib\net\WpfAnimatedGif.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Account.cs">
+      <DependentUpon>PilaModel.tt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppCodes\Banks.cs" />
+    <Compile Include="AppCodes\Log.cs" />
+    <Compile Include="AppCodes\MethodManager.cs" />
+    <Compile Include="AppCodes\Module.cs" />
+    <Compile Include="AppCodes\MyPrinter.cs" />
+    <Compile Include="AppCodes\ScreenManager.cs" />
+    <Compile Include="AppCodes\ThermalPrinterClass.cs" />
+    <Compile Include="AppCodes\TransactionCls.cs" />
+    <Compile Include="AppCodes\Utilities.cs" />
+    <Compile Include="BusyScreen.xaml.cs">
+      <DependentUpon>BusyScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionInfo.cs">
+      <DependentUpon>PilaModel.tt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DialogScreen.xaml.cs">
+      <DependentUpon>DialogScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MachineHandle.cs" />
+    <Compile Include="MoreNote.xaml.cs">
+      <DependentUpon>MoreNote.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PilaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PilaModel.Context.tt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="PilaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PilaModel.tt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="PilaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PilaModel.edmx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Screen000.xaml.cs">
+      <DependentUpon>Screen000.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen001.xaml.cs">
+      <DependentUpon>Screen001.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen002.xaml.cs">
+      <DependentUpon>Screen002.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen0021.xaml.cs">
+      <DependentUpon>Screen0021.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen0022.xaml.cs">
+      <DependentUpon>Screen0022.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen003.xaml.cs">
+      <DependentUpon>Screen003.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen004.xaml.cs">
+      <DependentUpon>Screen004.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen0041.xaml.cs">
+      <DependentUpon>Screen0041.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen005.xaml.cs">
+      <DependentUpon>Screen005.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen0051.xaml.cs">
+      <DependentUpon>Screen0051.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SetIpFrm.xaml.cs">
+      <DependentUpon>SetIpFrm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionFrm.xaml.cs">
+      <DependentUpon>TransactionFrm.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="bin\Debug\DE.h" />
+    <None Include="bin\Debug\GloryCoApiLx.h" />
+    <None Include="bin\Debug\GloryCoLx2010.h" />
+    <None Include="bin\Debug\GloryCoTypeDef.h" />
+    <None Include="bin\Debug\GlyTrace.000" />
+    <None Include="bin\Debug\GlyTrace.001" />
+    <None Include="bin\Debug\GlyTrace.002" />
+    <None Include="bin\Debug\GlyTrace.003" />
+    <None Include="bin\Debug\GlyTrace.004" />
+    <None Include="bin\Debug\libglorycolx2010.lib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\libglyde.lib" />
+    <None Include="bin\Debug\PILLARSALT KIOSK.vshost.exe.config" />
+    <EntityDeploy Include="PilaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PilaModel.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EntityDeploy>
+    <None Include="packages.config" />
+    <None Include="PilaModel.edmx.diagram">
+      <DependentUpon>PilaModel.edmx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="BusyScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MoreNote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen000.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen001.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen002.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen0021.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen0022.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen003.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen004.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen0041.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen005.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen0051.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SetIpFrm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TransactionFrm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ThermalDotNet.dll" />
+    <Resource Include="AppImages\settings.png" />
+    <Resource Include="AppImages\settings-1.png" />
+    <Resource Include="AppImages\phone.jpg" />
+    <Resource Include="AppImages\index.gif" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="PilaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PilaModel.edmx</DependentUpon>
+      <LastGenOutput>PilaModel.Context.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PilaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PilaModel.edmx</DependentUpon>
+      <LastGenOutput>PilaModel.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="TextFile1.txt" />
+    <Resource Include="AppImages\Accepted.png" />
+    <Resource Include="AppImages\Back.png" />
+    <Resource Include="AppImages\Back2.png" />
+    <Resource Include="AppImages\bills.png" />
+    <Resource Include="AppImages\cancel.png" />
+    <Resource Include="AppImages\continue.png" />
+    <Resource Include="AppImages\continues.png" />
+    <Resource Include="AppImages\DarkWood.jpg" />
+    <Resource Include="AppImages\Deposit.png" />
+    <Resource Include="AppImages\Donananion.png" />
+    <Resource Include="AppImages\help.png" />
+    <Resource Include="AppImages\hupper.png" />
+    <Resource Include="AppImages\Loader.gif" />
+    <Resource Include="AppImages\mobilemoney.png" />
+    <Resource Include="AppImages\next.png" />
+    <Resource Include="AppImages\pro.jpg" />
+    <Resource Include="AppImages\Transfer.png" />
+    <Resource Include="AppImages\userNotify.png" />
+    <Resource Include="bin\Debug\GloryCo.xml" />
+    <Content Include="bin\Debug\GloryCoCtrl.ocx" />
+    <Content Include="bin\Debug\GloryCoWin.dll" />
+    <Content Include="bin\Debug\libglorycolx2010.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\libglyde.dll" />
+    <Content Include="bin\Debug\libglygspcuw.dll" />
+    <Content Include="bin\Debug\PILLARSALT KIOSK.vshost.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GloryWindowsUserControl\GloryWindowsUserControl.csproj">
+      <Project>{f4f029df-908d-4136-8453-1b400f560bc5}</Project>
+      <Name>GloryWindowsUserControl</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

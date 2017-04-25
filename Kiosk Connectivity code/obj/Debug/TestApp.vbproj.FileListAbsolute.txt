@@ -1,0 +1,26 @@
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\obj\Debug\TestApp.vbprojResolveAssemblyReference.cache
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\obj\Debug\TestApp.Form1.resources
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\obj\Debug\TestApp.Resources.resources
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\obj\Debug\TestApp.vbproj.GenerateResource.Cache
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\obj\Debug\TestApp.xml
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\TestApp.exe.config
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\TestApp.exe
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\TestApp.pdb
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\TestApp.xml
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\SocketLibrary.dll
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\nsoftware.IPWorksOpenPGP.dll
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\TMSServerDAL.dll
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\EntityFramework.dll
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\nsoftware.IPWorksOpenPGP.System.dll
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\SocketLibrary.pdb
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\SocketLibrary.xml
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\nsoftware.IPWorksOpenPGP.xml
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\TMSServerDAL.pdb
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\TMSServerDAL.xml
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\bin\Debug\EntityFramework.xml
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\obj\Debug\TestApp.exe
+C:\Users\SE\Documents\Visual Studio 2013\Projects\TMSServer\TestApp\obj\Debug\TestApp.pdb
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\Kiosk Connectivity code\obj\Debug\TestApp.vbprojResolveAssemblyReference.cache
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\Kiosk Connectivity code\obj\Debug\TestApp.Resources.resources
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\Kiosk Connectivity code\obj\Debug\TestApp.vbproj.GenerateResource.Cache
+C:\ENTRALOG APPLICATIONS\PILLARSALT APPLICATION\PILLARSALT APPLICATION\Kiosk Connectivity code\obj\Debug\TestApp.xml

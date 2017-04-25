@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{654BE570-686C-4E14-AC3E-74FD39C9A501}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PillarSalt.BLL</RootNamespace>
+    <AssemblyName>PillarSalt.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PillarSalt.DAL_REPO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DASHBOARD.API\Bin\PillarSalt.DAL_REPO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccAccountsBankDetailsBll.cs" />
+    <Compile Include="AccBankBll.cs" />
+    <Compile Include="AccBankMappingBll.cs" />
+    <Compile Include="AccCurrencyCodeBll.cs" />
+    <Compile Include="AccountBll.cs" />
+    <Compile Include="AccountEntityBll.cs" />
+    <Compile Include="AccountLogBll.cs" />
+    <Compile Include="AccPendingTransactionsBll.cs" />
+    <Compile Include="AccRetirementsBll.cs" />
+    <Compile Include="CrmContactBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TmsAccountSetupBll.cs" />
+    <Compile Include="TmsAdminCodeBll.cs" />
+    <Compile Include="TmsAdvertBillingBll.cs" />
+    <Compile Include="TmsAdvertiseCashBll.cs" />
+    <Compile Include="TmsAdvertSchedulingBll.cs" />
+    <Compile Include="TmsAssignCommissionBll.cs" />
+    <Compile Include="TmsAssignMachineBll.cs" />
+    <Compile Include="TmsAssignPackageBll.cs" />
+    <Compile Include="TmsAssignTechnicianBll.cs" />
+    <Compile Include="TmsAuctionSettingBll.cs" />
+    <Compile Include="TmsBankingSectorsBll.cs" />
+    <Compile Include="TmsBlacklistingBll.cs" />
+    <Compile Include="TmsBulkCashBll.cs" />
+    <Compile Include="TmsCashBiddingBll.cs" />
+    <Compile Include="TmsCashdamsBll.cs" />
+    <Compile Include="TmsCommissionSetupBll.cs" />
+    <Compile Include="TmsConfigureScreenBll.cs" />
+    <Compile Include="TmsCustomerStatementBll.cs" />
+    <Compile Include="TmsDenominationBll.cs" />
+    <Compile Include="TmsDependencyBll.cs" />
+    <Compile Include="TmsDepositBagBll.cs" />
+    <Compile Include="TmsDepositBll.cs" />
+    <Compile Include="TmsDisbursementBll.cs" />
+    <Compile Include="TmsJobOrderBll.cs" />
+    <Compile Include="TmsLanguageBll.cs" />
+    <Compile Include="TmsLanguageManifestBll.cs" />
+    <Compile Include="TmsLanguageResourcesBll.cs" />
+    <Compile Include="TmsMachineBagDetachmentsBll.cs" />
+    <Compile Include="TmsMachineBagsBll.cs" />
+    <Compile Include="TmsMachineDisposalBll.cs" />
+    <Compile Include="TmsMachineDocumentBll.cs" />
+    <Compile Include="TmsMachineLocationBll.cs" />
+    <Compile Include="TmsMachineProfillingBll.cs" />
+    <Compile Include="TmsMachineStatusBll.cs" />
+    <Compile Include="TmsMaintenanceVoucherBll.cs" />
+    <Compile Include="TmsManageBankBll.cs" />
+    <Compile Include="TmsMmPackagesBll.cs" />
+    <Compile Include="TmsOperatorsBll.cs" />
+    <Compile Include="TmsPaymentScheduleBll.cs" />
+    <Compile Include="TmsQueryPaymentBll.cs" />
+    <Compile Include="TmsRegisterAgencyBll.cs" />
+    <Compile Include="TmsRegisterBankhBll.cs" />
+    <Compile Include="TmsResourceAllocationBll.cs" />
+    <Compile Include="TmsRetailerSetupBll.cs" />
+    <Compile Include="TmsScreenshotBll.cs" />
+    <Compile Include="TmsSectorSettingsBll.cs" />
+    <Compile Include="TmsSendCommandBll.cs" />
+    <Compile Include="TmsSwitchSetupBll.cs" />
+    <Compile Include="TmsTransactionDetailsBll.cs" />
+    <Compile Include="TmsWarrantyStatusBll.cs" />
+    <Compile Include="TmsWorkVerificationBll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PillarSalt.BOL\PillarSalt.BOL.csproj">
+      <Project>{77af9d92-3a4e-416e-9f40-805e5b424fdf}</Project>
+      <Name>PillarSalt.BOL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

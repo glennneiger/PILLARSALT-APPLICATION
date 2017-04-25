@@ -1,0 +1,2281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nsoftware.IPWorksOpenPGP</name>
+    </assembly>
+    <members>
+        <member name="F:nsoftware.core.LoadCertificateForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:nsoftware.core.LoadCertificateForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:nsoftware.core.LoadCertificateForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.CertmgrCertChainEventArgs">
+            <summary>Event arguments for the CertChain event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.CertmgrCertListEventArgs">
+            <summary>Event arguments for the CertList event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.CertmgrErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.CertmgrKeyListEventArgs">
+            <summary>Event arguments for the KeyList event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.CertmgrStoreListEventArgs">
+            <summary>Event arguments for the StoreList event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.SetCertStore(System.Byte[],System.Int32,System.Int32)">
+            <summary>The certificate store to search for certificates.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.CreateCertificate(System.String,System.Int32)">
+            <summary>Creates a new self-signed certificate in the current store.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.CreateKey(System.String)">
+            <summary>Creates a new keyset associated with the provided name.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.DeleteCertificate">
+            <summary>Deletes the currently selected certificate from the store.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.DeleteKey(System.String)">
+            <summary>Deletes the keyset associated with the provided name.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ExportCertificate(System.String,System.String)">
+            <summary>Saves the current certificate to a PFX file.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.GenerateCSR(System.String,System.String)">
+            <summary>Generates a new CSR to be sent to a signing authority.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ImportCertificate(System.String,System.String,System.String)">
+            <summary>Imports a certificate from a PFX file into the current certificate store.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ImportSignedCSR(System.Byte[],System.String)">
+            <summary>Imports a signed CSR.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.IssueCertificate(System.String,System.Int32)">
+            <summary>Creates a new certificate in the current store, signed by the selected certificate.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ListCertificateStores">
+            <summary>Lists certificate stores.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ListKeys">
+            <summary>List keysets in a CSP.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ListMachineStores">
+            <summary>List machine certificate stores.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ListStoreCertificates">
+            <summary>List certificates in a store.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ReadCertificate(System.String)">
+            <summary>Loads a certificate from a file.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.Reset">
+            <summary>Resets all certificate properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.SaveCertificate(System.String)">
+            <summary>Saves the current certificate to a file.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.ShowCertificateChain">
+            <summary>Show certificate chain.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certmgr.SignCSR(System.Byte[],System.Int32)">
+            <summary>Creates a signed certificate from a CSR.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certmgr.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Certmgr.OnCertChain">
+            <summary>Shows the certificate chain for the certificate (see the ShowCertificateChain method).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Certmgr.OnCertList">
+            <summary>Lists the certificates in a store (see the ListStoreCertificates method).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Certmgr.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Certmgr.OnKeyList">
+            <summary>Lists the keysets in a CSP (see the ListKeys method).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Certmgr.OnStoreList">
+            <summary>Lists the system certificate stores (see the ListCertificateStores and ListMachineStores methods).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certmgr.Cert">
+            <summary>The current selected certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certmgr.CertExtensions">
+            <summary>A list of extensions used by the currently selected certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certmgr.CertStoreB">
+            <summary>The certificate store to search for certificates.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certmgr.CertStore">
+            <summary>The certificate store to search for certificates.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certmgr.CertStorePassword">
+            <summary>The password for the certificate store (if any).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certmgr.CertStoreType">
+            <summary>The type of certificate store for CertStore .</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.KeymgrErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.KeymgrKeyListEventArgs">
+            <summary>Event arguments for the KeyList event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.KeymgrKeyPassphraseEventArgs">
+            <summary>Event arguments for the KeyPassphrase event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.KeymgrSignatureListEventArgs">
+            <summary>Event arguments for the SignatureList event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.KeymgrStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.KeymgrSubkeyListEventArgs">
+            <summary>Event arguments for the SubkeyList event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.AddRevoker(System.String)">
+            <summary>Adds a designated revoker to the key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.AddUserId(System.String)">
+            <summary>Adds the specified user Id to the current key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ChangeExpirationDate(System.Int32)">
+            <summary>Changes the expiration date of the key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ChangePassphrase(System.String)">
+            <summary>Changes the passphrase of the current key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.CreateKey(System.String,System.String)">
+            <summary>Creates an OpenPGP key pair.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.DeleteKey(System.String)">
+            <summary>Deletes the specified key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ExportPublicKey(System.String,System.Boolean)">
+            <summary>Exports the public key of the current key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ExportSecretKey(System.String,System.Boolean)">
+            <summary>Exports the private key of the current key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ImportKey(System.String,System.String)">
+            <summary>Imports the key specified by UserId to the current keyring.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ImportKeyB(System.Byte[],System.String)">
+            <summary>Imports the key specified by UserId to the current keyring.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ListKeys">
+            <summary>Lists keys in the specified Keyring .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ListSignatures">
+            <summary>Lists all signatures of the current key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.ListSubkeys">
+            <summary>Lists the subkeys of the currently selected key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.LoadKeyring(System.String)">
+            <summary>Loads the keyring from disk.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.Reset">
+            <summary>Resets the component properties.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.RevokeKey(System.String)">
+            <summary>Revokes the specified key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.SaveKeyring(System.String)">
+            <summary>Saves the current Keyring to disk.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.SignUserId(System.String,System.String)">
+            <summary>Signs the specified user Id of the current key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Keymgr.VerifyPassphrase(System.String)">
+            <summary>Verifies the passphrase of specified key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Keymgr.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Keymgr.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Keymgr.OnKeyList">
+            <summary>Fires for each key in the keyring when ListKeys is called.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Keymgr.OnKeyPassphrase">
+            <summary>Fired if the passphrase of current key is incorrect or empty.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Keymgr.OnSignatureList">
+            <summary>Fires for each signature of the current key when ListSignatures is called.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Keymgr.OnStatus">
+            <summary>Shows the progress of the operation.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Keymgr.OnSubkeyList">
+            <summary>Fires once for each subkey listed when ListSubkeys is called.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Keymgr.Key">
+            <summary>The currently selected key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Keymgr.Keyring">
+            <summary>The location on disk of the keyring.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.MimeErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.MimeHeaderEventArgs">
+            <summary>Event arguments for the Header event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.MimeProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.SetMessage(System.Byte[],System.Int32,System.Int32)">
+            <summary>Contains the encoded message text or a path to a file which contains the encoded message text.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.DecodeFromFile">
+            <summary>Decodes from file.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.DecodeFromStream(System.IO.Stream)">
+            <summary>Decodes from stream.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.DecodeFromString">
+            <summary>Decodes from string.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.EncodeToFile">
+            <summary>Encodes to file.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.EncodeToStream(System.IO.Stream)">
+            <summary>Encodes to stream.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.EncodeToString">
+            <summary>Encodes to string.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mime.ResetData">
+            <summary>Resets the values of all headers and Part- properties.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Mime.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Mime.OnHeader">
+            <summary>Fired every time a header is parsed.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Mime.OnProgress">
+            <summary>Shows the progress of decoding/encoding the input data.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.MessageHeaders">
+            <summary>The headers of the MIME message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.Parts">
+            <summary>Contains information about all parts of a MIME message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.Boundary">
+            <summary>The boundary separating the MIME parts. Maximum length of 80 bytes.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.ContentType">
+            <summary>The value of the content-type header of the message which was encoded/decoded.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.ContentTypeAttr">
+            <summary>The attributes for content-type header of the message which was encoded/decoded.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.MessageB">
+            <summary>Contains the encoded message text or a path to a file which contains the encoded message text.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.Message">
+            <summary>Contains the encoded message text or a path to a file which contains the encoded message text.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mime.MessageHeadersString">
+            <summary>String version of the MIME message headers.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.OpenpgpErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.OpenpgpKeyPassphraseEventArgs">
+            <summary>Event arguments for the KeyPassphrase event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.OpenpgpProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.OpenpgpRecipientInfoEventArgs">
+            <summary>Event arguments for the RecipientInfo event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.OpenpgpSignatureInfoEventArgs">
+            <summary>Event arguments for the SignatureInfo event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.OpenpgpStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.OpenpgpVerificationStatusEventArgs">
+            <summary>Event arguments for the VerificationStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.SetInputMessage(System.Byte[],System.Int32,System.Int32)">
+            <summary>The message to process.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.SetOutputMessage(System.Byte[],System.Int32,System.Int32)">
+            <summary>The output message after processing.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.Decrypt">
+            <summary>Decrypts the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.DecryptAndVerifySignature">
+            <summary>Decrypts and verifies the signature of the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.Encrypt">
+            <summary>Encrypts the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.GetRecipientInfo">
+            <summary>Gets recipient information for an encrypted message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.Reset">
+            <summary>Resets the component properties.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.SetInputStream(System.IO.Stream)">
+            <summary>Sets the stream from which the component will read data to encrypt or decrypt.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.SetOutputStream(System.IO.Stream)">
+            <summary>The stream to which the component will write the fully encrypted or decrypted OpenPGP data.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.Sign">
+            <summary>Signs the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.SignAndEncrypt">
+            <summary>Signs and encrypts the current message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Openpgp.VerifySignature">
+            <summary>Verifies the signature of the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Openpgp.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Openpgp.OnKeyPassphrase">
+            <summary>Fired if the passphrase of current key is incorrect or empty.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Openpgp.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Openpgp.OnRecipientInfo">
+            <summary>Fired for each recipient key of the encrypted message.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Openpgp.OnSignatureInfo">
+            <summary>Fired during verification of the signed message.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Openpgp.OnStatus">
+            <summary>Shows the progress of the operation.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Openpgp.OnVerificationStatus">
+            <summary>Fired after verification of the signed message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.Keys">
+            <summary>A collection of keys used for cryptographic operations.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.MessageHeaders">
+            <summary>A collection of headers in the ASCII armored message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.RecipientKeys">
+            <summary>The collection of keys belonging to the recipient of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.SignerKeys">
+            <summary>The collection of keys belonging to the signer of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.ASCIIArmor">
+            <summary>Specifies whether to use ASCII armor to encode the output message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.ClearSignature">
+            <summary>Specifies whether or not to create a cleartext signature.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.CompressionMethod">
+            <summary>The compression algorithm used.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.DetachedSignature">
+            <summary>Specifies whether or not to generate a detached signature when signing a message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.EncryptingAlgorithm">
+            <summary>The encryption algorithm used when encrypting.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.InputFile">
+            <summary>The file to process.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.InputMessageB">
+            <summary>The message to process.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.InputMessage">
+            <summary>The message to process.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.OutputFile">
+            <summary>The output file.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.OutputMessageB">
+            <summary>The output message after processing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.OutputMessage">
+            <summary>The output message after processing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.Overwrite">
+            <summary>Indicates whether or not the component should overwrite files.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Openpgp.SigningAlgorithm">
+            <summary>The signature hash algorithm used when signing.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerEndTransferEventArgs">
+            <summary>Event arguments for the EndTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerKeyPassphraseEventArgs">
+            <summary>Event arguments for the KeyPassphrase event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerPITrailEventArgs">
+            <summary>Event arguments for the PITrail event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerStartTransferEventArgs">
+            <summary>Event arguments for the StartTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PfilemailerTransferEventArgs">
+            <summary>Event arguments for the Transfer event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.AddAttachment(System.String)">
+            <summary>Adds FileName as an attachment.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.Connect">
+            <summary>Connects to the mail relay and sends the SMTP HELO command.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.Disconnect">
+            <summary>Disconnects from the SMTP server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.DoEvents">
+            <summary>Processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.Encrypt">
+            <summary>Encrypts the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.Interrupt">
+            <summary>Interrupt the current method.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.ProcessQueue(System.String)">
+            <summary>Sends the messages which have previously been queued into QueueDir .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.Queue(System.String)">
+            <summary>Queues the message into QueueDir .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.ResetHeaders">
+            <summary>Resets all the message headers to empty.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.Send">
+            <summary>Sends the current message and MIME encoded attachment.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.SetMessageStream(System.IO.Stream)">
+            <summary>Sets the stream to be uploaded to the server as part of the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.Sign">
+            <summary>Signs the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pfilemailer.SignAndEncrypt">
+            <summary>Signs and encrypts the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnEndTransfer">
+            <summary>Fired when the message text completes transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnKeyPassphrase">
+            <summary>Fired if the passphrase of current key is incorrect or empty.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnPITrail">
+            <summary>Traces the commands sent to the mail server, and the respective replies.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnStartTransfer">
+            <summary>Fired when the message text starts transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnStatus">
+            <summary>Shows the progress of the operation.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pfilemailer.OnTransfer">
+            <summary>Fired while the message text gets transferred to MailServer .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Attachments">
+            <summary>The paths of files to attach to the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Keys">
+            <summary>A collection of keys used for cryptographic operations.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.MessageRecipients">
+            <summary>The collection of recipients of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.RecipientKeys">
+            <summary>The collection of keys belonging to the recipient of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.AuthMechanism">
+            <summary>Used when connecting to the mail server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.BCc">
+            <summary>A comma separated list of addresses for blind carbon copies (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Cc">
+            <summary>A comma separated list of addresses for carbon copies (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Command">
+            <summary>Used to send additional commands directly to the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.CompressionMethod">
+            <summary>The compression algorithm used.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Connected">
+            <summary>Shows whether the component is connected.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.DeliveryNotificationTo">
+            <summary>Email address to send to which to send a delivery notification.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.EncryptingAlgorithm">
+            <summary>The encryption algorithm used when encrypting.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.From">
+            <summary>The email address of the sender (required).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Idle">
+            <summary>The current status of the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Importance">
+            <summary>Importance of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.LastReply">
+            <summary>The last reply from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.LocalHost">
+            <summary>The name of the local host or user-assigned IP interface through which connections are initiated or accepted.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.MailPort">
+            <summary>The server port for SMTP (default 25).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.MailServer">
+            <summary>The name or address of a mail server (mail relay).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.MessageDate">
+            <summary>Date of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.MessageId">
+            <summary>The Message Identifier for the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.MessageText">
+            <summary>The full text of the message to send (without headers).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.OtherHeaders">
+            <summary>An RFC 822 compliant string consisting of extra headers.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Password">
+            <summary>A password for logon to the MailServer .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Priority">
+            <summary>Priority of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.ReadReceiptTo">
+            <summary>Email address to send a read receipt to.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.ReplyTo">
+            <summary>A mail address to which to reply (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.SendTo">
+            <summary>A comma separated list of addresses for destinations (required).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Sensitivity">
+            <summary>Sensitivity of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.SigningAlgorithm">
+            <summary>The signature hash algorithm used when signing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.SSLStartMode">
+            <summary>Determines how the component starts the SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Subject">
+            <summary>The subject of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pfilemailer.User">
+            <summary>A user identifier to login as in the MailServer .</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerEndTransferEventArgs">
+            <summary>Event arguments for the EndTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerKeyPassphraseEventArgs">
+            <summary>Event arguments for the KeyPassphrase event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerPITrailEventArgs">
+            <summary>Event arguments for the PITrail event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerStartTransferEventArgs">
+            <summary>Event arguments for the StartTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PhtmlmailerTransferEventArgs">
+            <summary>Event arguments for the Transfer event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.AddAttachment(System.String)">
+            <summary>Adds FileName as an attachment.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.Connect">
+            <summary>Connects to the mail relay and sends the SMTP HELO command.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.Disconnect">
+            <summary>Disconnects from the SMTP server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.DoEvents">
+            <summary>Processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.Encrypt">
+            <summary>Encrypts the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.Interrupt">
+            <summary>Interrupt the current method.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.ProcessQueue(System.String)">
+            <summary>Sends the messages which have previously been queued into QueueDir .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.Queue(System.String)">
+            <summary>Queues the message into QueueDir .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.ResetHeaders">
+            <summary>Resets all the message headers to empty.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.Send">
+            <summary>Sends the current message and MIME encoded attachment.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.SetMessageHTMLStream(System.IO.Stream)">
+            <summary>Sets the stream from which the component will read the HTML version of the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.Sign">
+            <summary>Signs the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Phtmlmailer.SignAndEncrypt">
+            <summary>Signs and encrypts the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnEndTransfer">
+            <summary>Fired when the message text completes transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnKeyPassphrase">
+            <summary>Fired if the passphrase of current key is incorrect or empty.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnPITrail">
+            <summary>Traces the commands sent to the mail server, and the respective replies.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnStartTransfer">
+            <summary>Fired when the message text starts transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnStatus">
+            <summary>Shows the progress of the operation.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Phtmlmailer.OnTransfer">
+            <summary>Fired while the message text gets transferred to MailServer .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Attachments">
+            <summary>The paths of files to attach to the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Images">
+            <summary>The embedded images in the HTML message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Keys">
+            <summary>A collection of keys used for cryptographic operations.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.MessageRecipients">
+            <summary>The collection of recipients of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.RecipientKeys">
+            <summary>The collection of keys belonging to the recipient of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.AuthMechanism">
+            <summary>Used when connecting to the mail server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.BCc">
+            <summary>A comma separated list of addresses for blind carbon copies (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Cc">
+            <summary>A comma separated list of addresses for carbon copies (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Command">
+            <summary>Used to send additional commands directly to the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.CompressionMethod">
+            <summary>The compression algorithm used.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Connected">
+            <summary>Shows whether the component is connected.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.DeliveryNotificationTo">
+            <summary>Email address to send to which to send a delivery notification.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.EncryptingAlgorithm">
+            <summary>The encryption algorithm used when encrypting.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.From">
+            <summary>The email address of the sender (required).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.HTMLFile">
+            <summary>The path to a local HTML file.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Idle">
+            <summary>The current status of the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Importance">
+            <summary>Importance of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.LastReply">
+            <summary>The last reply from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.LocalHost">
+            <summary>The name of the local host or user-assigned IP interface through which connections are initiated or accepted.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.MailPort">
+            <summary>The server port for SMTP (default 25).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.MailServer">
+            <summary>The name or address of a mail server (mail relay).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.MessageDate">
+            <summary>Date of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.MessageHTML">
+            <summary>The HTML version of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.MessageId">
+            <summary>The Message Identifier for the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.MessageText">
+            <summary>The plain text version of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.OtherHeaders">
+            <summary>An RFC 822 compliant string consisting of extra headers.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.ParseHTML">
+            <summary>Controls the behavior of the MessageHTML property.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Password">
+            <summary>A password for logon to the MailServer .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Priority">
+            <summary>Priority of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.ReadReceiptTo">
+            <summary>Email address to send a read receipt to.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.ReplyTo">
+            <summary>A mail address to which to reply (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.SendTo">
+            <summary>A comma separated list of addresses for destinations (required).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Sensitivity">
+            <summary>Sensitivity of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.SigningAlgorithm">
+            <summary>The signature hash algorithm used when signing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.SSLStartMode">
+            <summary>Determines how the component starts the SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Subject">
+            <summary>The subject of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Phtmlmailer.User">
+            <summary>A user identifier to login as in the MailServer .</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapEndTransferEventArgs">
+            <summary>Event arguments for the EndTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapHeaderEventArgs">
+            <summary>Event arguments for the Header event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapKeyPassphraseEventArgs">
+            <summary>Event arguments for the KeyPassphrase event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapMailboxACLEventArgs">
+            <summary>Event arguments for the MailboxACL event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapMailboxListEventArgs">
+            <summary>Event arguments for the MailboxList event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapMessageInfoEventArgs">
+            <summary>Event arguments for the MessageInfo event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapMessagePartEventArgs">
+            <summary>Event arguments for the MessagePart event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapPITrailEventArgs">
+            <summary>Event arguments for the PITrail event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapRecipientInfoEventArgs">
+            <summary>Event arguments for the RecipientInfo event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapSignatureInfoEventArgs">
+            <summary>Event arguments for the SignatureInfo event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapStartTransferEventArgs">
+            <summary>Event arguments for the StartTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapTransferEventArgs">
+            <summary>Event arguments for the Transfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PimapVerificationStatusEventArgs">
+            <summary>Event arguments for the VerificationStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.SetMessage(System.Byte[],System.Int32,System.Int32)">
+            <summary>Provides the raw message content.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.AddMessageFlags(System.String)">
+            <summary>Adds the specified flags to the messages specified by MessageSet .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.AppendToMailbox">
+            <summary>Appends the message in MessageText to the mailbox specified by Mailbox .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.CheckMailbox">
+            <summary>Sends a 'CHECK' command to the server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.CloseMailbox">
+            <summary>Removes all messages marked with 'Deleted' flag from the currently selected mailbox and unselect mailbox.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.Connect">
+            <summary>Connects to an IMAP server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.CopyToMailbox">
+            <summary>Copies the messages specified by MessageSet to the mailbox specified by Mailbox .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.CreateMailbox">
+            <summary>Creates a new mailbox specified by Mailbox .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.Decrypt">
+            <summary>Decrypts the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.DecryptAndVerifySignature">
+            <summary>Decrypts and verifies the signature of the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.DeleteFromMailbox">
+            <summary>Marks the messages specified by MessageSet as deleted.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.DeleteMailbox">
+            <summary>Deletes a mailbox specified by Mailbox .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.DeleteMailboxACL(System.String)">
+            <summary>Deletes mailbox access control rights for a specific user.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.Disconnect">
+            <summary>Disconnects from an IMAP server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.DoEvents">
+            <summary>Processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.ExamineMailbox">
+            <summary>Selects a Mailbox (Read-only mode).</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.ExpungeMailbox">
+            <summary>Removes all messages marked with 'Deleted' flag from the currently selected mailbox.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.FetchMessageHeaders">
+            <summary>Retrieves the message headers of messages specified by the MessageSet property.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.FetchMessageInfo">
+            <summary>Retrieves information about messages specified by the MessageSet property.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.FetchMessagePart(System.String)">
+            <summary>Retrieves the message part specified by PartID.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.FetchMessagePartHeaders(System.String)">
+            <summary>Retrieves the headers of message part specified by PartID.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.FetchMessageText">
+            <summary>Retrieves the message text of messages specified by the MessageSet property.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.GetMailboxACL">
+            <summary>Retrieves mailbox access control rights.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.Interrupt">
+            <summary>Interrupt the current method.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.ListMailboxes">
+            <summary>Lists all mailboxes matching all criteria in the Mailbox property.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.ListSubscribedMailboxes">
+            <summary>Lists all subscribed mailboxes matching all criteria in the Mailbox property.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.LocalizeDate(System.String)">
+            <summary>Converts a valid RFC 822 message date to local date and time.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.MoveToMailbox">
+            <summary>Moves the messages specified by MessageSet to the mailbox specified by Mailbox .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.Noop">
+            <summary>Sends a 'NOOP' command to the server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.RenameMailbox(System.String)">
+            <summary>Change the name of Mailbox to NewName .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.ResetMessageFlags">
+            <summary>Replaces the flags of the messages specified by MessageSet with the flags specified by MessageFlags .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.SearchMailbox(System.String)">
+            <summary>Search selected mailbox for specified text.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.SelectMailbox">
+            <summary>Select a Mailbox.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.SetMailboxACL(System.String,System.String)">
+            <summary>Sets mailbox access control rights for a specific user.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.SetMessageStream(System.IO.Stream)">
+            <summary>Sets the stream to which the message (or message part) downloaded from the server will be written.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.SubscribeMailbox">
+            <summary>Subscribes to the mailbox specified by Mailbox .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.UnsetMessageFlags">
+            <summary>Removes the flags specified by MessageFlags from the messages specified by MessageSet .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.UnsubscribeMailbox">
+            <summary>Unsubscribes from the mailbox specified by Mailbox .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Pimap.VerifySignature">
+            <summary>Verifies the signature of the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnEndTransfer">
+            <summary>Fired when the message or the part data finishes transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnHeader">
+            <summary>Fired every time a header line comes in.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnKeyPassphrase">
+            <summary>Fired if the passphrase of current key is incorrect or empty.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnMailboxACL">
+            <summary>Fires for each set of access control rights returned by the server.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnMailboxList">
+            <summary>Fired for each mailbox received through the ListMailboxes and ListSubscribedMailboxes methods.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnMessageInfo">
+            <summary>Fired with information for the message(s) retrieved by the server.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnMessagePart">
+            <summary>Fired for each message part when FetchMessageInfo is called.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnPITrail">
+            <summary>Traces the commands sent to the mail server, and the respective replies.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnRecipientInfo">
+            <summary>Fired for each recipient key of the encrypted message.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnSignatureInfo">
+            <summary>Fired during verification of the signed message.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnStartTransfer">
+            <summary>Fired when the message or the part data starts transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnStatus">
+            <summary>Shows the progress of the operation.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnTransfer">
+            <summary>Fired while the message gets transferred from the MailServer .</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Pimap.OnVerificationStatus">
+            <summary>Fired after verification of the signed message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Keys">
+            <summary>A collection of keys used for cryptographic operations.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MailboxList">
+            <summary>Collection of mailboxes listed by the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageHeaders">
+            <summary>Collection of RFC822-encoded headers of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageInfo">
+            <summary>Collection of messages retrieved by FetchMessageInfo .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageParts">
+            <summary>Collection of message parts collected by FetchMessageInfo .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageRecipients">
+            <summary>Collection of recipients for the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.SignerKeys">
+            <summary>The collection of keys belonging to the signer of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.AuthMechanism">
+            <summary>The authentication mechanism to be used when connecting to the mail server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.AutoDecodeParts">
+            <summary>Determines whether to automatically decode message parts.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Command">
+            <summary>Can be used to send additional commands directly to the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Connected">
+            <summary>Shows whether the component is connected.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.EndByte">
+            <summary>The byte index of the position where the transfer should end.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Idle">
+            <summary>The current status of the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.LastReply">
+            <summary>The last reply from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.LocalHost">
+            <summary>The name of the local host or user-assigned IP interface through which connections are initiated or accepted.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Mailbox">
+            <summary>Name of the mailbox selected on the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MailboxFlags">
+            <summary>Defines flags in the selected mailbox.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MailPort">
+            <summary>The port of the IMAP server (default is 143).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MailServer">
+            <summary>The name or address of the mail server (IMAP server).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageB">
+            <summary>Provides the raw message content.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Message">
+            <summary>Provides the raw message content.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageContentEncoding">
+            <summary>The ContentEncoding of the selected message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageContentType">
+            <summary>The ContentType of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageCount">
+            <summary>The total number of messages on the Mailbox .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageDate">
+            <summary>The time the message was created.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageDeliveryTime">
+            <summary>The time the message was delivered to the mail server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageFlags">
+            <summary>Contains the flags of the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageFrom">
+            <summary>The address of the author of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageHeadersString">
+            <summary>String version of RFC822-encoded headers of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageId">
+            <summary>The message identifier of the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageInReplyTo">
+            <summary>The unique message identifier of the message this one is in reply to.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageNetId">
+            <summary>The globally unique identifier of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageReplyTo">
+            <summary>Email address(s) where replies to the message should be sent.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageSender">
+            <summary>The address of the sender of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageSet">
+            <summary>The set of messages to operate on.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageSize">
+            <summary>The size of the selected message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageSubject">
+            <summary>The subject of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.MessageText">
+            <summary>The body of the retrieved message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Overwrite">
+            <summary>Indicates whether or not the component should overwrite files during transfer.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Password">
+            <summary>The password used to authenticate to the MailServer .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.PeekMode">
+            <summary>When set to True, the message Seen flag is not changed during reading.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.RecentMessageCount">
+            <summary>Number of new messages in the Mailbox .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.SortCriteria">
+            <summary>Sorts criteria to use for message retrieval operations.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.SSLStartMode">
+            <summary>Determines how the component starts the SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.StartByte">
+            <summary>The byte index of the position where the transfer should start.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.UIDMode">
+            <summary>If true, permanent message identifiers are used instead of the default temporary identifiers.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.UIDValidity">
+            <summary>The UIDValidity parameter sent from the server in response to SelectMailbox command.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Pimap.User">
+            <summary>The user name used to authenticate to the MailServer .</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopEndTransferEventArgs">
+            <summary>Event arguments for the EndTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopHeaderEventArgs">
+            <summary>Event arguments for the Header event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopKeyPassphraseEventArgs">
+            <summary>Event arguments for the KeyPassphrase event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopMessageListEventArgs">
+            <summary>Event arguments for the MessageList event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopPITrailEventArgs">
+            <summary>Event arguments for the PITrail event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopRecipientInfoEventArgs">
+            <summary>Event arguments for the RecipientInfo event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopSignatureInfoEventArgs">
+            <summary>Event arguments for the SignatureInfo event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopStartTransferEventArgs">
+            <summary>Event arguments for the StartTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopTransferEventArgs">
+            <summary>Event arguments for the Transfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PpopVerificationStatusEventArgs">
+            <summary>Event arguments for the VerificationStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.Connect">
+            <summary>Connects to the mail server and attempts to login.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.Decrypt">
+            <summary>Decrypts the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.DecryptAndVerifySignature">
+            <summary>Decrypts and verifies the signature of the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.Delete">
+            <summary>Deletes a message specified by MessageNumber on the server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.Disconnect">
+            <summary>Disconnects from the mail server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.DoEvents">
+            <summary>Processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.Interrupt">
+            <summary>Interrupt the current method.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.ListMessageSizes">
+            <summary>Retrieves a list of all message sizes from the server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.ListMessageUIDs">
+            <summary>Retrieves a list of all message UIDs from the server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.LocalizeDate(System.String)">
+            <summary>Converts a valid RFC 822 message date to local date and time.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.Reset">
+            <summary>Resets all changes and revert back to the state when the user first connected.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.Retrieve">
+            <summary>Retrieves a message specified by MessageNumber from the server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.RetrieveHeaders">
+            <summary>Retrieves headers for a message specified by MessageNumber .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.SetMessageStream(System.IO.Stream)">
+            <summary>Sets the stream to which the message downloaded from the server will be written.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Ppop.VerifySignature">
+            <summary>Verifies the signature of the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnEndTransfer">
+            <summary>Fired when the message completes transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnHeader">
+            <summary>Fired for every message header being retrieved.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnKeyPassphrase">
+            <summary>Fired if the passphrase of current key is incorrect or empty.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnMessageList">
+            <summary>Fired for every message listed by ListMessageSizes and/or ListMessageUIDs .</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnPITrail">
+            <summary>Traces the commands sent to the mail server, and the respective replies.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnRecipientInfo">
+            <summary>Fired for each recipient key of the encrypted message.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnSignatureInfo">
+            <summary>Fired during verification of the signed message.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnStartTransfer">
+            <summary>Fired when the message starts transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnStatus">
+            <summary>Shows the progress of the operation.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnTransfer">
+            <summary>Fired while the message gets transferred from MailServer .</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Ppop.OnVerificationStatus">
+            <summary>Fired after verification of the signed message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.Keys">
+            <summary>A collection of keys used for cryptographic operations.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageHeaders">
+            <summary>Collection of the message headers as retrieved from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageRecipients">
+            <summary>A collection of recipients for the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.SignerKeys">
+            <summary>The collection of keys belonging to the signer of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.AuthMechanism">
+            <summary>The authentication mechanism to be used when connecting to the mail server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.Command">
+            <summary>Used to send additional commands directly to the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.Connected">
+            <summary>Shows whether the component is connected.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.Idle">
+            <summary>The current status of the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.IncludeHeaders">
+            <summary>Instructs the component to include the headers in the MessageText and LocalFile.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.LastReply">
+            <summary>The last reply from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.LocalHost">
+            <summary>The name of the local host or user-assigned IP interface through which connections are initiated or accepted.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MailPort">
+            <summary>The server port for POP (default 110).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MailServer">
+            <summary>The name or address of a mail server (internet post office server).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MaxLines">
+            <summary>The maximum number of message lines besides headers to retrieve.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageB">
+            <summary>Provides the raw message content.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.Message">
+            <summary>Provides the raw message content.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageCc">
+            <summary>The value of the CC header of the last retrieved message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageCount">
+            <summary>The number of messages in the mailbox.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageDate">
+            <summary>The value of the date header of the last retrieved message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageFrom">
+            <summary>The value of the from header of the last retrieved message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageHeadersString">
+            <summary>A string representation of the full headers of the message as retrieved from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageNumber">
+            <summary>Current (selected) message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageReplyTo">
+            <summary>The value of the Reply-To header of the last retrieved message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageSize">
+            <summary>The size in bytes of the current message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageSubject">
+            <summary>The value of the Subject header of the last retrieved message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageText">
+            <summary>The full text of the message as retrieved from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageTo">
+            <summary>The value of the To header of the last retrieved message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.MessageUID">
+            <summary>The unique identifier of the message as specified by the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.Password">
+            <summary>The password for the mailbox user.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.SSLStartMode">
+            <summary>Determines how the component starts the SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.TotalSize">
+            <summary>Cumulative size in bytes of messages in the mailbox (including headers).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Ppop.User">
+            <summary>The user identifier for the mailbox.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpEndTransferEventArgs">
+            <summary>Event arguments for the EndTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpExpandEventArgs">
+            <summary>Event arguments for the Expand event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpKeyPassphraseEventArgs">
+            <summary>Event arguments for the KeyPassphrase event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpPITrailEventArgs">
+            <summary>Event arguments for the PITrail event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpStartTransferEventArgs">
+            <summary>Event arguments for the StartTransfer event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.PsmtpTransferEventArgs">
+            <summary>Event arguments for the Transfer event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.SetMessage(System.Byte[],System.Int32,System.Int32)">
+            <summary>Provides a way to set the raw message content.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Connect">
+            <summary>Connects to the mail relay and sends the SMTP HELO command.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Disconnect">
+            <summary>Disconnects from the SMTP server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.DoEvents">
+            <summary>Processes events from the internal message queue.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Encrypt">
+            <summary>Encrypts the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Expand(System.String)">
+            <summary>Asks the MailServer to expand a name or mailing list.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Interrupt">
+            <summary>Interrupt the current method.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.ProcessQueue(System.String)">
+            <summary>Sends the messages which have previously been queued into QueueDir .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Queue(System.String)">
+            <summary>Queues the message into QueueDir .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.ResetHeaders">
+            <summary>Resets all the message headers to empty.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Send">
+            <summary>Sends the current message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.SendToTerminalAndEmail">
+            <summary>Sends to terminal and email.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.SendToTerminalOnly">
+            <summary>Sends to terminal only.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.SendToTerminalOrEmail">
+            <summary>Sends to terminal or email.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.SetMessageStream(System.IO.Stream)">
+            <summary>Sets the stream to be uploaded to the server as part of the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Sign">
+            <summary>Signs the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.SignAndEncrypt">
+            <summary>Signs and encrypts the current message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Psmtp.Verify(System.String)">
+            <summary>Sends a Verification request to the SMTP server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnEndTransfer">
+            <summary>Fired when the message text completes transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnExpand">
+            <summary>Fired for every email address returned by the server when the Expand method is called.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnKeyPassphrase">
+            <summary>Fired if the passphrase of current key is incorrect or empty.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnPITrail">
+            <summary>Traces the commands sent to the mail server, and the respective replies.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnStartTransfer">
+            <summary>Fired when the message text starts transferring.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnStatus">
+            <summary>Shows the progress of the operation.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Psmtp.OnTransfer">
+            <summary>Fired while the message text gets transferred to MailServer .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Keys">
+            <summary>A collection of keys used for cryptographic operations.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MessageHeaders">
+            <summary>Collection of RFC822-encoded headers of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MessageRecipients">
+            <summary>The collection of recipients of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.RecipientKeys">
+            <summary>The collection of keys belonging to the recipient of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.AllowExtensions">
+            <summary>A switch allowing the component to use ESMTP features (SMTP extensions).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.AuthMechanism">
+            <summary>Used when connecting to the mail server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.BCc">
+            <summary>A comma separated list of addresses for blind carbon copies (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Cc">
+            <summary>A comma separated list of addresses for carbon copies (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Command">
+            <summary>Used to send additional commands directly to the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.CompressionMethod">
+            <summary>The compression algorithm used.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Connected">
+            <summary>Shows whether the component is connected.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.DeliveryNotificationTo">
+            <summary>Email address to send to which to send a delivery notification.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.EncryptingAlgorithm">
+            <summary>The encryption algorithm used when encrypting.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.From">
+            <summary>The email address of the sender (required).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Idle">
+            <summary>The current status of the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Importance">
+            <summary>Importance of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.LastReply">
+            <summary>The last reply from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.LocalHost">
+            <summary>The name of the local host or user-assigned IP interface through which connections are initiated or accepted.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MailPort">
+            <summary>The server port for SMTP (default 25).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MailServer">
+            <summary>The name or address of a mail server (mail relay).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MessageB">
+            <summary>Provides a way to set the raw message content.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Message">
+            <summary>Provides a way to set the raw message content.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MessageDate">
+            <summary>Date of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MessageHeadersString">
+            <summary>String representation of RFC822-encoded headers of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MessageId">
+            <summary>The Message Identifier for the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.MessageText">
+            <summary>The full text of the message to send (without headers).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.OtherHeaders">
+            <summary>An RFC 822 compliant string consisting of extra headers.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Password">
+            <summary>A password for logon to the MailServer .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Priority">
+            <summary>Priority of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.ReadReceiptTo">
+            <summary>Email address to send a read receipt to.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.ReplyTo">
+            <summary>A mail address to which to reply (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.ReturnPath">
+            <summary>Sets the Return-Path to be used for sending email.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.SendTo">
+            <summary>A comma separated list of addresses for destinations (required).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Sensitivity">
+            <summary>Sensitivity of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.SigningAlgorithm">
+            <summary>The signature hash algorithm used when signing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.SSLStartMode">
+            <summary>Determines how the component starts the SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Subject">
+            <summary>The subject of the mail message (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Psmtp.User">
+            <summary>A user identifier to login as in the MailServer .</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.SdaErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.SdaProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksOpenPGP.SdaStatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Sda.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Sda.CreateSDA">
+            <summary>Compresses the files and creates a self-decrypting archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Sda.Reset">
+            <summary>Resets the component.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Sda.OnError">
+            <summary>Information about non-fatal errors.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Sda.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksOpenPGP.Sda.OnStatus">
+            <summary>Shows the progress of the operation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.ArchiveFile">
+            <summary>The name of the self-decrypting archive to create.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.BannerText">
+            <summary>Optional banner text to show before the self-extraction starts.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.CaptionText">
+            <summary>Optional caption (title) text for the self-extractor dialogs.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.CompressionLevel">
+            <summary>The compression level to use.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.ExtractToPath">
+            <summary>Optional target directory for the self-extractor.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.FileToExecute">
+            <summary>Optional file to execute (open) after the archive is extracted.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.Password">
+            <summary>An optional password for the self-decrypting archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.RecurseSubdirectories">
+            <summary>Whether or not to recurse into subdirectories during archive creation.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.SourceDirectory">
+            <summary>Directory to be compressed into a self-decrypting archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Sda.SourceFile">
+            <summary>File to be compressed into a self-decrypting archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certificate.#ctor">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certificate.#ctor(System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certificate.#ctor(System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certificate.#ctor(nsoftware.IPWorksOpenPGP.CertStoreTypes,System.String,System.String,System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certificate.#ctor(nsoftware.IPWorksOpenPGP.CertStoreTypes,System.String,System.String,System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certificate.#ctor(nsoftware.IPWorksOpenPGP.CertStoreTypes,System.Byte[],System.String,System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Certificate.#ctor(nsoftware.IPWorksOpenPGP.CertStoreTypes,System.Byte[],System.String,System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.EffectiveDate">
+            <summary>The date which this certificate becomes valid.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.EncodedB">
+            <summary>The certificate (PEM/base64 encoded).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.Encoded">
+            <summary>The certificate (PEM/base64 encoded).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.ExpirationDate">
+            <summary>The date the certificate expires.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.ExtendedKeyUsage">
+            <summary>A comma-delimited list of extended key usage identifiers.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.Fingerprint">
+            <summary>The hex-encoded, 16-byte MD5 fingerprint of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.Issuer">
+            <summary>The issuer of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.PrivateKey">
+            <summary>The private key of the certificate (if available).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.PrivateKeyAvailable">
+            <summary>Shows whether a PrivateKey is available for the  selected certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.PrivateKeyContainer">
+            <summary>The name of the PrivateKey container for the  certificate (if available).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.PublicKey">
+            <summary>The public key of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.PublicKeyAlgorithm">
+            <summary>Textual description of the public key algorithm of the  certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.PublicKeyLength">
+            <summary>The length of the certificate public key (in bits).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.SerialNumber">
+            <summary>The serial number of the certificate encoded as a  string.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.SignatureAlgorithm">
+            <summary>Text description of the signature algorithm of the  certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.StoreB">
+            <summary>The name of the certificate store for the client certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.Store">
+            <summary>The name of the certificate store for the client certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.StorePassword">
+            <summary>If the certificate store is of a type that requires  a password, this property is used to specify that  password in order to open the certificate store.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.StoreType">
+            <summary>The type of certificate store for this certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.Subject">
+            <summary>The subject of the certificate used for client authentication.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.SubjectAltNames">
+            <summary>A comma-separated lists of alternative subject names of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.ThumbprintMD5">
+            <summary>MD5 hash of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.ThumbprintSHA1">
+            <summary>SHA1 hash of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.Usage">
+            <summary>Text description of UsageFlags .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.UsageFlags">
+            <summary>Flags that show intended use for the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Certificate.Version">
+            <summary>The certificate's version number.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.CertExtension.#ctor(System.String,System.Byte[],System.Boolean)">
+            <summary>Represents an extension for a certificate.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.CertExtension.Critical">
+            <summary>Whether or not the extension is defined as critical.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.CertExtension.OID">
+            <summary>The ASN.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.CertExtension.ValueB">
+            <summary>The raw value of this certificate extension.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.CertExtension.Value">
+            <summary>The raw value of this certificate extension.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Key.#ctor(System.String)">
+            <summary>The OpenPGP key being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Key.#ctor(System.Byte[])">
+            <summary>The OpenPGP key being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Key.#ctor(System.String,System.String)">
+            <summary>The OpenPGP key being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Key.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>The OpenPGP key being used.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Key.#ctor(System.Byte[],System.String)">
+            <summary>The OpenPGP key being used.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.EffectiveDate">
+            <summary>The date when this key becomes valid.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.EncodedB">
+            <summary>The key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.Encoded">
+            <summary>The key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.ExpirationDate">
+            <summary>The date the key expires.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.Fingerprint">
+            <summary>The hex-encoded, 20-byte fingerprint of the key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.Id">
+            <summary>The hex-encoded, 4-byte key Id.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.OtherUserIds">
+            <summary>If the specified key has alternate user Ids associated with it, this property returns a comma-separated list of the other user Ids.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.Passphrase">
+            <summary>The passphrase for the key's secret key (if any).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.PublicKey">
+            <summary>The public key of the key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.PublicKeyAlgorithm">
+            <summary>A text description of the public key algorithm of the  key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.PublicKeyLength">
+            <summary>The length of the public key in bits.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.Revoked">
+            <summary>Whether or not the key is revoked.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.SecretKey">
+            <summary>The secret key of the key (if available).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.SecretKeyAvailable">
+            <summary>Whether or not a secret key is available for the selected key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.Usage">
+            <summary>A text description of UsageFlags .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.UsageFlags">
+            <summary>Flags that show the intended use for the key.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Key.UserId">
+            <summary>The user Id of the key.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Header.#ctor">
+            <summary>An HTTP header as it is received from the server.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Header.#ctor(System.String,System.String)">
+            <summary>An HTTP header as it is received from the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Header.Field">
+            <summary>This property contains the name of the HTTP header (same case as it is delivered).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Header.Value">
+            <summary>This property contains the header contents.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MIMEPart.#ctor">
+            <summary>A part of the MIME message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MIMEPart.#ctor(System.String)">
+            <summary>A part of the MIME message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MIMEPart.#ctor(System.Byte[])">
+            <summary>A part of the MIME message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MIMEPart.#ctor(System.IO.Stream)">
+            <summary>A part of the MIME message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MIMEPart.#ctor(System.IO.Stream,System.String)">
+            <summary>A part of the MIME message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.ContentDisposition">
+            <summary>Content disposition for each part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.ContentDispositionAttr">
+            <summary>The content disposition's attribute (if any) for each part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.ContentId">
+            <summary>Content identifier for each part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.ContentType">
+            <summary>Content type for each part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.ContentTypeAttr">
+            <summary>The content type attribute, if any, for each part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.DecodedFile">
+            <summary>The filename with the decoded data.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.DecodedStringB">
+            <summary>This field holds the actual content of each part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.DecodedString">
+            <summary>This field holds the actual content of each part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.Encoding">
+            <summary>This field contains the actual content encoding type for each part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.Filename">
+            <summary>This field contains the filename attribute specified in the headers of the part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.Headers">
+            <summary>This field contains the headers for each MIME part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.Name">
+            <summary>This field contains the name given to a part, such as the filename.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.PartInputStream">
+            <summary>This field contains a stream which contains the actual content of each part before the message is encoded.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.PartOutputStream">
+            <summary>The component decodes the actual part of Message when this field's  value is first set, and writes the decoded value to the stream.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MIMEPart.Size">
+            <summary>This field contains the size of the DecodedFile or DecodedString .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.FileAttachment.#ctor">
+            <summary>This describes the file being attached.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.FileAttachment.#ctor(System.String)">
+            <summary>This describes the file being attached.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.FileAttachment.#ctor(System.String,System.String)">
+            <summary>This describes the file being attached.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.FileAttachment.#ctor(System.String,System.IO.Stream)">
+            <summary>This describes the file being attached.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.FileAttachment.#ctor(System.String,System.IO.Stream,System.String)">
+            <summary>This describes the file being attached.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.FileAttachment.File">
+            <summary>This property contains the path of a file on your system that you would like to send as an attachment with your message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.FileAttachment.InputStream">
+            <summary>When this property is set to a valid stream, the component will attach the data from the stream as the current attachment.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.FileAttachment.Name">
+            <summary>This property contains the name of the attachment to be sent.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Firewall.#ctor">
+            <summary>The firewall the component will connect through.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Firewall.AutoDetect">
+            <summary>This property tells the component whether or not to automatically detect and use firewall system settings, if available.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Firewall.FirewallType">
+            <summary>This property determines the type of firewall to connect through.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Firewall.Host">
+            <summary>This property contains the name or IP address of firewall (optional).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Firewall.Password">
+            <summary>This property contains a password if authentication is to be used when connecting through the firewall.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Firewall.Port">
+            <summary>This property contains the TCP port for the firewall Host .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Firewall.User">
+            <summary>This property contains a user name if authentication is to be used connecting through a firewall.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MessageRecipient.#ctor">
+            <summary>A recipient of the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MessageRecipient.#ctor(System.String)">
+            <summary>A recipient of the message.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MessageRecipient.#ctor(System.String,System.Int32)">
+            <summary>A recipient of the message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageRecipient.Address">
+            <summary>This field contains the email address of the recipient.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageRecipient.Name">
+            <summary>This field contains name of the recipient.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageRecipient.Options">
+            <summary>This field contains the recipient sending options (used only by SMTP).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageRecipient.RecipientType">
+            <summary>This field contains the recipient type: To, Cc, or BCc.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.HTMLImage.#ctor">
+            <summary>This type describes an HTML embedded image.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.HTMLImage.#ctor(System.String)">
+            <summary>This type describes an HTML embedded image.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.HTMLImage.File">
+            <summary>This property contains the name of the image files embedded into the HTML message.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.HTMLImage.Id">
+            <summary>This property contains the content identifier for embedded images.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.HTMLImage.ImageType">
+            <summary>This property contains the content type for embedded images.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.Mailbox.#ctor">
+            <summary>Mailboxes collected when calling <b>ListMailboxes</b> or <b>ListSubscribedMailboxes</b> .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mailbox.Flags">
+            <summary>The mailbox flags in a mailbox listing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mailbox.Name">
+            <summary>The mailbox name in a mailbox listing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.Mailbox.Separator">
+            <summary>The Separator field contains the character that  separates the different parts in the mailbox path hierarchy.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MessageInfo.#ctor">
+            <summary>This is a listing of information for a message returned by the server.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageInfo.Date">
+            <summary>The date of a message in a message info listing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageInfo.Flags">
+            <summary>Message flag in a message info listing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageInfo.From">
+            <summary>The sender of a message in a message info listing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageInfo.MessageId">
+            <summary>The unique identifier of a message in a message info listing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageInfo.Size">
+            <summary>The size of a message in a message info listing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessageInfo.Subject">
+            <summary>The subject of a message in a message info listing.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksOpenPGP.MessagePart.#ctor">
+            <summary>A message part of a message listing.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.ContentDisposition">
+            <summary>This field shows the value of the Content-Disposition header of the message part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.ContentEncoding">
+            <summary>This field shows how the data is encoded.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.ContentId">
+            <summary>This field shows the value of the Content-Id header of the message part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.ContentType">
+            <summary>This field shows the type of data contained in the message part.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.Filename">
+            <summary>This field shows the filename corresponding  to the part (if the part was included in the message as  an attached file).</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.Id">
+            <summary>This field contains the identifier of a part listing which  may be identified in other parts or messages.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.MultipartMode">
+            <summary>This field shows how this part  relates to the message's whole multipart structure  ('mixed', 'alternative', etc.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.Parameters">
+            <summary>This field contains the additional parameters passed  to the ContentType header such as the part charset etc.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksOpenPGP.MessagePart.Size">
+            <summary>This field contains the size of a part in a message part listing.</summary>
+        </member>
+    </members>
+</doc>

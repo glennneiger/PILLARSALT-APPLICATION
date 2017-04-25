@@ -1,0 +1,2188 @@
+000238C7        2016:03:15 13:14:55.171  Tracer initiated !!!
+2016:03:15 13:14:55.186  Used by new framework ( Jun 30 2014 )
+2016:03:15 13:14:55.186  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 13:14:55.186  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 13:14:55.186  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 13:14:55.186  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 13:14:55.186  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 13:14:55.186  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 13:14:55.186  A> GLY_SetWindowHandle 00000001 000509A2
+2016:03:15 13:14:55.186  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:14:55.202  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:14:55.202  DLLTEST FFFFFFFE-
+2016:03:15 13:14:55.202  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:14:55.202  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 13:14:55.202  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:00.205  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:15:00.205  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:05.219  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:15:05.219  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:10.232  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:15:10.232  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:15.245  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:15:15.245  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:20.252  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:15:20.252  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:25.260  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:15:25.260  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:30.274  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:15:30.274  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:15:35.287  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:15:35.287  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:18:36.919  Tracer initiated !!!
+2016:03:15 13:18:36.919  Used by new framework ( Jun 30 2014 )
+2016:03:15 13:18:36.919  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 13:18:36.919  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 13:18:36.919  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 13:18:36.919  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 13:18:36.919  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 13:18:36.919  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 13:18:36.919  A> GLY_SetWindowHandle 00000001 00060704
+2016:03:15 13:18:36.919  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:36.935  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:18:36.935  DLLTEST FFFFFFFE-
+2016:03:15 13:18:36.935  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:18:36.935  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 13:18:36.935  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:41.941  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:18:41.941  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:46.955  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:18:46.955  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:51.970  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:18:51.970  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:18:56.975  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.975  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.975  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.975  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.975  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.975  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.975  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.976  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.976  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.976  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:18:56.976  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:18:56.976  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:20:54.737  Tracer initiated !!!
+2016:03:15 13:20:54.737  Used by new framework ( Jun 30 2014 )
+2016:03:15 13:20:54.737  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 13:20:54.737  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 13:20:54.737  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 13:20:54.737  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 13:20:54.737  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 13:20:54.737  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 13:20:54.737  A> GLY_SetWindowHandle 00000001 00170A10
+2016:03:15 13:20:54.737  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:20:54.752  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:20:54.752  DLLTEST FFFFFFFE-
+2016:03:15 13:20:54.752  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:20:54.752  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 13:20:54.752  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 13:48:48.677  Tracer initiated !!!
+2016:03:15 13:48:48.677  Used by new framework ( Jun 30 2014 )
+2016:03:15 13:48:48.677  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 13:48:48.677  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 13:48:48.677  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 13:48:48.677  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 13:48:48.677  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 13:48:48.677  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 13:48:48.677  A> GLY_SetWindowHandle 00000001 002508C4
+2016:03:15 13:48:48.677  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:48.693  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:48:48.693  DLLTEST FFFFFFFE-
+2016:03:15 13:48:48.693  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:48:48.693  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 13:48:48.693  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 13:48:51.340  A> GLY_CLOSE 00000000
+2016:03:15 13:48:51.340  R: ??? GLY_CLOSE
+2016:03:15 13:48:53.063  A> GLY_AsyncDeviceRequest(1769491) 00000001-002508C4-00000002
+2016:03:15 13:48:53.063  R: GLY_ERROR_COMMUNICATION GLY_AsyncDeviceRequest(1769491) 00000001-002508C4-00000002
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:53.702  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:48:53.702  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:48:58.711  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:48:58.711  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:49:01.257  A> GLY_AsyncDeviceRequest(1769491) 00000001-002508C4-00000003
+2016:03:15 13:49:01.257  R: GLY_ERROR_COMMUNICATION GLY_AsyncDeviceRequest(1769491) 00000001-002508C4-00000003
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.716  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:49:03.717  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:49:03.717  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:59:43.674  Tracer initiated !!!
+2016:03:15 13:59:43.674  Used by new framework ( Jun 30 2014 )
+2016:03:15 13:59:43.674  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 13:59:43.674  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 13:59:43.674  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 13:59:43.674  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 13:59:43.674  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 13:59:43.674  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 13:59:43.674  A> GLY_SetWindowHandle 00000001 00040AEE
+2016:03:15 13:59:43.674  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:43.689  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:59:43.689  DLLTEST FFFFFFFE-
+2016:03:15 13:59:43.689  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:59:43.689  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 13:59:43.689  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:48.698  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:59:48.698  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:53.704  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:59:53.704  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 13:59:58.709  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 13:59:58.709  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:00:39.833  Tracer initiated !!!
+2016:03:15 14:00:39.833  Used by new framework ( Jun 30 2014 )
+2016:03:15 14:00:39.833  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 14:00:39.833  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 14:00:39.833  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 14:00:39.833  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 14:00:39.833  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 14:00:39.833  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 14:00:39.833  A> GLY_SetWindowHandle 00000001 000F0B2A
+2016:03:15 14:00:39.849  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:00:39.864  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:00:39.864  DLLTEST FFFFFFFE-
+2016:03:15 14:00:39.864  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:00:39.864  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 14:00:39.864  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 14:21:07.915  Tracer initiated !!!
+2016:03:15 14:21:07.918  Used by new framework ( Jun 30 2014 )
+2016:03:15 14:21:07.919  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 14:21:07.919  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 14:21:07.919  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 14:21:07.919  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 14:21:07.919  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 14:21:07.919  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 14:21:07.919  A> GLY_SetWindowHandle 00000001 001606A6
+2016:03:15 14:21:07.919  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 14:21:07.921  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.922  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.922  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.922  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.922  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.922  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.922  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.922  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.923  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.923  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:07.923  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:21:07.923  DLLTEST FFFFFFFE-
+2016:03:15 14:21:07.923  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:21:07.923  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 14:21:07.923  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 14:21:12.929  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.929  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:12.930  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:21:12.931  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:21:17.935  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.936  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.936  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.936  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.936  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.936  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.937  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.937  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.937  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.937  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:17.937  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:21:17.937  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:22.947  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:21:22.947  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:27.957  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:21:27.957  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:21:32.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.957  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.958  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.958  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.958  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.958  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.958  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.958  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.958  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.958  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:21:32.959  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:21:32.959  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:22:32.557  Tracer initiated !!!
+2016:03:15 14:22:32.557  Used by new framework ( Jun 30 2014 )
+2016:03:15 14:22:32.557  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 14:22:32.557  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 14:22:32.557  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 14:22:32.557  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 14:22:32.557  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 14:22:32.557  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 14:22:32.557  A> GLY_SetWindowHandle 00000001 00080B84
+2016:03:15 14:22:32.557  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:32.573  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:22:32.573  DLLTEST FFFFFFFE-
+2016:03:15 14:22:32.573  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:22:32.573  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 14:22:32.573  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:37.587  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:22:37.587  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:42.589  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:22:42.589  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:22:46.582  A> GLY_CLOSE 00000001
+2016:03:15 14:22:51.301  Tracer initiated !!!
+2016:03:15 14:22:51.301  Used by new framework ( Jun 30 2014 )
+2016:03:15 14:22:51.301  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 14:22:51.301  Glory Dll Opened by DLLTEST Handle 00000002
+2016:03:15 14:22:51.301  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 14:22:51.301  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000002
+2016:03:15 14:22:51.301  A> GLY_SetMessageCode 00000002 00000401
+2016:03:15 14:22:51.301  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 14:22:51.301  A> GLY_SetWindowHandle 00000002 00080B84
+2016:03:15 14:22:51.301  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:51.317  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:22:51.317  DLLTEST FFFFFFFE-
+2016:03:15 14:22:51.317  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:22:51.317  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 14:22:51.317  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000002
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:22:56.320  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:22:56.320  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:01.326  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:01.326  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:06.335  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:06.335  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:08.170  A> GLY_CLOSE 00000002
+2016:03:15 14:23:13.778  Tracer initiated !!!
+2016:03:15 14:23:13.778  Used by new framework ( Jun 30 2014 )
+2016:03:15 14:23:13.778  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 14:23:13.778  Glory Dll Opened by DLLTEST Handle 00000003
+2016:03:15 14:23:13.778  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 14:23:13.778  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000003
+2016:03:15 14:23:13.778  A> GLY_SetMessageCode 00000003 00000401
+2016:03:15 14:23:13.778  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 14:23:13.778  A> GLY_SetWindowHandle 00000003 00080B84
+2016:03:15 14:23:13.778  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 14:23:13.794  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.795  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.795  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.795  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.795  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.795  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.795  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.795  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.795  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.796  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:13.796  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:13.796  DLLTEST FFFFFFFE-
+2016:03:15 14:23:13.796  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:13.796  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 14:23:13.796  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000003
+2016:03:15 14:23:17.730  A> GLY_AsyncDeviceRequest(1769491) 00000003-00080B84-00000002
+2016:03:15 14:23:17.730  R: GLY_ERROR_COMMUNICATION GLY_AsyncDeviceRequest(1769491) 00000003-00080B84-00000002
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:18.802  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:18.802  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:23.808  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:23.808  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:25.385  A> GLY_Reset 00000003
+2016:03:15 14:23:25.385  R: GLY_ERROR_COMMUNICATION GLY_Reset 00000003
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:28.818  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:28.818  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:33.819  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:33.819  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:38.827  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:38.827  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:23:43.840  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:23:43.840  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:25:07.217  Tracer initiated !!!
+2016:03:15 14:25:07.233  Used by new framework ( Jun 30 2014 )
+2016:03:15 14:25:07.233  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 14:25:07.233  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 14:25:07.233  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 14:25:07.233  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 14:25:07.233  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 14:25:07.233  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 14:25:07.233  A> GLY_SetWindowHandle 00000001 00100B78
+2016:03:15 14:25:07.233  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 14:25:07.264  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.266  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.266  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.267  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.267  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.267  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.267  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.267  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.267  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.267  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:07.268  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:25:07.268  DLLTEST FFFFFFFE-
+2016:03:15 14:25:07.268  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:25:07.268  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 14:25:07.268  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:12.272  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:25:12.272  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:25:17.272  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.273  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.273  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.273  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.273  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.273  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.274  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:17.274  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:25:17.274  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:25:22.045  A> GLY_Reset 00000001
+2016:03:15 14:25:22.045  R: GLY_ERROR_COMMUNICATION GLY_Reset 00000001
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:22.279  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:25:22.279  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 14:25:27.280  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 14:25:27.280  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 15:04:48.731  Tracer initiated !!!
+2016:03:15 15:04:48.731  Used by new framework ( Jun 30 2014 )
+2016:03:15 15:04:48.731  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 15:04:48.731  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 15:04:48.731  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 15:04:48.731  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 15:04:48.731  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 15:04:48.731  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 15:04:48.731  A> GLY_SetWindowHandle 00000001 002E0790
+2016:03:15 15:04:48.731  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:48.747  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 15:04:48.747  DLLTEST FFFFFFFE-
+2016:03:15 15:04:48.747  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 15:04:48.747  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 15:04:48.747  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 15:04:53.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.747  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.748  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.748  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.748  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.748  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.748  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.748  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.749  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:53.749  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 15:04:53.749  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 15:04:57.927  A> GLY_AsyncDeviceRequest(1769491) 00000001-002E0790-00000002
+2016:03:15 15:04:57.927  R: GLY_ERROR_COMMUNICATION GLY_AsyncDeviceRequest(1769491) 00000001-002E0790-00000002
+2016:03:15 15:04:58.761  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.761  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.761  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.761  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.761  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.761  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.761  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.762  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.762  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.762  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:04:58.762  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 15:04:58.762  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:03.765  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 15:05:03.765  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:08.779  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 15:05:08.779  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 15:05:12.259  A> GLY_CLOSE 00000001
+2016:03:15 15:05:25.411  Tracer initiated !!!
+2016:03:15 15:05:25.411  Used by new framework ( Jun 30 2014 )
+2016:03:15 15:05:25.411  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 15:05:25.411  Glory Dll Opened by DLLTEST Handle 00000002
+2016:03:15 15:05:25.411  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 15:05:25.411  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000002
+2016:03:15 15:05:25.411  A> GLY_SetMessageCode 00000002 00000401
+2016:03:15 15:05:25.411  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 15:05:25.411  A> GLY_SetWindowHandle 00000002 002E0790
+2016:03:15 15:05:25.411  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:25.427  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 15:05:25.427  DLLTEST FFFFFFFE-
+2016:03:15 15:05:25.427  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 15:05:25.427  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 15:05:25.427  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000002
+2016:03:15 15:05:27.820  A> GLY_GetCounter 00000002
+2016:03:15 15:05:27.820  R: GLY_ERROR_COMMUNICATION GLY_GetCounter 00000002
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:30.436  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 15:05:30.436  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 15:05:35.436  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 15:05:35.436  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:14:40.799  Tracer initiated !!!
+2016:03:15 16:14:40.962  Used by new framework ( Jun 30 2014 )
+2016:03:15 16:14:40.963  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 16:14:40.963  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 16:14:40.963  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 16:14:40.963  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 16:14:40.964  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 16:14:40.964  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 16:14:40.964  A> GLY_SetWindowHandle 00000001 0001077C
+2016:03:15 16:14:40.964  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 16:14:40.966  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.966  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.966  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.966  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.967  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.967  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.967  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.967  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.967  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.968  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:40.968  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:14:40.968  DLLTEST FFFFFFFE-
+2016:03:15 16:14:40.968  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:14:40.968  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 16:14:40.969  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 16:14:45.969  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.969  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.969  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.969  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.969  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.969  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:45.970  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:14:45.970  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:50.970  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:14:50.970  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:14:52.916  A> GLY_AsyncDeviceRequest(1769491) 00000001-0001077C-00000001
+2016:03:15 16:14:52.916  R: GLY_ERROR_COMMUNICATION GLY_AsyncDeviceRequest(1769491) 00000001-0001077C-00000001
+2016:03:15 16:14:55.972  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.972  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:14:55.973  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:14:55.974  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:00.977  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.977  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.977  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.977  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.978  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.978  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.978  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.978  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.978  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.978  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:00.979  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:00.979  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:05.983  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.983  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.983  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.983  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.984  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.984  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.984  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.984  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.984  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.984  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:05.984  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:05.984  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:10.985  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:10.985  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:15.986  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.986  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.986  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.986  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.986  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.987  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.987  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.987  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.988  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.988  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:15.988  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:15.988  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:20.989  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.989  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.989  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.989  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.989  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.990  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.990  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.990  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.990  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.990  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:20.990  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:20.990  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:25.993  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.993  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.993  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.993  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.993  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.994  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.994  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.994  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.994  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.994  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:25.994  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:25.995  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:30.997  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.997  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.997  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.997  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.997  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.998  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.998  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.998  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.998  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.998  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:30.998  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:30.998  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:36.006  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:36.006  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:41.006  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:41.007  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:41.007  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:46.009  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:46.009  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:51.009  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:51.009  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:15:56.010  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.010  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.010  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.010  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.010  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.011  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.011  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.011  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.011  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.011  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:15:56.011  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:15:56.011  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:01.013  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.013  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.013  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.013  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.013  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.013  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.013  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.013  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.014  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.014  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:01.014  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:01.014  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:06.014  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.014  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.014  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.014  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.014  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.014  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.015  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.015  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.015  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.015  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:06.015  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:06.015  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:11.016  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.016  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.016  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.016  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.016  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.016  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.016  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.017  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.017  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.017  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:11.017  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:11.017  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:16.021  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:16.021  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:21.022  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:21.022  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:26.028  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:26.028  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:31.036  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:31.036  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:36.048  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:36.048  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:41.052  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:41.052  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:46.062  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:46.062  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:51.062  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.063  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.063  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.063  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.063  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.063  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.063  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.063  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.063  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.064  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:51.064  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:51.064  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:16:56.074  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:16:56.074  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:01.076  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:01.076  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:06.090  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:06.090  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:11.091  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:11.091  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:16.105  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:16.105  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:21.112  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:21.112  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:26.127  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:26.127  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:31.127  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:31.127  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:36.139  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.140  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.140  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.140  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.140  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.140  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.140  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.140  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.140  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.141  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:36.141  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:36.141  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:41.144  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:41.144  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:46.155  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:46.155  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:51.160  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:51.160  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:17:56.167  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:17:56.167  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:01.180  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:01.180  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:06.191  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:06.191  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:11.205  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:11.205  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:16.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.205  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.206  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.206  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.206  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.206  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.206  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.206  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:16.206  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:16.206  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:21.209  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:21.209  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:26.218  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:26.218  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:31.233  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:31.233  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:36.243  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:36.243  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:41.244  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:41.244  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:46.257  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:46.257  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:51.257  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:51.257  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:18:56.268  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.268  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.268  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.269  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.269  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.269  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.269  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.269  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.269  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.269  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:18:56.269  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:18:56.269  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:01.280  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:01.280  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:06.281  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:06.281  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:11.284  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:11.284  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:16.288  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:16.288  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:21.292  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:21.292  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:26.292  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:26.292  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:31.306  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:31.306  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:36.321  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:36.321  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:41.322  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:41.322  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:46.332  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:46.332  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:19:51.333  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:19:51.333  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:31:29.856  Tracer initiated !!!
+2016:03:15 16:31:29.856  Used by new framework ( Jun 30 2014 )
+2016:03:15 16:31:29.856  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 16:31:29.856  Glory Dll Opened by DLLTEST Handle 00000001
+2016:03:15 16:31:29.856  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 16:31:29.856  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000001
+2016:03:15 16:31:29.856  A> GLY_SetMessageCode 00000001 00000401
+2016:03:15 16:31:29.856  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 16:31:29.856  A> GLY_SetWindowHandle 00000001 000905B6
+2016:03:15 16:31:29.856  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:29.871  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:31:29.871  DLLTEST FFFFFFFE-
+2016:03:15 16:31:29.871  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:31:29.871  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 16:31:29.871  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000001
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:34.875  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:31:34.875  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:39.878  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:31:39.878  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:31:44.879  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.879  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.879  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.879  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.880  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.880  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.880  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.880  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.880  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.880  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:44.880  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:31:44.880  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:49.884  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:31:49.884  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:31:54.886  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.887  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.887  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.887  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.887  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.887  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.887  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.887  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.888  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.888  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:54.888  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:31:54.888  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:31:59.897  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:31:59.897  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:04.906  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:04.906  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:09.912  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:09.912  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:14.927  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:14.927  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:19.799  A> GLY_CLOSE 00000001
+2016:03:15 16:32:25.004  Tracer initiated !!!
+2016:03:15 16:32:25.004  Used by new framework ( Jun 30 2014 )
+2016:03:15 16:32:25.004  libglyde Version 2014.03.25.01 ( Jun 30 2014 )
+2016:03:15 16:32:25.004  Glory Dll Opened by DLLTEST Handle 00000002
+2016:03:15 16:32:25.004  Configuration file : C:\Users\ofemi.DESKTOP-9TB67BA\OneDrive\Documents\Visual Studio 2015\Projects\PillarSalt Solutions\KIOSK_ACTIVEX\bin\Debug\GloryCo.xml
+2016:03:15 16:32:25.004  R: GLY_SUCCESS GLY_OPEN DLLTEST 00000002
+2016:03:15 16:32:25.004  A> GLY_SetMessageCode 00000002 00000401
+2016:03:15 16:32:25.004  R: GLY_SUCCESS GLY_SetMessageCode
+2016:03:15 16:32:25.004  A> GLY_SetWindowHandle 00000002 000905B6
+2016:03:15 16:32:25.004  R: GLY_SUCCESS GLY_SetWindowHandle
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:25.019  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:25.019  DLLTEST FFFFFFFE-
+2016:03:15 16:32:25.019  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:25.019  DVC_ST (DLLTEST) S_MATRIX_INITIALIZE -( EV_SENSE_INTERVAL_TIMEOUT )-> S_COMM_ERROR
+2016:03:15 16:32:25.019  A< GLY_STATUS_CHANGE(000007D1)-GLY_STATUS_ERROR_COMMUNICATION(000007DA) 00000002
+2016:03:15 16:32:30.020  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.020  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.021  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.022  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:30.022  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:30.022  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:35.034  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.034  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.034  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.035  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.035  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.035  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.035  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.035  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.035  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.035  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:35.035  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:35.035  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:40.047  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:40.047  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:45.048  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:45.048  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:50.050  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:50.050  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:32:55.064  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.064  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.064  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.064  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.064  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.065  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.065  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.065  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.065  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.065  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:32:55.065  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:32:55.065  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:00.066  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.066  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.067  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.067  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.067  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.067  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.067  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.067  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.068  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.068  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:00.068  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:00.068  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:05.077  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:05.077  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:10.079  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:10.079  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:15.087  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:15.087  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:20.094  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.094  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.095  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.095  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.095  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.096  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.096  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.096  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.096  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.097  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:20.097  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:20.097  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:25.106  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:25.106  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:30.116  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:30.116  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:35.122  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:35.122  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:40.132  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:40.132  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:45.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.132  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.133  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.133  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.133  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.133  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.133  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:45.133  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:45.133  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:50.135  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:50.135  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:33:55.137  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:33:55.137  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:00.148  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:00.148  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:05.148  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:05.148  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:10.163  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:10.163  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:11.036  A> GLY_AsyncDeviceRequest(1769491) 00000002-000905B6-00000001
+2016:03:15 16:34:11.036  R: GLY_ERROR_COMMUNICATION GLY_AsyncDeviceRequest(1769491) 00000002-000905B6-00000001
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:15.166  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:15.166  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:20.169  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.169  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.169  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.169  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.170  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.170  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.170  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.170  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.170  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.170  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:20.170  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:20.170  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:25.186  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:25.186  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:30.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.191  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.192  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.192  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.192  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.192  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.192  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:30.192  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:30.192  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:35.204  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:35.204  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:40.217  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:40.217  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:45.219  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:45.219  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:50.227  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:50.227  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:34:55.239  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:34:55.239  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:00.244  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:35:00.244  DELinkLevel::CommandCommunication ResetCommnucation rc=-102
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  recvRepsonse result=-2 len=0 bcc=00
+2016:03:15 16:35:05.251  GspcSerial::SerialCommunication retry over cmd 60
+2016:03:15 16:35:05.251  DELinkLevel::CommandCommunication ResetCommnucation rc=-102

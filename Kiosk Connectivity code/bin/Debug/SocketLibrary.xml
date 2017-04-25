@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SocketLibrary
+</name>
+</assembly>
+<members>
+<member name="T:SocketLibrary.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SocketLibrary.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SocketLibrary.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:SocketLibrary.Common.Output.#ctor(System.String,System.String,System.DateTime,System.Boolean,System.String,System.String,System.String,System.String,System.Byte[])">
+ <summary>
+ Gets a generic  objects.
+ </summary>
+ 
+</member>
+<member name="F:SocketLibrary.Common.PairOutput._text">
+ <summary>
+ Gets a generic  objects for a key value pair.
+ </summary>
+ 
+</member>
+<member name="M:SocketLibrary.TMSEncryption.Decrypt_TripleDES(System.String,System.Boolean)">
+ <summary>
+ DeCrypt a string using dual encryption method. Return a DeCrypted clear string
+ </summary>
+ <param name="cipherString">encrypted string</param>
+ <param name="useHashing">Did you use hashing to encrypt this data? pass true is yes</param>
+ <returns></returns>
+</member>
+</members>
+</doc>

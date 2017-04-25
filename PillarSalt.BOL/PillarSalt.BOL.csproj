@@ -1,0 +1,1317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77AF9D92-3A4E-416E-9F40-805E5B424FDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PillarSalt.BOL</RootNamespace>
+    <AssemblyName>PillarSalt.BOL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCBank.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ACCBudget.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Account.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountEntity.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountLog.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ACCProforma.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccProformaDetail.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Accounts_BankDetails.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Amortisation.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Amortisation_Schedule.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_BankMapping.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Budget.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Budget_Breakdown.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Budget_Categories.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Budget_Funding.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Budget_Inputs.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Budget_Periods.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Budget_Revenue.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_CurrencyCode.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Expenses_Limits.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Payments.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Pending_Transactions.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Retirements.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Retirement_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Appointments.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ApprovalLimits.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Emails.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Email_Recipients.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_RequisitionType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Requisition_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Requisition_Enquiries.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ResourceBooking.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Resources.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ResourceTypes.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Resource_Request.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ScrapBook.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SMS.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SMS_Recipents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SMS_SenderList.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SMS_Statistics.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Template_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Template_Emails.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Template_SMS.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_User_Alarm.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_User_Calendar.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_WorkOrder.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_WorkOrder_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_WorkOrder_PaySchedule.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_WorkOrder_Progression.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_WorkOrder_Progression_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Applications.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Membership.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Paths.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Profile.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Roles.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_SchemaVersions.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Users.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_UsersInRoles.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_WebEvent_Events.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Assets_FixedAsset_Faults.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_AssetLocations.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Brands.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_CommonFaults.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Depreciation.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Disposal.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_FixedAssets.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_FixedAsset_Faults.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_InspectionType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Inspection_Visit.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Maintenance_Decision.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Maintenance_Request.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Maintenance_Schedule.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Mobility.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Models.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Relocations.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Status.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_WarrantyStatus.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Branch.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CASetting.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONFIG.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMContact.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMDiscount.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMIndustry.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMLead.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMMarketList.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMMarketListDetail.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMOpportunity.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMQuote.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRMRating.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Clients.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Partners.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerBillProforma.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerItinerary.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPayment.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerVisit.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomeUnbillProfDetail.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMS_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMS_Document_Access.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMS_Document_Template.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMS_Document_Trail.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMS_Template_Categories.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EvaluationWeight.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Expens.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRIdCard.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Applicants.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Applicant_Assessment.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Application_Shortlist.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Appointment_Payroll.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Appraisal.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Appraisal_Categories.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Appraisal_Grade.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Appraisal_Ratio.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Calendar.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_CareerNeeds.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Goals.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Job_Description.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_KPI.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Leave.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Leave_Allotment.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Leave_Basis.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Leave_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Leave_Request.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Leave_Request_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Loan_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Loan_RateType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_OtherInfo.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_PAYE_Template.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Posts.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_PreviousEmployers.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Qualification_Stage.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Queries.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Recruitment_Performance.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Referees.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_RelievingStaff.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Salary_Scale.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Schooling.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_StaffAppraisal.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Staff_Wage.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Suspensions.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_SuspensionType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_TAT.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_TAT_Monitor.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_ThriftDetails.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_ThriftGroup.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Vacancies.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Vacancies_Req.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HR_Wages.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IMChat.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryAssigning.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryBatching.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryItem.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMovement.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryOrderDetail.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryPriceHistory.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryPricing.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryPurchaseOrder.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryReqDetail.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryRequest.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventorySale.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryStocking.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryStockType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryVendor.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryVendorCat.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryVoucher.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory_Voucher_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_AllowedDevices.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_Backup.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_KnowledgeBase.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_Post_Roles.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_SupportDocuments.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_SupportResponse.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_SupportTicket.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_SupportType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_Token.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LEGAL_Chambers.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LEGAl_Counsel.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LEGAL_Court_Proceedings.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LEGAL_Document_Tracking.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LEGAL_Litigants.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LEGAL_Litigation.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LEGAL_Litigation_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LEGAL_Litigation_Types.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Level.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Loan.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MANProductionOrder.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MANUBom.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Messaging.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessagingLog.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OtherReport.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_Contract.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_ContractCompletion.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_Contract_Document.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_Negotiation.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_StatementOfWork.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_Tender.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_TenderBids.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_TenderBids_Details.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_TenderCriteria.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_TenderDocuments.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outsourcing_TenderEvaluation.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PatientCase.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayRollSetting.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PillarSaltModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PillarSaltModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PillarSaltModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PillarSaltModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PillarSaltModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Costing.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Dependencies.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_GanttResourceAssignments.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_GanttResources.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Issues_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Location.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Milestones.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_ProjectDetails.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_ProjectDocuments.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Projects.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_ProjectType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Requests.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_TaskDocuments.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Tasks.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_TaskType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_Valuation.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_WorkFlows.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_WorkflowTasks.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Prj_WorkFlowType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductService.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="profession.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProfitCentre.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qualification.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Estate.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Features.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_FeatureType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Frequency.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_New_Rental_Income.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Property.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_PropertyAnalysis.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_PropertyFeatures.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_PropertyType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_PropertyValuation.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Property_ClientLeasing.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Property_Condition.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Property_Manifest.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Property_Status.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_RentalLog.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_RentalUnit.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_ServiceCharge.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Tenant.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_UBAProperties.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_UnitType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Unit_Manifest.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Real_Valuation_Services.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Relationship.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Salary.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolBranch.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceAssembly.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceChargeHistory.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffAlllowList.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffAllowance.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffAllowDeduction.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffAttendance.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffBio.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffBonu.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDependant.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDutyShift.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffEmpStatu.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffFixedAllowance.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffFixedDeduction.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffJobType.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffPayRoll.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffQualification.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffScheme.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffTime.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffZKUser.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="state.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="State1.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Access.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_AllowedIP.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_approval.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_AUDIT.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_DuplicateRules.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_ErrorLogs.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_Errors.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Events.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Event_CustomAction.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Event_Notification.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Event_NotifyMode.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Event_Subscription.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Event_SubscriptionAction.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Event_UserNotify_Filter.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Internal_Communications.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_LoginDevice_Log.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_LoginIP_log.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_LoginSettings.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_ModuleTable.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Notification.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Privileges.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_ShortCut.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_tab.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_tablist.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_tempImages.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_UpdateLog.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_User_Activity.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Widgets.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_WidgetUser.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_WorkSpaces.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_bankgl.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_bankgl2.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Batchtempdump.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_BatchtempdumpHist.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CASAAccount.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_currency.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_disclosure.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_gl.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_gl2.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_glclasslv.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_glmenu.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_transactions.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_transacttype.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempStatement.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempStatement2.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Term.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Account_Categories.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Acct_Setup.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Acquirer.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_AdminCode.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_AdvertBilling.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Advertise_Cash.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_AdvertScheduling.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_AssignMachine.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_AssignPackage.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Assign_Commission.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Assign_Technician.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_AtmMap.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Auction_Settings.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Banks_Sectors.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Bidders.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Blacklisting.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Branch.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_BulkCash.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_CashBidding.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Cashdams.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Commission_Setup.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_ConfigureScreen.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Customer_Statement.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Denomination.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Dependency.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Deposit.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_DepositeBag.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Disbursment.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_IPSettings.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_JobOrder.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_JobProgression.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Language.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_LanguageManifest.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_LanguageResources.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_LogUpdate.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_MachineBagDetachment.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_MachineBags.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_MachineDisposal.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_MachineScreen.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Machine_BrandandModels.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Machine_Disposal.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Machine_Documents.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Machine_Locations.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Machine_Status.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_MaintenanceVoucher.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Manage_Bank.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_MMPackages.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Offsite.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Operators.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_PaymentSchedule.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Predictive_Maintenance.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_QueryPayment.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Region.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_RegisterAgency.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Register_Bank.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_ResourceAllocation.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Retailer_Setup.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Screenshot.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_SectorSettings.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_SendCommand.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_SwitchSetup.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_TransactionDetails.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_UpdateSettings.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_WarrantyStatus.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_WorkVerification.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMS_Work_Order.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="town.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UBA_PropertyTem.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnitMeasure.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZkDevice.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zkem_AttParam.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zkem_CHECKEXACT.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zkem_CHECKINOUT.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zkem_DEPARTMENTS.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zkem_TEMPLATE.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zkem_UserACMachines.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zkem_USERINFO.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zkem_UsersMachines.cs">
+      <DependentUpon>PillarSaltModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="PillarSaltModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PillarSaltModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="PillarSaltModel.edmx.diagram">
+      <DependentUpon>PillarSaltModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PillarSaltModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PillarSaltModel.edmx</DependentUpon>
+      <LastGenOutput>PillarSaltModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PillarSaltModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PillarSaltModel.edmx</DependentUpon>
+      <LastGenOutput>PillarSaltModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

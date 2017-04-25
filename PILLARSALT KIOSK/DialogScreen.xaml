@@ -1,0 +1,31 @@
+﻿<Window x:Class="PILLARSALT_KIOSK.DialogScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="DialogScreen" Height="600" Width="1024" WindowStyle="None" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="AppImages/pro.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="753*"/>
+            <ColumnDefinition Width="132*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Margin="6,130,4,92" Stroke="Black" RadiusY="24.5" RadiusX="24.5" StrokeThickness="0" Grid.Column="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.446,0.868" StartPoint="0.446,0.107">
+                    <GradientStop Color="#FF848913"/>
+                    <GradientStop Color="#FFE2DA85" Offset="1"/>
+                    <GradientStop Color="#FFC2C368" Offset="0.803"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="textBlock" Height="60" Margin="292,140,285,0" TextWrapping="Wrap" Text="NOTICE" VerticalAlignment="Top" FontSize="40" FontWeight="Bold" Foreground="#FFF7ECEC" TextDecorations="Underline" Grid.Column="1"/>
+        <Button x:Name="button" Content="Ok" Margin="47,405,54,0" FontSize="53.333" FontWeight="Bold" Background="#FFE00303" Click="ModalDialogOk" Foreground="#FFF9F3F3" Grid.Column="1" Height="70" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtDialogMessage" Margin="47,200,54,202" FontSize="40" FontWeight="Bold" TextWrapping="WrapWithOverflow" Foreground="#FFF7F5F5" Grid.Column="1"><Run FontFamily="Consolas" Text="COUNT FAILED, REMOVE NOTES, ARRANGE PROPERLY AND PLACE NOTE IN THE HOPPER, PRESS START-COUNT TO TRY AGAIN!"/></TextBlock>
+
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GlyConfiguration>
+
+<DLLTEST DLL="libglyde.dll" DEVICETYPE="DE">
+	<PORT   TYPE="SERIAL"
+		xTYPE="PIPE"
+		PORT_NAME= "COM2" 
+		BAUD = "9600" 
+		DATABIT= "8" 
+		PARITY= "EVEN" 
+		STOPBIT= "1" 
+		FLOW= "OFF" 
+		TIMEUP="2500"
+	/> 
+	<PATH   
+		UPLOAD= "D:\monitor\upload\" 
+		DOWNLOAD= "D:\monitor\download\" 
+	/> 
+	 
+	<OPT
+		DOWNLOADRETRYCOUNT= "5"
+		UPLOADRETRYCOUNT= "5"
+		DOWNLOADWAIT= "2000"
+		UPLOADWAIT= "800"
+		IDFORMAT= "8"
+		USERIDINFO="EXP"
+	/>
+</DLLTEST>
+
+<TraceServer TcpPort="60000">
+	<LogFile Name="GlyTrace" Number="9" Size="50000000" />
+</TraceServer>
+
+<Tracer TraceServer="127.0.0.1" TraceServerPort="60000" />
+
+vvvvvvvvvv GmonitorLX is for factory use. vvvvvvvvvvvvvvvv
+<GmonitorLX TraceServer="127.0.0.1" TraceServerPort="60000" />
+
+</GlyConfiguration>

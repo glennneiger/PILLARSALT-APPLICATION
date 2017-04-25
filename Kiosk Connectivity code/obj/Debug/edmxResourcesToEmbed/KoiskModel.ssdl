@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mainModel.Store" Provider="Devart.Data.SQLite" ProviderManifestToken="SQLite, 3.7.7.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="text" />
+    <Property Name="Class" Type="text" />
+    <Property Name="dob" Type="numeric" Precision="29" Scale="15" />
+  </EntityType>
+  <EntityType Name="ConnectionInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IPAddress" Type="text" />
+    <Property Name="AlternateIP" Type="text" />
+    <Property Name="SocketPort" Type="integer" />
+    <Property Name="KeyName" Type="text" />
+    <Property Name="PrivateKey" Type="blob" />
+    <Property Name="PublicKey" Type="blob" />
+    <Property Name="ProfilingIP" Type="text" />
+    <Property Name="Entry" Type="integer" />
+    <Property Name="Active" Type="integer" />
+    <Property Name="KeyPass" Type="text" />
+  </EntityType>
+  <EntityContainer Name="mainModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="main" store:Type="Tables" />
+    <EntitySet Name="ConnectionInfo" EntityType="Self.ConnectionInfo" Schema="main" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

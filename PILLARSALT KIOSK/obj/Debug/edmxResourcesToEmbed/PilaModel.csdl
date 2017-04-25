@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PilaDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Class" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dob" Type="Decimal" Precision="29" Scale="15" />
+  </EntityType>
+  <EntityType Name="ConnectionInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IPAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AlternateIP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SocketPort" Type="Int64" />
+    <Property Name="KeyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PrivateKey" Type="Binary" MaxLength="2147483647" FixedLength="false" />
+    <Property Name="PublicKey" Type="Binary" MaxLength="2147483647" FixedLength="false" />
+    <Property Name="ProfilingIP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Entry" Type="Int64" />
+    <Property Name="Active" Type="Int64" />
+    <Property Name="KeyPass" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="PilaDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="Self.Account" />
+    <EntitySet Name="ConnectionInfoes" EntityType="Self.ConnectionInfo" />
+  </EntityContainer>
+</Schema>

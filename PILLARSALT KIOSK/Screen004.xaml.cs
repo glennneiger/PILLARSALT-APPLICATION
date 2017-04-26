@@ -46,9 +46,8 @@ namespace PILLARSALT_KIOSK
                 }
             });
             t.Wait();
-            Thread.Sleep(1000);
-
-            t.
+            Thread.Sleep(2000);
+            
 
             if (_dtCountData.Rows.Count > 0)
             {

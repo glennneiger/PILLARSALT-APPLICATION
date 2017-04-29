@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxGLORYCOCTRLLib;
-using GLORYCOCTRLLib;
 
 namespace GloryWindowsUserControl
 {
@@ -22,11 +14,6 @@ namespace GloryWindowsUserControl
             InitializeComponent();
         }
 
-        private void GloryWinUserControl_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public string DoGloryOpen(string handleName)
         {
             try
@@ -34,6 +21,8 @@ namespace GloryWindowsUserControl
                 if (!axGloryCoCtrl1.Created)
                 {
                     axGloryCoCtrl1.CreateControl();
+                    //axGloryCoCtrl1.GlyStatus
+
                     return axGloryCoCtrl1.GlyOpen(handleName);
                 }
                 return axGloryCoCtrl1.GlyOpen(handleName);
@@ -63,7 +52,7 @@ namespace GloryWindowsUserControl
 
         }
 
-        public string DoGlyDeLock(string handleName)
+        public string DoGlyAsyncDeLock(string handleName)
         {
             try
             {
@@ -71,7 +60,7 @@ namespace GloryWindowsUserControl
                 if (!axGloryCoCtrl1.Created)
                 {
                     axGloryCoCtrl1.CreateControl();
-                    deLock = axGloryCoCtrl1.GlyDeLock(handleName);
+                    deLock = axGloryCoCtrl1.GlyAsyncDeLock(handleName);
                 }
                 deLock = axGloryCoCtrl1.GlyDeLock(handleName);
 
@@ -92,11 +81,10 @@ namespace GloryWindowsUserControl
                 if (!axGloryCoCtrl1.Created)
                 {
                     axGloryCoCtrl1.CreateControl();
-                    rtn = axGloryCoCtrl1.GlyAsyncDeCntStart(handle);
+                    return axGloryCoCtrl1.GlyAsyncDeCntStart(handle);
                 }
+                return axGloryCoCtrl1.GlyAsyncDeCntStart(handle);
 
-                rtn = axGloryCoCtrl1.GlyAsyncDeCntStart(handle);
-                return rtn;
             }
             catch (Exception ex)
             {
@@ -133,6 +121,16 @@ namespace GloryWindowsUserControl
                 return axGloryCoCtrl1.CountData; ;
             }
             return axGloryCoCtrl1.CountData;
+        }
+
+        public string DoGlyAsyncDeUnLock(string handle)
+        {
+            if (!axGloryCoCtrl1.Created)
+            {
+                axGloryCoCtrl1.CreateControl();
+                return axGloryCoCtrl1.GlyAsyncDeUnLock(handle); ;
+            }
+            return axGloryCoCtrl1.GlyAsyncDeUnLock(handle);
         }
 
         public string DoGlyReadLog(string handle)
@@ -195,8 +193,6 @@ namespace GloryWindowsUserControl
             }
         }
 
-
-
-
+       
     }
 }

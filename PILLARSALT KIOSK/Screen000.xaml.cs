@@ -121,12 +121,27 @@ namespace PILLARSALT_KIOSK
 
         private void button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+
             _thermal = new ThermalPrinterClass();
             _thermal.TestReceipt(_printer);
             //MyPrinter.PrintReceiptForTransaction();
             //MyPrinter.PrintRawData();
 
+        }
+
+       
+        private void OpenGloryOnLoad(object sender, RoutedEventArgs e)
+        {
+            int o = MachineHandle.OpenGloryOnLoad();
+            if (o < 1)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                MessageBox.Show("Glory Open!");
+            }
+            
         }
     }
 }

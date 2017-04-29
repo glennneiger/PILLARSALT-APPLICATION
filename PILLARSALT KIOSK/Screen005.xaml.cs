@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using PILLARSALT_KIOSK.AppCodes;
@@ -39,7 +40,7 @@ namespace PILLARSALT_KIOSK
             }
             catch (Exception ex)
             {
-                MessageBox.Show("GrdCount" + ex.Message);
+                MessageBox.Show("GrdCount Err: " + ex.Message);
             }
 
         }
@@ -75,7 +76,7 @@ namespace PILLARSALT_KIOSK
         private void DoAcceptStoreCash(object sender, RoutedEventArgs e)
         {
             //await DropAndPost();
-            MachineHandle.DoStoreForRetailer(txtTotalCounted.Text);
+            MachineHandle.DoStoreForRetailer();
             string screenName = "TransactionFrm";
             var sm = new ScreenManager();
             sm.GetStateArray();
@@ -84,7 +85,7 @@ namespace PILLARSALT_KIOSK
 
         private Task DropAndPost()
         {
-            MachineHandle.DoStoreForRetailer(txtTotalCounted.Text);
+            MachineHandle.DoStoreForRetailer();
             string screenName = "Screen002";
             var sm = new ScreenManager();
             sm.GetStateArray();
@@ -95,6 +96,7 @@ namespace PILLARSALT_KIOSK
         private void DoRejectOpenEscrow(object sender, RoutedEventArgs e)
         {
             string r = MachineHandle.DoRejectOpenEscrow();
+            Thread.Sleep(2000);
             if (!r.ToLower().Contains("error".ToLower()))
             {
                 string screenName = "Screen002";
@@ -111,7 +113,7 @@ namespace PILLARSALT_KIOSK
 
         private void DoCloseGlory(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            MachineHandle.DoCloseGlory();
+            //MachineHandle.DoCloseGlory();
         }
     }
 }

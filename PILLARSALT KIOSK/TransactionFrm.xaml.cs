@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,23 +29,29 @@ namespace PILLARSALT_KIOSK
 
         private void GetGridData(object sender, RoutedEventArgs e)
         {
-            Content grdContent = TransactionCls.DenominationContents;
-            if (grdContent != null)
+            DataSet ds = new DataSet();
+            ds = MachineHandle.CountDataSet;
+            DataTable dt = new DataTable();
+            dt = ds.Tables[0];
+
+            int sumTotal = 0;
+            int amount = 0;
+            TxtDenomData.Text = "Note \tQty \tAmount\n";
+
+            foreach (DataTable table in ds.Tables)
             {
-                int sumTotal = 0;
-                int amount = 0;
-                TxtDenomData.Text = "Note \tQty \tAmount\n";
-                foreach (var items in grdContent.Parameters)
+                foreach (DataRow row in table.Rows)
                 {
-                    amount = Convert.ToInt16(items.Text) * Convert.ToInt16(items.Value);
-                    TxtDenomData.Text += items.Text + " \t" + items.Value + " \t" +
-                                         amount + "\n";
+                    amount = Convert.ToInt32(row["TOTAL"].ToString());
                     sumTotal += amount;
                 }
-                TxtSumTotal.Text += sumTotal.ToString();
+                foreach (DataRow row1 in table.Rows)
+                {
+                    TxtDenomData.Text += row1["NOTE"] + " \t" + row1["QTY"] + " \t" + row1["TOTAL"] + "\n";
+                }
 
             }
-
+            TxtSumTotal.Text += sumTotal.ToString();
         }
 
 

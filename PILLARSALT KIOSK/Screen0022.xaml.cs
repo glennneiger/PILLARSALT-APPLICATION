@@ -1,10 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 using PILLARSALT_KIOSK.AppCodes;
 
 namespace PILLARSALT_KIOSK
@@ -17,40 +24,25 @@ namespace PILLARSALT_KIOSK
         public Screen0022()
         {
             InitializeComponent();
-
-            GetRegisteredBanksList();
-
-            listbox.SelectionChanged += ListboxOnSelectionChanged;
-            listbox1.SelectionChanged += Listbox1OnSelectionChanged;
         }
 
-        private void Listbox1OnSelectionChanged(object sender, SelectionChangedEventArgs selectionChangedEventArgs)
+        private void GotoNext(object sender, RoutedEventArgs e)
         {
-            if (listbox1.SelectedItems.Count > 0)
-            {
-                btnContinue.IsEnabled = true;
-            }
-            listbox.UnselectAll();
+            MachineHandle.ReceiverAccountNumber = accNumberTxt.Text;
+
+            string screenName = "Screen0023";
+            var sm = new ScreenManager();
+            sm.GetStateArray();
+            ShowNextWindow(screenName);
         }
 
-        private void ListboxOnSelectionChanged(object sender, SelectionChangedEventArgs selectionChangedEventArgs)
+        private void GotoPrevious(object sender, RoutedEventArgs e)
         {
-            if (listbox.SelectedItems.Count > 0)
-            {
-                btnContinue.IsEnabled = true;
-            }
-           listbox1.UnselectAll();
+            string screenName = "Screen002";
+            var sm = new ScreenManager();
+            sm.GetStateArray();
+            ShowNextWindow(screenName);
         }
-
-        private DataTable _dt;
-        private Dictionary<string, string> _bankDictionary;
-
-        private void GetRegisteredBanksList()
-        {
-            _dt = new DataTable();
-
-        }
-
         void ShowNextWindow(string windowFileName)
         {
             var window = (Window)Application.LoadComponent(new Uri(windowFileName + ".xaml", UriKind.Relative));
@@ -62,42 +54,69 @@ namespace PILLARSALT_KIOSK
 
             Close();
         }
-        private void GotoNext(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            string screenName = "Screen003";
-            var sm = new ScreenManager();
-            sm.GetStateArray();
-            ShowNextWindow(screenName);
-        }
+            Button button = sender as Button;
+            if (button != null)
+                switch (button.CommandParameter.ToString())
+                {
+                    //case "ESC":
+                    //    this.DialogResult = false;
+                    //    break;
 
-        private void GotoPrevious(object sender, RoutedEventArgs e)
-        {
-            string screenName = "Screen0021";
-            var sm = new ScreenManager();
-            sm.GetStateArray();
-            ShowNextWindow(screenName);
-        }
+                    //case "RETURN":
+                    //    this.DialogResult = true;
+                    //    break;
 
-        private async void GetAccountOwnerDetails(object o, RoutedEventArgs e)
-        {
-            //perform await funtion to get accout holder details
+                    case "BACK":
+                        if (Result.Length > 0)
+                        {
+                            Result = Result.Remove(Result.Length - 1);
+                            accNumberTxt.Text = Result;
+                        }
+                        break;
 
-            var bs = new BusyScreen();
-            bs.Show();
-            bs.Topmost = true;
-            await Task.Delay(3000);
-            bs.Close();
-
-            //txtAccountHolder.Text = "ADESANYA OLUFEMI S. :-: Number :-: " + accNumberTxt.Text + " Bank :-: " + txtBankName.Text;
-
-
-
-            //if successful enable continue btn
-            btnContinue.IsEnabled = true;
+                    default:
+                        Result += button.Content.ToString();
+                        accNumberTxt.Text = Result;
+                        break;
+                }
         }
 
 
+        #region Public Properties
+
+        private string _result;
+        public string Result
+        {
+            get { return _result; }
+            private set { _result = value; this.OnPropertyChanged("Result"); }
+
+        }
+        #endregion
+        #region INotifyPropertyChanged members
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(String info)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+
+        #endregion
+
+        private void FncEnableContinueBtn(object sender, TextChangedEventArgs e)
+        {
+            if (accNumberTxt.Text.Length == 10)
+            {
+                btnContinue.IsEnabled = true;
+            }
+            else
+            {
+                btnContinue.IsEnabled = false;
+            }
+        }
     }
-
-
 }

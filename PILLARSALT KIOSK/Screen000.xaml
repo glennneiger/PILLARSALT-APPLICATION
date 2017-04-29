@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PILLARSALT_KIOSK"
         mc:Ignorable="d"
-         Title="Screen000" Height="600" Width="1024" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowState="Maximized" Cursor="None" WindowStyle="ToolWindow">
+         Title="Screen000" Height="600" Width="1024" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowState="Maximized" Cursor="None" WindowStyle="ToolWindow" Loaded="OpenGloryOnLoad">
     <Grid Cursor="Arrow">
         <Button x:Name="btnStart" Content="CLICK HERE" Height="60" Margin="30,0,0,24" VerticalAlignment="Bottom" Foreground="#FFFDFDFD" FontSize="26.667" FontWeight="Bold" HorizontalAlignment="Left" Width="192" Click="GotoLanguagePage">
             <Button.Background>
@@ -28,7 +28,7 @@
                 <ImageBrush ImageSource="AppImages/settings-1.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button" HorizontalAlignment="Left" Margin="51,147,0,0" VerticalAlignment="Top" Width="222" Height="74" Click="button_Click_1">
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="51,147,0,0" VerticalAlignment="Top" Width="222" Height="74" Click="button_Click_1" Visibility="Hidden">
             <Button x:Name="button1" Content="Button" Width="75"/>
         </Button>
     </Grid>

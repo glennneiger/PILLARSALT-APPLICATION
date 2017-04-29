@@ -145,6 +145,7 @@ namespace PILLARSALT_KIOSK
 
             //start glory
             string rtn = null;
+            int colTotal = 0;
             txtTotalCounted.Text = "";
             //open glory again to recount
             string[] words = null;
@@ -152,12 +153,12 @@ namespace PILLARSALT_KIOSK
             if (_handle.Equals("") || _handle == null)
             {
                 rtn = Gctrl.DoGloryOpen("DLLTEST");
+                MessageBox.Show(rtn);
             }
 
             if (rtn != null) words = rtn.Split(',');
             if (words != null) _handle = words[1];
 
-            int colTotal = 0;
             try
             {
                 BusyScreen bs = new BusyScreen();
@@ -172,7 +173,7 @@ namespace PILLARSALT_KIOSK
                 goto countStart;
 
                 deLock: //call method to delock glory if error occur in glory
-                Gctrl.DoGlyDeLock(_handle);
+                Gctrl.DoGlyAsyncDeLock(_handle);
 
 
                 countStart:
@@ -265,13 +266,8 @@ namespace PILLARSALT_KIOSK
                         winDepCount.Topmost = true;
                         winDepCount.ShowDialog();
                     }
-
-                    //Gctrl.DoGloryClose(_handle);
-                    //_handle = "";
-                    //_handle = null;
-
                     //await PutMethodDelay(5000);
-                    Thread.Sleep(5000);
+                    Thread.Sleep(2000);
                 }
                 else
                 {
@@ -284,7 +280,7 @@ namespace PILLARSALT_KIOSK
                     //close glory bcos count is empty
                     Gctrl.DoGloryClose(_handle);
                     _handle = null;
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
 
                 }
             }

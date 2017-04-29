@@ -158,14 +158,17 @@
     <Compile Include="Screen0022.xaml.cs">
       <DependentUpon>Screen0022.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Screen0023.xaml.cs">
+      <DependentUpon>Screen0023.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen0024.xaml.cs">
+      <DependentUpon>Screen0024.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screen003.xaml.cs">
       <DependentUpon>Screen003.xaml</DependentUpon>
     </Compile>
     <Compile Include="Screen004.xaml.cs">
       <DependentUpon>Screen004.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Screen0041.xaml.cs">
-      <DependentUpon>Screen0041.xaml</DependentUpon>
     </Compile>
     <Compile Include="Screen005.xaml.cs">
       <DependentUpon>Screen005.xaml</DependentUpon>
@@ -265,15 +268,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Screen0023.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen0024.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Screen003.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Screen004.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Screen0041.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

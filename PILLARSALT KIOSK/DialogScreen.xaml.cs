@@ -15,16 +15,12 @@ namespace PILLARSALT_KIOSK
 
         private void ModalDialogOk(object sender, RoutedEventArgs e)
         {
-            Task t = Task.Run(() =>
-            {
-                MessageBox.Show("Is Clicked");
+            
                 Screen004 screen004 = new Screen004();
                 screen004.Show();
                 screen004.Topmost = true;
                 Close();
-            });
-            t.Wait();
-
+           
         }
     }
 }

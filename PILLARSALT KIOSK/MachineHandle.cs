@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
+using System.Globalization;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using GloryWindowsUserControl;
 using PILLARSALT_KIOSK.AppCodes;
@@ -14,96 +17,24 @@ namespace PILLARSALT_KIOSK
         public static string MHandle { get; set; }
         public static DataSet CountDataSet;
         public static DataTable CountDataTable;
-
-        #region machine methods begins 
         public static Content Content1 { get; set; }
+        public static string ReceiverAccountNumber { get; set; }
+        public static string DepositorPhoneNumber { get; set; }
+
+        public static decimal TotalAmountCounted = 0.00M;
+        public static string _countDataArr;
+        public static string _rtnCountData;
+        public static decimal _totalAmount = 0.00M;
+
         public static GloryWinUserControl Gctrl = new GloryWinUserControl();
 
-        public static DataTable DoStartCount()
-        {
-            MessageBox.Show("Do start");
-
-            try
-            {
-                //start glory
-                //open glory again to recount
-                MHandle = String.Empty;
-
-                if (string.IsNullOrEmpty(MHandle))
-                {
-                    var rtn = Gctrl.DoGloryOpen("DLLTEST");
-                    var words = rtn.Split(',');
-                    MHandle = words[1];
-                    MessageBox.Show("Handle is --- " + MHandle);
-                }
-
-                //skip delock
-                goto countStart;
-
-                deLock: //call method to delock glory if error occur in glory
-                Gctrl.DoGlyDeLock(MHandle);
-
-                countStart:
-                //Do count start Delay 1 seconds
-                Thread.Sleep(1000);
-                var rtnCntStart = Gctrl.DoGlyAsyncDeCntStart(MHandle);
-                if (rtnCntStart.Contains("ERROR"))
-                {
-                    goto deLock;
-                }
-
-                //Delay 1 seconds
-                Thread.Sleep(1000);
-                var rtnCountData = Gctrl.DoCountData();
-
-                MessageBox.Show(rtnCountData);
-                if (!rtnCountData.Contains("ERROR") && rtnCountData != "")
-                {
-                    //remove first part of string from the returned string
-                    var countData = rtnCountData.Split(':');
-                    //create array from the second part of returned string
-                    var countDataArr = countData[1];
-                    var primeArray = countDataArr.Split(',');
-
-                    //prepare datatable for the array elements
-                    CountDataSet = new DataSet();
-                    CountDataTable = new DataTable();
-
-                    CountDataTable.Columns.Add("NOTE");
-                    CountDataTable.Columns.Add("QUANTITY");
-                    CountDataTable.Columns.Add("TOTAL");
-
-                    for (int i = 0; i < primeArray.Length; i += 5)
-                    {
-                        int first = Convert.ToInt16(primeArray[i]);
-                        int second = Convert.ToInt16(primeArray[i + 1]);
-                        int third = first * second;
-                        if (second != 0)
-                        {
-                            CountDataTable.Rows.Add(first, second, third);
-                        }
-                    }
-                    CountDataSet.Tables.Add(CountDataTable);
-                    return CountDataTable;
-                }
-
-                //Delay 2 seconds
-                Thread.Sleep(2000);
-                goto deLock;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            return null;
-        }
-
-        public static void DoStoreForRetailer(string dAmount)
+        #region machine methods begins 
+        public static void DoStoreForRetailer()
         {
             var messageType = "KIOSK-REQUEST";
             var origin = MethodManager.GetMacAddress();
             var destination = String.Empty;
-            var adminUser = "STA-20101-Tobi";
+            var adminUser = "STA-20101-TOBI";
             var transactionId = "01.00.1209387817.31.0035133522.POS-12/234.1782096210243";
             var senderIpAddress = MethodManager.GetIpAddress();
             var userId = 100;
@@ -112,9 +43,10 @@ namespace PILLARSALT_KIOSK
             var screen = "777"; //read screen from screen manager
             var state = "2"; //read state from screen manager
             var description = "Deposit Information";
-            var contentType = "whatever";
+            var contentType = "Deposit Transaction Type";
             var notes = "This is a deposit message";
-            //var amount = dAmount;
+            var amount = _totalAmount;
+            var depositorPhoneNumber = DepositorPhoneNumber;
             var accountNum = "1234Account";
 
             try
@@ -134,7 +66,7 @@ namespace PILLARSALT_KIOSK
                     var param1 = new Common.PairOutput
                     {
                         Text = "Amount",
-                        Value = dAmount
+                        Value = Convert.ToString(_totalAmount, CultureInfo.CurrentCulture)
                     };
                     var param2 = new Common.PairOutput
                     {
@@ -175,7 +107,6 @@ namespace PILLARSALT_KIOSK
                     foreach (DataRow row in CountDataTable.Rows)
                     {
                         Common.PairOutput den = new Common.PairOutput
-
                         {
                             Text = row[0].ToString(),
                             Value = row[1].ToString()
@@ -191,7 +122,7 @@ namespace PILLARSALT_KIOSK
                     TransactionCls.DenominationContents = denomContent;
                     TransactionCls.MethodContent = depositContent;
 
-                    var msg = MethodManager.DoMethod(messageType, origin, destination, adminUser, transactionId, senderIpAddress, userId, longitude, latitude, screen, state, description, contentType, notes, dAmount, accountNum);
+                    var msg = MethodManager.DoMethod(messageType, origin, destination, adminUser, transactionId, senderIpAddress, userId, longitude, latitude, screen, state, description, contentType, notes, _totalAmount.ToString(CultureInfo.CurrentCulture), accountNum);
                     if (msg == "1")
                     {
 
@@ -213,7 +144,25 @@ namespace PILLARSALT_KIOSK
             return s;
 
         }
-        #endregion
+
+
+        public static int OpenGloryOnLoad()
+        {
+            //start glory
+            //open glory again to recount
+            MHandle = String.Empty;
+
+            if (string.IsNullOrEmpty(MHandle))
+            {
+                var rtn = Gctrl.DoGloryOpen("DLLTEST");
+
+                var words = rtn.Split(',');
+                MHandle = words[1];
+                //MessageBox.Show("Handle is --- " + MHandle);
+                return 1;
+            }
+            return 0;
+        }
 
         public static void DoCloseGlory()
         {
@@ -221,10 +170,32 @@ namespace PILLARSALT_KIOSK
             var s = Gctrl.DoGloryClose(MHandle);
             if (!s.Contains("Errror"))
             {
-                MessageBox.Show("Glory Closed!");
+                //MessageBox.Show("Glory Closed!");
                 MHandle = String.Empty;
             }
 
         }
+
+        public static string DoGlyAsyncDeLock(string mHandle)
+        {
+            return Gctrl.DoGlyAsyncDeLock(mHandle);
+        }
+
+        public static string DoGlyAsyncDeUnLock(string mHandle)
+        {
+            return Gctrl.DoGlyAsyncDeUnLock(mHandle);
+        }
+
+        public static string DoCountData()
+        {
+            return Gctrl.DoCountData();
+        }
+
+        public static async Task<string> DoGlyAsyncDeCntStart(string mHandle)
+        {
+            return await Task.Run(() => Gctrl.DoGlyAsyncDeCntStart(mHandle));
+        }
+
+        #endregion
     }
 }

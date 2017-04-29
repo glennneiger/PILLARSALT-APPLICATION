@@ -1,0 +1,56 @@
+﻿<Window
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PILLARSALT_KIOSK"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com" x:Class="PILLARSALT_KIOSK.Screen0024"
+        mc:Ignorable="d"
+       Title="Account Holder Details" Height="600" Width="1024" FontSize="33.333" FontWeight="Bold" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True" WindowStartupLocation="CenterScreen" WindowState="Maximized" Cursor="Arrow" WindowStyle="None" Loaded="GetHolderDetails">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="244*"/>
+            <ColumnDefinition Width="537*"/>
+            <ColumnDefinition Width="243*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="184*"/>
+            <RowDefinition Height="209*"/>
+            <RowDefinition Height="93*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="txtScreenTitle" Content="ACCOUNT HOLDER DETAILS" Background="#FFECF1E3" FontSize="40" HorizontalContentAlignment="Center" Grid.ColumnSpan="3">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+
+        <Image x:Name="gifImg" gif:ImageBehavior.AnimatedSource="AppImages/index.gif" Margin="148,40,150,10" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" />
+        <TextBlock x:Name="txtProcessingAnim" TextWrapping="Wrap"  FontWeight="Bold" Foreground="#FF465F32" TextOptions.TextHintingMode="Animated" Grid.Row="3" FontStyle="Italic" Grid.Column="1"
+        >
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Gray" ShadowDepth="6" Direction="300" BlurRadius="10"/>
+            </TextBlock.Effect><Run Text="Wait, ...getting details"/></TextBlock>
+        <Button x:Name="btnContinue" IsEnabled="False" Margin="0,0,29,10"  VerticalContentAlignment="Center" HorizontalContentAlignment="left" Grid.Row="4" HorizontalAlignment="Right" Width="287" RenderTransformOrigin="0.5,0.5" Height="60" VerticalAlignment="Bottom" BorderThickness="0" Content="CONTINUE" FontSize="40" Click="GotoNext" Grid.Column="1" Grid.ColumnSpan="2" Visibility="Hidden"   >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="AppImages/Back.png" Stretch="Uniform" AlignmentX="Right"/>
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnBack" Margin="27,0,0,8"  Content="BACK" Foreground="Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Grid.Row="4"
+            Grid.Column="0" Width="188" HorizontalAlignment="Left" BorderThickness="0" RenderTransformOrigin="0.5,0.5" FontSize="40" Height="64" VerticalAlignment="Bottom" Click="GotoPrevious" Visibility="Hidden"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="AppImages/Back2.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+
+        </Button>
+
+    </Grid>
+</Window>

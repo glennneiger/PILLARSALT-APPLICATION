@@ -1,22 +1,26 @@
-﻿<Window x:Class="PILLARSALT_KIOSK.Screen004"
+﻿<Window
          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com" x:Class="PILLARSALT_KIOSK.Screen004"
+    
         mc:Ignorable="d"
       Title="Start-Count" Height="600" Width="1024" WindowStyle="None" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" WindowState="Maximized" FontSize="40" FontWeight="Bold">
     <Grid x:Name="DepositCount">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="97*"/>
-            <ColumnDefinition Width="318*"/>
-            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="799*"/>
+            <ColumnDefinition Width="112*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="73*"/>
-            <RowDefinition Height="443*"/>
+            <RowDefinition Height="138*"/>
+            <RowDefinition Height="189*"/>
+            <RowDefinition Height="116*"/>
             <RowDefinition Height="84*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnStartCount" FontSize="40" Content="START-COUNT" Margin="46,167,53,0" Grid.Row="1" Click="DoStartCount" Height="63" VerticalAlignment="Top" Grid.Column="1">
+        <Button x:Name="btnStartCount" FontSize="40" Content="START-COUNT" Margin="170,75,173,0" Grid.Row="1" Click="CallDoStartCount" Height="63" VerticalAlignment="Top" Grid.Column="1">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFD5F0C6" Offset="0.277"/>
@@ -29,8 +33,8 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <TextBox x:Name="txtProcessing" Height="61" Margin="10,176,10,0" Grid.Row="1" TextWrapping="Wrap" Text="Wait, processing count..." VerticalAlignment="Top" Background="#FFF50707" Grid.Column="1" Foreground="White" Visibility="Hidden"/>
-        <Button x:Name="btnBack" Margin="27,7,0,13"  Content="BACK" Foreground="Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Grid.Row="2"
+        <TextBox x:Name="txtProcessing" Height="61" Margin="10,38,10,0" Grid.Row="2" TextWrapping="Wrap" Text="Wait, processing count..." VerticalAlignment="Top" Background="#FFF50707" Grid.Column="1" Foreground="White" Visibility="Hidden"/>
+        <Button x:Name="btnBack" Margin="27,7,0,13"  Content="BACK" Foreground="Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Grid.Row="4"
         	Grid.Column="0" Width="212" HorizontalAlignment="Left" BorderThickness="0" RenderTransformOrigin="0.5,0.5" FontSize="40" Click="GotoPrevious" Grid.ColumnSpan="2"  >
             <Button.Effect>
                 <DropShadowEffect/>
@@ -40,6 +44,13 @@
             </Button.Background>
 
         </Button>
+
+        <Image Name="gifImg" gif:ImageBehavior.AnimatedSource="AppImages/index.gif" Margin="282,5,282,8" RenderTransformOrigin="0.5,0.5" Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="txtProcessingAnim" Margin="0,15,0,27" TextWrapping="Wrap"  FontWeight="Bold" Foreground="#FF465F32" TextOptions.TextHintingMode="Animated" Grid.Row="3" FontStyle="Italic"
+                   Grid.Column="1">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Gray" ShadowDepth="6" Direction="300" BlurRadius="10"/>
+            </TextBlock.Effect><Run Text="Transaction"/><Run Text=" is p"/><Run Text="rocessing..."/></TextBlock>
 
     </Grid>
 </Window>

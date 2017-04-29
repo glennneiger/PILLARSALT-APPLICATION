@@ -35,7 +35,7 @@ namespace PILLARSALT_KIOSK
         void ShowNextWindow(string windowFileName)
         {
             var window = (Window)Application.LoadComponent(new Uri(windowFileName + ".xaml", UriKind.Relative));
-            window.Topmost = true;
+            //window.Topmost = true;
             window.WindowStyle = WindowStyle.None;
             window.WindowState = WindowState.Maximized;
             //window.Owner = this;

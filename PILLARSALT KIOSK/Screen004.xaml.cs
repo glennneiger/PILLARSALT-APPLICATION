@@ -173,7 +173,7 @@ namespace PILLARSALT_KIOSK
                 //Do count start Delay 1 seconds
                 Thread.Sleep(3000);
                 var rtnCntStart = MachineHandle.DoGlyAsyncDeCntStart(MachineHandle.MHandle).Result; //this method should be an await method
-                Thread.Sleep(10000);
+                Thread.Sleep(15000);//delay 15 seconds before calling the next method
                 if (rtnCntStart.ToLower().Contains("SEQUENCE".ToLower()))
                 {
                     goto deLock;

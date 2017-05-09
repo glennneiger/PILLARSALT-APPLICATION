@@ -196,6 +196,12 @@ namespace PILLARSALT_KIOSK
             return await Task.Run(() => Gctrl.DoGlyAsyncDeCntStart(mHandle));
         }
 
+        public static string GetEscrowStatus()
+        {
+            return Gctrl.GetEscrowStatus(MHandle);
+        }
+
+      
         #endregion
     }
 }

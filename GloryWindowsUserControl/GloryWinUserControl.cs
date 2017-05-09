@@ -8,7 +8,6 @@ namespace GloryWindowsUserControl
     {
         AxGloryCoCtrl axGloryCoCtrl1 = new AxGloryCoCtrl();
 
-
         public GloryWinUserControl()
         {
             InitializeComponent();
@@ -60,11 +59,9 @@ namespace GloryWindowsUserControl
                 if (!axGloryCoCtrl1.Created)
                 {
                     axGloryCoCtrl1.CreateControl();
-                    deLock = axGloryCoCtrl1.GlyAsyncDeLock(handleName);
+                    return axGloryCoCtrl1.GlyAsyncDeLock(handleName);
                 }
-                deLock = axGloryCoCtrl1.GlyDeLock(handleName);
-
-                return deLock;
+                return axGloryCoCtrl1.GlyDeLock(handleName);
             }
             catch (Exception ex)
             {
@@ -100,7 +97,7 @@ namespace GloryWindowsUserControl
                 if (!axGloryCoCtrl1.Created)
                 {
                     axGloryCoCtrl1.CreateControl();
-                    rtn = axGloryCoCtrl1.GlyDeCancel(handleName);
+                    return axGloryCoCtrl1.GlyDeCancel(handleName);
                 }
                 rtn = axGloryCoCtrl1.GlyDeCancel(handleName);
                 return rtn;
@@ -193,6 +190,15 @@ namespace GloryWindowsUserControl
             }
         }
 
-       
+
+        public string GetEscrowStatus(string mHandle)
+        {
+            if (!axGloryCoCtrl1.Created)
+            {
+                axGloryCoCtrl1.CreateControl();
+                return axGloryCoCtrl1.GlyDeGetEscrowCounter(mHandle);
+            }
+                return axGloryCoCtrl1.GlyDeGetEscrowCounter(mHandle);
+        }
     }
 }

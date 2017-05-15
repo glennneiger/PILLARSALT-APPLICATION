@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using PILLARSALT_KIOSK.AppCodes;
 
 namespace PILLARSALT_KIOSK
 {
@@ -26,21 +27,53 @@ namespace PILLARSALT_KIOSK
 
         private void GotoPrevious(object sender, RoutedEventArgs e)
         {
+            //open escrow
+            var s = MachineHandle.DoRejectOpenEscrow();
+            if (!s.ToLower().Contains("error".ToLower()))
+            {
+                string screenName = "Screen002";
+                var sm = new ScreenManager();
+                sm.GetStateArray();
 
+                ShowNextWindow(screenName);
+            }
+        }
+        void ShowNextWindow(string windowFileName)
+        {
+            var window = (Window)Application.LoadComponent(new Uri(windowFileName + ".xaml", UriKind.Relative));
+            window.Topmost = true;
+            window.WindowStyle = WindowStyle.None;
+            window.WindowState = WindowState.Maximized;
+            //window.Owner = this;
+            window.Show();
+
+            Close();
+        }
+
+
+        private void RemovePlaceHolderText(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DoAcceptStoreCash()
+        {
+            //await DropAndPost();
+            //MachineHandle.DoStoreForRetailer();
+            string screenName = "TransactionFrm";
+            var sm = new ScreenManager();
+            sm.GetStateArray();
+            ShowNextWindow(screenName);
         }
 
         private void GotoNext(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void RemovePlaceHolderText(object sender, RoutedEventArgs e)
-        {
-            if (txtAccNumber.Text == "ACC. NUMBER HERE")
-            {
-                txtAccNumber.Text = "";
-            }
-
+            //open escrow
+            //string screenName = "Screen002";
+            //var sm = new ScreenManager();
+            //sm.GetStateArray();
+            //ShowNextWindow(screenName);
+            DoAcceptStoreCash();
         }
     }
 }

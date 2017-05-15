@@ -20,6 +20,7 @@ namespace PILLARSALT_KIOSK
         public static Content Content1 { get; set; }
         public static string ReceiverAccountNumber { get; set; }
         public static string DepositorPhoneNumber { get; set; }
+        public static int _retyInt = 0;
 
         public static decimal TotalAmountCounted = 0.00M;
         public static string _countDataArr;

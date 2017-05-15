@@ -180,7 +180,9 @@ namespace PILLARSALT_KIOSK
                 }
                 if (rtnCntStart.Contains("SUCCESS"))
                 {
-                    //deUnLock:
+                    //get escrow counter status
+
+
 
                     string sUl = MachineHandle.DoGlyAsyncDeUnLock(MachineHandle.MHandle);
                     Thread.Sleep(2000);

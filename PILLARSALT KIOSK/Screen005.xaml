@@ -7,10 +7,10 @@
       Title="Counted Notes Summary" Height="600" Width="1024" WindowStyle="None" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" WindowState="Maximized" FontSize="40" FontWeight="Bold" Loaded="BindRecordToGrid" Closing="DoCloseGlory">
     <Grid x:Name="CountSummary">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="358*"/>
+            <ColumnDefinition Width="216*"/>
+            <ColumnDefinition Width="199*"/>
             <ColumnDefinition Width="251*"/>
-            <ColumnDefinition Width="67*"/>
-            <ColumnDefinition Width="383*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="71*"/>
@@ -26,8 +26,8 @@
         <Rectangle Grid.Column="2" Fill="#FFAA2203" Margin="13,5,10,6" Grid.Row="1" Stroke="Black" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="textBlock" Grid.Column="2" Margin="28,18,145,0" Grid.Row="1" TextWrapping="Wrap" Text="TOTAL" Foreground="#FFF5ECEC" TextDecorations="Underline" Height="60" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="txtTotalCounted" Grid.Column="2" Margin="28,73,27,23" Grid.Row="1" TextWrapping="Wrap" Foreground="#FFF5ECEC" TextDecorations="{x:Null}" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnBack" Margin="27,0,0,13"  Content="BACK/REJECT" Foreground="Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Grid.Row="2"
-        	Grid.Column="0" Width="349" HorizontalAlignment="Left" BorderThickness="0" RenderTransformOrigin="0.5,0.5" FontSize="40" Height="64" VerticalAlignment="Bottom" Click="GotoPrevious" Grid.ColumnSpan="2"  >
+        <Button x:Name="btnBack" Margin="14,0,0,13"  Content="BACK/REJECT" Foreground="Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Grid.Row="2"
+        	Grid.Column="0" Width="334" HorizontalAlignment="Left" BorderThickness="0" RenderTransformOrigin="0.5,0.5" FontSize="40" Height="64" VerticalAlignment="Bottom" Click="GotoPrevious"  >
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -36,7 +36,7 @@
             </Button.Background>
 
         </Button>
-        <Button x:Name="btnAccept" Content="ACCEPT" Margin="15,0,16,13" Grid.Column="3" Grid.Row="2" FontSize="40" FontWeight="Bold" IsEnabled="True" Height="66" VerticalAlignment="Bottom" Click="DoAcceptStoreCash">
+        <Button x:Name="btnAccept" Content="ACCEPT" Margin="14,0,10,13" Grid.Column="3" Grid.Row="2" FontSize="40" FontWeight="Bold" IsEnabled="True" Height="66" VerticalAlignment="Bottom" Click="DoAcceptStoreCash">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFD5F0C6" Offset="0.277"/>
@@ -44,7 +44,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btnReject" Content="REJECT" Visibility="Hidden" Margin="17,0,13,13" Grid.Row="2" FontSize="40" FontWeight="Bold" Height="65" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.Column="1" Click="DoRejectOpenEscrow">
+        <Button x:Name="btnRetry" Content="RETRY REJECTED(3)" Visibility="Visible" Margin="0,0,13,13" Grid.Row="2" FontSize="40" FontWeight="Bold" Height="65" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.Column="1" Click="DoCountRetry" HorizontalAlignment="Right" Width="392">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFD5F0C6" Offset="0.277"/>

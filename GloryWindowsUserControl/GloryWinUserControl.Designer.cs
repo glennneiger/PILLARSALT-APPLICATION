@@ -41,6 +41,7 @@
             this.axGloryCoCtrl2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axGloryCoCtrl2.OcxState")));
             this.axGloryCoCtrl2.Size = new System.Drawing.Size(161, 120);
             this.axGloryCoCtrl2.TabIndex = 0;
+            this.axGloryCoCtrl2.GlyFULL += new AxGLORYCOCTRLLib._DGloryCoCtrlEvents_GlyFULLEventHandler(this.DoEscrowFull);
             // 
             // GloryWinUserControl
             // 
@@ -49,7 +50,6 @@
             this.Controls.Add(this.axGloryCoCtrl2);
             this.Name = "GloryWinUserControl";
             this.Size = new System.Drawing.Size(269, 236);
-            //this.Load += new System.EventHandler(this.GloryWinUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axGloryCoCtrl2)).EndInit();
             this.ResumeLayout(false);
 

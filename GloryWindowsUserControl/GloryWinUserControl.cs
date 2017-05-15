@@ -200,5 +200,10 @@ namespace GloryWindowsUserControl
             }
                 return axGloryCoCtrl1.GlyDeGetEscrowCounter(mHandle);
         }
+
+        private void DoEscrowFull(object sender, _DGloryCoCtrlEvents_GlyFULLEvent e)
+        {
+            MessageBox.Show(@"Escrow is full");
+        }
     }
 }

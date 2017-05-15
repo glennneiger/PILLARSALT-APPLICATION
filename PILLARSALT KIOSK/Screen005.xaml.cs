@@ -20,7 +20,6 @@ namespace PILLARSALT_KIOSK
             BindRecordToGrid(MachineHandle.CountDataSet);
         }
 
-
         public void BindRecordToGrid(DataSet dSet)
         {
             try
@@ -47,7 +46,6 @@ namespace PILLARSALT_KIOSK
 
         private void GotoPrevious(object sender, RoutedEventArgs e)
         {
-
             //open escrow
             var s = MachineHandle.DoRejectOpenEscrow();
             if (!s.ToLower().Contains("error".ToLower()))
@@ -58,8 +56,6 @@ namespace PILLARSALT_KIOSK
 
                 ShowNextWindow(screenName);
             }
-
-
         }
         void ShowNextWindow(string windowFileName)
         {
@@ -76,8 +72,8 @@ namespace PILLARSALT_KIOSK
         private void DoAcceptStoreCash(object sender, RoutedEventArgs e)
         {
             //await DropAndPost();
-            MachineHandle.DoStoreForRetailer();
-            string screenName = "TransactionFrm";
+            //MachineHandle.DoStoreForRetailer();
+            string screenName = "Screen0051";
             var sm = new ScreenManager();
             sm.GetStateArray();
             ShowNextWindow(screenName);
@@ -93,27 +89,41 @@ namespace PILLARSALT_KIOSK
             return null;
         }
 
-        private void DoRejectOpenEscrow(object sender, RoutedEventArgs e)
-        {
-            string r = MachineHandle.DoRejectOpenEscrow();
-            Thread.Sleep(2000);
-            if (!r.ToLower().Contains("error".ToLower()))
-            {
-                string screenName = "Screen002";
-                var sm = new ScreenManager();
-                sm.GetStateArray();
-                ShowNextWindow(screenName);
-            }
-        }
+        //private void DoCountoRetry(object sender, RoutedEventArgs e)
+        //{
+        //    string r = MachineHandle.DoRejectOpenEscrow();
+        //    Thread.Sleep(2000);
+        //    if (!r.ToLower().Contains("error".ToLower()))
+        //    {
+        //        string screenName = "Screen002";
+        //        var sm = new ScreenManager();
+        //        sm.GetStateArray();
+        //        ShowNextWindow(screenName);
+        //    }
+        //}
 
         private void BindRecordToGrid(object sender, RoutedEventArgs e)
         {
             BindRecordToGrid(MachineHandle.CountDataSet);
+            while (MachineHandle._retyInt < 4)
+            {
+                btnRetry.Visibility = Visibility.Visible;
+                btnRetry.Content = "RETRY REJECTED(" + MachineHandle._retyInt + ")";
+            }
         }
 
         private void DoCloseGlory(object sender, System.ComponentModel.CancelEventArgs e)
         {
             //MachineHandle.DoCloseGlory();
+        }
+
+        private void DoCountRetry(object sender, RoutedEventArgs e)
+        {
+            MachineHandle._retyInt++;
+            string screenName = "Screen003";
+            var sm = new ScreenManager();
+            sm.GetStateArray();
+            ShowNextWindow(screenName);
         }
     }
 }

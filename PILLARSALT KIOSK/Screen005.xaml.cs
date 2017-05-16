@@ -7,35 +7,45 @@ using PILLARSALT_KIOSK.AppCodes;
 
 namespace PILLARSALT_KIOSK
 {
+    using System.Globalization;
+
     /// <summary>
     /// Interaction logic for Screen005.xaml
     /// </summary>
     public partial class Screen005 : Window
     {
-        //private string _handle = MachineHandle.MHandle;
-
         public Screen005()
         {
             InitializeComponent();
-            BindRecordToGrid(MachineHandle.CountDataSet);
+            BindRecordToGrid();
         }
 
-        public void BindRecordToGrid(DataSet dSet)
+        public void BindRecordToGrid()
         {
             try
             {
+                if (MachineHandle._retyInt > 0)
+                {
+                    btnRetry.Visibility = Visibility.Visible;
+                    btnRetry.Content = "RECOUNT(" + MachineHandle._retyInt + ")";
+                }
+                else
+                {
+                    btnRetry.Visibility = Visibility.Hidden;
+                }
+
+                DataSet ds = new DataSet();
+                ds.Tables.Add(MachineHandle.CountDataTable);
                 //clear grids datasource
                 grdCount.DataContext = null;
-                grdCount.ItemsSource = dSet.Tables[0].DefaultView;
+                grdCount.ItemsSource = ds.Tables[0].DefaultView;
+                //dSet.Tables[0].DefaultView;
                 int totalAmount = 0;
-                foreach (DataTable table in dSet.Tables)
+                foreach (DataRow row in MachineHandle.CountDataTable.Rows)
                 {
-                    foreach (DataRow row in table.Rows)
-                    {
-                        totalAmount += Convert.ToInt32(row["TOTAL"].ToString());
-                    }
+                    totalAmount += Convert.ToInt32(row["TOTAL"].ToString());
                 }
-                txtTotalCounted.Text = totalAmount.ToString();
+                txtTotalCounted.Text = "NGN" + totalAmount.ToString("C");
             }
             catch (Exception ex)
             {
@@ -46,6 +56,7 @@ namespace PILLARSALT_KIOSK
 
         private void GotoPrevious(object sender, RoutedEventArgs e)
         {
+            MachineHandle._retyInt = 3;
             //open escrow
             var s = MachineHandle.DoRejectOpenEscrow();
             if (!s.ToLower().Contains("error".ToLower()))
@@ -73,6 +84,8 @@ namespace PILLARSALT_KIOSK
         {
             //await DropAndPost();
             //MachineHandle.DoStoreForRetailer();
+            MachineHandle._retyInt = 3;
+
             string screenName = "Screen0051";
             var sm = new ScreenManager();
             sm.GetStateArray();
@@ -89,29 +102,6 @@ namespace PILLARSALT_KIOSK
             return null;
         }
 
-        //private void DoCountoRetry(object sender, RoutedEventArgs e)
-        //{
-        //    string r = MachineHandle.DoRejectOpenEscrow();
-        //    Thread.Sleep(2000);
-        //    if (!r.ToLower().Contains("error".ToLower()))
-        //    {
-        //        string screenName = "Screen002";
-        //        var sm = new ScreenManager();
-        //        sm.GetStateArray();
-        //        ShowNextWindow(screenName);
-        //    }
-        //}
-
-        private void BindRecordToGrid(object sender, RoutedEventArgs e)
-        {
-            BindRecordToGrid(MachineHandle.CountDataSet);
-            while (MachineHandle._retyInt < 4)
-            {
-                btnRetry.Visibility = Visibility.Visible;
-                btnRetry.Content = "RETRY REJECTED(" + MachineHandle._retyInt + ")";
-            }
-        }
-
         private void DoCloseGlory(object sender, System.ComponentModel.CancelEventArgs e)
         {
             //MachineHandle.DoCloseGlory();
@@ -119,7 +109,7 @@ namespace PILLARSALT_KIOSK
 
         private void DoCountRetry(object sender, RoutedEventArgs e)
         {
-            MachineHandle._retyInt++;
+            MachineHandle._retyInt--;
             string screenName = "Screen003";
             var sm = new ScreenManager();
             sm.GetStateArray();

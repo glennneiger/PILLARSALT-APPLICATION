@@ -50,7 +50,6 @@ namespace PILLARSALT_KIOSK
             Close();
         }
 
-
         private void RemovePlaceHolderText(object sender, RoutedEventArgs e)
         {
 

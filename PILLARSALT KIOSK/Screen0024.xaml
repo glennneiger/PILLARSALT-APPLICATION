@@ -27,7 +27,7 @@
         </Label>
 
         <Image x:Name="gifImg" gif:ImageBehavior.AnimatedSource="AppImages/index.gif" Margin="148,40,150,10" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" />
-        <TextBlock x:Name="txtProcessingAnim" TextWrapping="Wrap"  FontWeight="Bold" Foreground="#FF465F32" TextOptions.TextHintingMode="Animated" Grid.Row="3" FontStyle="Italic" Grid.Column="1"
+        <TextBlock x:Name="txtProcessingAnim" TextWrapping="Wrap"  FontWeight="Bold" Foreground="#FF465F32" TextOptions.TextHintingMode="Animated" Grid.Row="3" FontStyle="Italic" Grid.Column="1" Margin="94,0,95,0"
         >
             <TextBlock.Effect>
                 <DropShadowEffect Color="Gray" ShadowDepth="6" Direction="300" BlurRadius="10"/>

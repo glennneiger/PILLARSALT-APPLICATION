@@ -161,6 +161,9 @@
     <Compile Include="Screen0023.xaml.cs">
       <DependentUpon>Screen0023.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Screen0024.xaml.cs">
+      <DependentUpon>Screen0024.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screen003.xaml.cs">
       <DependentUpon>Screen003.xaml</DependentUpon>
     </Compile>
@@ -268,6 +271,10 @@
     <Page Include="Screen0023.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screen0024.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Screen003.xaml">
       <SubType>Designer</SubType>

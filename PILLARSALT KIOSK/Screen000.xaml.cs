@@ -128,8 +128,7 @@ namespace PILLARSALT_KIOSK
             //MyPrinter.PrintRawData();
 
         }
-
-       
+        
         private void OpenGloryOnLoad(object sender, RoutedEventArgs e)
         {
             int o = MachineHandle.OpenGloryOnLoad();
@@ -139,7 +138,7 @@ namespace PILLARSALT_KIOSK
             }
             else
             {
-                MessageBox.Show("Glory Open!");
+                //MessageBox.Show("Glory Open!");
             }
             
         }

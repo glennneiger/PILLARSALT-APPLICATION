@@ -41,7 +41,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <TextBlock x:Name="txtFundTransfer" Margin="10,0,10,20.458" TextWrapping="Wrap" Height="49.542" VerticalAlignment="Bottom" Grid.Row="1" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Grid.Column="1" TextAlignment="Center" TouchEnter="GotoPrev"><Run Text="FUND "/><Run Text="TRANSFER"/></TextBlock>
+        <TextBlock x:Name="txtFundTransfer" Margin="10,0,10,20.458" TextWrapping="Wrap" Height="49.542" VerticalAlignment="Bottom" Grid.Row="1" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Grid.Column="1" TextAlignment="Center"><Run Text="FUND "/><Run Text="TRANSFER"/></TextBlock>
         <Button x:Name="btnFundTransfer" Margin="89,10,97,70" Content="" VerticalContentAlignment="Bottom" Grid.Row="1" Grid.Column="1" d:LayoutOverrides="Width, LeftMargin, RightMargin, TopMargin, BottomMargin" BorderThickness="2" Click="GotoNext1">
             <Button.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource BORDER-COLOR}"/>

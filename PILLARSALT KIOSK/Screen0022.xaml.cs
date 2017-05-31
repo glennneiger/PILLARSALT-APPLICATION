@@ -28,7 +28,7 @@ namespace PILLARSALT_KIOSK
 
         private void GotoNext(object sender, RoutedEventArgs e)
         {
-            MachineHandle.ReceiverAccountNumber = accNumberTxt.Text;
+            Banks.AccountNumber = accNumberTxt.Text;
 
             string screenName = "Screen0023";
             var sm = new ScreenManager();

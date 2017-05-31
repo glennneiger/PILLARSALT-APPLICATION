@@ -43,7 +43,7 @@ namespace PILLARSALT_KIOSK
 
         private void GotoNext(object sender, RoutedEventArgs e)
         {
-            MachineHandle.DepositorPhoneNumber = phoneNumberTxt.Text;
+            Banks.PhoneNumber = phoneNumberTxt.Text;
             string screenName = "Screen0022";
             var sm = new ScreenManager();
             sm.GetStateArray();

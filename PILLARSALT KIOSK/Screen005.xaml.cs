@@ -45,11 +45,11 @@ namespace PILLARSALT_KIOSK
                 {
                     totalAmount += Convert.ToInt32(row["TOTAL"].ToString());
                 }
-                txtTotalCounted.Text = "NGN" + totalAmount.ToString("C");
+                txtTotalCounted.Text = "NGN" + totalAmount.ToString("N1");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("GrdCount Err: " + ex.Message);
+                //MessageBox.Show("GrdCount Err: " + ex.Message);
             }
 
         }

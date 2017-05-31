@@ -29,6 +29,8 @@ namespace PILLARSALT_KIOSK
             if (listbox1.SelectedItems.Count > 0)
             {
                 btnContinue.IsEnabled = true;
+               
+                Banks.Name = ((ListBoxItem)listbox1.SelectedValue).Content.ToString();
             }
             listbox.UnselectAll();
         }
@@ -38,8 +40,10 @@ namespace PILLARSALT_KIOSK
             if (listbox.SelectedItems.Count > 0)
             {
                 btnContinue.IsEnabled = true;
+
+                Banks.Name = ((ListBoxItem)listbox.SelectedValue).Content.ToString();
             }
-           listbox1.UnselectAll();
+            listbox1.UnselectAll();
         }
 
         private DataTable _dt;

@@ -49,9 +49,9 @@ namespace PILLARSALT_KIOSK
             var description = "Deposit Information";
             var contentType = "Deposit Transaction Type";
             var notes = "This is a deposit message";
-            var amount = _totalAmount;
-            var depositorPhoneNumber = DepositorPhoneNumber;
-            var accountNum = "1234Account";
+            //var amount = _totalAmount;
+            //var depositorPhoneNumber = DepositorPhoneNumber;
+            //var accountNum = ReceiverAccountNumber;
 
             try
             {
@@ -75,20 +75,24 @@ namespace PILLARSALT_KIOSK
                     var param2 = new Common.PairOutput
                     {
                         Text = "AcctNo",
-                        Value = accountNum
+                        Value = Banks.AccountNumber
                     };
-
                     var param3 = new Common.PairOutput
+                    {
+                        Text = "Bank",
+                        Value = Banks.Name
+                    };
+                    var param4 = new Common.PairOutput
                     {
                         Text = "Currency",
                         Value = "NGN"
                     };
-                    var param4 = new Common.PairOutput
+                    var param5 = new Common.PairOutput
                     {
                         Text = "Depositor",
-                        Value = "Yames"
+                        Value = Banks.PhoneNumber
                     };
-                    var param5 = new Common.PairOutput
+                    var param6 = new Common.PairOutput
                     {
                         Text = "SessionId",
                         Value = "1"
@@ -99,7 +103,7 @@ namespace PILLARSALT_KIOSK
                     depositParams.Add(param3);
                     depositParams.Add(param4);
                     depositParams.Add(param5);
-
+                    depositParams.Add(param6);
                     //depositContent.Parameters = depositParams;
                     var depositContent = new Content
                     {
@@ -126,17 +130,17 @@ namespace PILLARSALT_KIOSK
                     TransactionCls.DenominationContents = denomContent;
                     TransactionCls.MethodContent = depositContent;
 
-                    var msg = MethodManager.DoMethod(messageType, origin, destination, adminUser, transactionId, senderIpAddress, userId, longitude, latitude, screen, state, description, contentType, notes, _totalAmount.ToString(CultureInfo.CurrentCulture), accountNum);
+                    var msg = MethodManager.DoMethod(messageType, origin, destination, adminUser, transactionId, senderIpAddress, userId, longitude, latitude, screen, state, description, contentType, notes, _totalAmount.ToString(CultureInfo.CurrentCulture), Banks.AccountNumber);
                     if (msg == "1")
                     {
 
                     }
-                    MessageBox.Show(msg);
+                    //MessageBox.Show(msg);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
 
             //}

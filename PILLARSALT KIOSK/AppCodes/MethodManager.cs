@@ -217,10 +217,12 @@ namespace PILLARSALT_KIOSK.AppCodes
             //TextWriter twr;
             dynamic logs = serializer.Serialize(errLogs);
             const string dFolder = @"C:\KioskLog";
-            Directory.CreateDirectory(dFolder);
-
+            DirectoryInfo dir = new DirectoryInfo(dFolder);
+            if (!dir.Exists)
+            {
+                 Directory.CreateDirectory(dFolder);
+            }
             string path = dFolder + @"\Applog.txt";
-
             using (StreamWriter w = File.AppendText(path))
             {
                 Log(logs.ToString(), w);

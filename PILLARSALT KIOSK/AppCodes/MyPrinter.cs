@@ -50,7 +50,7 @@ namespace PILLARSALT_KIOSK.AppCodes
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
         }
 

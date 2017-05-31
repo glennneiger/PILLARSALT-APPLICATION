@@ -29,8 +29,8 @@
         <Rectangle Fill="#FFF4F4F5" Margin="15,8,22,10" Grid.Row="1" Stroke="Black" Grid.RowSpan="2" Grid.ColumnSpan="2"
                    Grid.Column="0" />
 
-        <Button x:Name="BtnEnglish" Content="PRINT RECEIPT" Margin="15,10,10,20" Grid.Row="3" Grid.Column="0"
-                Click="PrintReceipt" FontSize="33.333" FontWeight="Bold">
+        <Button x:Name="BtnEnglish" Content="NO" Margin="0,166,72,62" Grid.Row="2" Grid.Column="0"
+                Click="PrintReceipt" FontSize="33.333" FontWeight="Bold" HorizontalAlignment="Right" Width="277">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFD5F0C6" Offset="0.277"/>
@@ -38,9 +38,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="TxtDenomData" Margin="15,25,10,25" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" TextWrapping="Wrap" FontSize="33.333" FontWeight="Bold"/>
-        <TextBlock x:Name="TxtSumTotal" Grid.Column="1" Margin="10,100,22,25" Grid.Row="2" TextWrapping="Wrap" FontSize="40" FontWeight="Bold" Foreground="#FFCD0808"><Run Text="TOTAL AMOUNT" TextDecorations="Underline"/><LineBreak/><Run Text="NGN "/></TextBlock>
-        <Button x:Name="BtnGotoMenu" Content="START NEW TRANSACTION" Margin="10,10,22,20" Grid.Row="3" Click="GoToMaimMenu" FontSize="33.333" FontWeight="Bold" Grid.Column="1">
+        <Button x:Name="BtnGotoMenu" Content="YES" Margin="63,166,0,62" Grid.Row="2" Click="GoToMaimMenu" FontSize="33.333" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Width="266">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFD5F0C6" Offset="0.277"/>
@@ -48,7 +46,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="TxtReceiver" Grid.Column="1" Height="155" Margin="10,25,22,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="33.333" FontWeight="Bold" Text="Receiver" TextDecorations="Underline" Grid.RowSpan="2"/>
+        <Label x:Name="label" Content="DO YOU WANT TO START A NEW TRANSACTION?" HorizontalAlignment="Left" Margin="32,0,0,0" Grid.Row="2" VerticalAlignment="Top" Height="87" Width="945" Grid.ColumnSpan="2" FontSize="40" FontWeight="Bold"/>
 
     </Grid>
 </Window>

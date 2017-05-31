@@ -124,7 +124,7 @@ namespace PILLARSALT_KIOSK
                     int third = first * second;
                     if (second > 0)
                     {
-                        MessageBox.Show($"Am in split3 loop : {first}\t{second}\t{third}");
+                        //MessageBox.Show($"Am in split3 loop : {first}\t{second}\t{third}");
                         MachineHandle.CountDataTable.Rows.Add(first, second, third);
                     }
                 }

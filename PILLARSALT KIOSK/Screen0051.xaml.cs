@@ -23,6 +23,14 @@ namespace PILLARSALT_KIOSK
         public Screen0051()
         {
             InitializeComponent();
+
+            ShowDetails();
+        }
+
+        private void ShowDetails()
+        {
+            txtReceiver.Text = "Name : " + Banks.HolderName + Environment.NewLine + "Bank : " + Banks.Name + Environment.NewLine + "Acc. Number : " + Banks.AccountNumber;
+            txtTotalAmount.Text = "NGN" + MachineHandle.TotalAmountCounted.ToString("N1");
         }
 
         private void GotoPrevious(object sender, RoutedEventArgs e)
